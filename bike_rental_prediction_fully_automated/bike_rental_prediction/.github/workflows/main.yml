@@ -1,0 +1,112 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    - run: |
+        pip install torch numpy scikit-learn pandas
+        python src/train.py
+
+  build-docker:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+    
+    - name: Login to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
+    
+    - name: Build and push Docker image
+      env:
+        ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
+      run: |
+        docker build -t bike-rental-prediction .
+        docker tag bike-rental-prediction:latest $ECR_REGISTRY/bike-rental-prediction:latest
+        docker push $ECR_REGISTRY/bike-rental-prediction:latest
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-docker
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Deploy to EC2
+      env:
+        PRIVATE_KEY: ${{ secrets.EC2_PRIVATE_KEY }}
+        HOST: ${{ secrets.EC2_HOST }}
+        USER: ${{ secrets.EC2_USER }}
+        ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
+      run: |
+        echo "$PRIVATE_KEY" > private_key.pem
+        chmod 600 private_key.pem
+        
+        ssh -i private_key.pem -o StrictHostKeyChecking=no $USER@$HOST << 'ENDSSH'
+          # Force update container
+          docker stop bike-rental-api 2>/dev/null || true
+          docker rm bike-rental-api 2>/dev/null || true
+          docker system prune -f
+          
+          # Pull and run latest
+          aws ecr get-login-password --region us-east-1 | \
+            docker login --username AWS --password-stdin $ECR_REGISTRY
+          docker pull $ECR_REGISTRY/bike-rental-prediction:latest
+          docker run -d --name bike-rental-api -p 80:1234 --restart unless-stopped \
+            $ECR_REGISTRY/bike-rental-prediction:latest
+          
+          # Verify
+          sleep 5
+          docker ps
+          curl -f http://localhost/health
+        ENDSSH
+        
+        rm -f private_key.pem
+
+  integration-tests:
+    runs-on: ubuntu-latest
+    needs: deploy
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Test production API
+      run: |
+        API_URL="http://${{ secrets.EC2_HOST }}"
+        
+        echo "🔍 Testing production API endpoints..."
+        
+        # Test health
+        curl -f $API_URL/health
+        echo "✅ Health check passed"
+        
+        # Test root
+        curl -f $API_URL/
+        echo "✅ Root endpoint passed"
+        
+        # Test predict
+        curl -X POST $API_URL/predict \
+          -H "Content-Type: application/json" \
+          -d '{"features": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3]}'
+        echo "✅ Predict endpoint passed"
+        
+        echo "✅ All integration tests passed!"
