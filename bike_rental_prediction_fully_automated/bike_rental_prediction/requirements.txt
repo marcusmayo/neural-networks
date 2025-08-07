@@ -5,3 +5,8 @@ torch
 mlflow
 fastapi
 uvicorn
+
+# Development and CI/CD dependencies
+pytest>=7.0
+black>=22.0
+flake8>=5.0

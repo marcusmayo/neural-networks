@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/582742913003827547/4230bb6e74d4456f88f5e46e2108e940/artifacts
+end_time: 1754513913530
+entry_point_name: ''
+experiment_id: '582742913003827547'
+lifecycle_stage: active
+run_id: 4230bb6e74d4456f88f5e46e2108e940
+run_name: sneaky-fox-617
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754513908955
+status: 3
+tags: []
+user_id: ubuntu

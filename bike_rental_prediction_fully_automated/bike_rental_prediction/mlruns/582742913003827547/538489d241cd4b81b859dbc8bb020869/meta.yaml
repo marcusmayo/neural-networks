@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/582742913003827547/538489d241cd4b81b859dbc8bb020869/artifacts
+end_time: 1754512850033
+entry_point_name: ''
+experiment_id: '582742913003827547'
+lifecycle_stage: active
+run_id: 538489d241cd4b81b859dbc8bb020869
+run_name: stately-toad-537
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754512844620
+status: 3
+tags: []
+user_id: ubuntu

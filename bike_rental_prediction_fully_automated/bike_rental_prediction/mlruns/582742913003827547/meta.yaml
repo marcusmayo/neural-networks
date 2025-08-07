@@ -1,0 +1,6 @@
+artifact_location: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/582742913003827547
+creation_time: 1754512844473
+experiment_id: '582742913003827547'
+last_update_time: 1754512844473
+lifecycle_stage: active
+name: BikePrediction

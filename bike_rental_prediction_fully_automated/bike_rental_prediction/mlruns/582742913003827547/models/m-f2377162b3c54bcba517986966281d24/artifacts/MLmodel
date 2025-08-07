@@ -1,0 +1,31 @@
+artifact_path: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/582742913003827547/models/m-f2377162b3c54bcba517986966281d24/artifacts
+flavors:
+  python_function:
+    cloudpickle_version: 3.1.1
+    code: null
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.12.3
+    streamable: false
+is_signature_from_type_hint: false
+mlflow_version: 3.2.0
+model_id: m-f2377162b3c54bcba517986966281d24
+model_size_bytes: 28431
+model_uuid: m-f2377162b3c54bcba517986966281d24
+prompts: null
+run_id: 92ba09440a144318960c555a74e7b4b7
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: values
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1, 53]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-08-06 21:51:38.942832'

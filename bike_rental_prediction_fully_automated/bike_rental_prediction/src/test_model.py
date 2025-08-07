@@ -8,7 +8,7 @@ def test_model():
     X_train, X_test, y_train, y_test = load_and_preprocess()
     X_test_tensor = torch.tensor(X_test, dtype=torch.float32)
 
-    model = torch.load("models/latest_model.pt", map_location=torch.device("cpu"))
+    model = torch.load("models/latest_model.pt", map_location=torch.device("cpu"), weights_only=False)
     model.eval()
     with torch.no_grad():
         predictions = model(X_test_tensor).numpy().flatten()

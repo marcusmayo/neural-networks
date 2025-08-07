@@ -1,0 +1,10 @@
+artifact_location: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/582742913003827547/models/m-615cbd5dcb8c4a27a2fd58740a308d0a/artifacts
+creation_timestamp: 1754515708949
+experiment_id: '582742913003827547'
+last_updated_timestamp: 1754515713533
+model_id: m-615cbd5dcb8c4a27a2fd58740a308d0a
+model_type: null
+name: model
+source_run_id: 36b1ab325190421a9e77ccfa959a0d3d
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/582742913003827547/c86494b8dc2c418e82f4f0e18186361a/artifacts
+end_time: 1754514045796
+entry_point_name: ''
+experiment_id: '582742913003827547'
+lifecycle_stage: active
+run_id: c86494b8dc2c418e82f4f0e18186361a
+run_name: debonair-fly-993
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754514041184
+status: 3
+tags: []
+user_id: ubuntu

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/582742913003827547/40f402af9ab04cf2a371cbe031a2f541/artifacts
+end_time: 1754516708073
+entry_point_name: ''
+experiment_id: '582742913003827547'
+lifecycle_stage: active
+run_id: 40f402af9ab04cf2a371cbe031a2f541
+run_name: adaptable-doe-475
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754516708031
+status: 4
+tags: []
+user_id: ubuntu

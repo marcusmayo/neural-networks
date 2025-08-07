@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/0/e37eea5e475045fe85a1a5ebb494dffe/artifacts
+end_time: 1754518836285
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e37eea5e475045fe85a1a5ebb494dffe
+run_name: bemused-penguin-638
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754518831595
+status: 3
+tags: []
+user_id: ubuntu

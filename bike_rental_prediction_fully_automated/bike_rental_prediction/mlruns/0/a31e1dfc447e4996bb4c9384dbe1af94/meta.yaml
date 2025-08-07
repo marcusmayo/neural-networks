@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/0/a31e1dfc447e4996bb4c9384dbe1af94/artifacts
+end_time: 1754517713759
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a31e1dfc447e4996bb4c9384dbe1af94
+run_name: funny-stag-418
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754517713726
+status: 4
+tags: []
+user_id: ubuntu

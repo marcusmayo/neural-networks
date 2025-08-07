@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/582742913003827547/36b1ab325190421a9e77ccfa959a0d3d/artifacts
+end_time: 1754515713563
+entry_point_name: ''
+experiment_id: '582742913003827547'
+lifecycle_stage: active
+run_id: 36b1ab325190421a9e77ccfa959a0d3d
+run_name: resilient-crab-878
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754515708931
+status: 3
+tags: []
+user_id: ubuntu

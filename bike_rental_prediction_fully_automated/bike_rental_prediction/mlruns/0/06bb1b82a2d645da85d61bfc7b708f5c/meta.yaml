@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/0/06bb1b82a2d645da85d61bfc7b708f5c/artifacts
+end_time: 1754518642212
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 06bb1b82a2d645da85d61bfc7b708f5c
+run_name: sassy-bug-324
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754518642179
+status: 4
+tags: []
+user_id: ubuntu
