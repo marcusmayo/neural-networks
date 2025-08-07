@@ -1,4 +1,0 @@
-# MLflow Configuration
-tracking_uri = "./mlruns"
-artifact_location = "./mlruns"
-registry_uri = "./mlruns"
