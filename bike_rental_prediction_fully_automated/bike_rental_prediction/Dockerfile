@@ -1,17 +1,19 @@
-FROM python:3.11-slim
+FROM python:3.9-slim
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
-
+# Install dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir torch flask numpy scikit-learn pandas
 
+# Copy application files
+COPY app/ ./app/
 COPY src/ ./src/
+COPY models/ ./models/
 COPY data/ ./data/
-RUN mkdir -p mlruns models
-COPY mlruns/ ./mlruns/
 
+# Expose port
 EXPOSE 1234
-HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 CMD curl -f http://localhost:1234/health || exit 1
-CMD ["mlflow", "models", "serve", "-m", "models:/BikeRentalModel/latest", "--host", "0.0.0.0", "-p", "1234", "--no-conda"]
+
+# Run the Flask app instead of MLflow
+CMD ["python", "app/serve.py"]
