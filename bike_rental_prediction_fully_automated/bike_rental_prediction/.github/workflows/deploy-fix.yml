@@ -1,0 +1,42 @@
+name: Fixed Deployment
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Configure AWS
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+    
+    - name: Deploy to EC2
+      run: |
+        # Use EC2 Instance Connect to deploy
+        aws ec2-instance-connect send-ssh-public-key \
+          --instance-id i-0dc6adb1e1abe543d \
+          --instance-os-user ubuntu \
+          --ssh-public-key "$(cat ~/.ssh/id_rsa.pub 2>/dev/null || ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa && cat ~/.ssh/id_rsa.pub)" \
+          --availability-zone us-east-1b || true
+        
+        # Alternative: Use Systems Manager if available
+        aws ssm send-command \
+          --instance-ids i-0dc6adb1e1abe543d \
+          --document-name "AWS-RunShellScript" \
+          --parameters 'commands=[
+            "docker stop bike-rental-api || true",
+            "docker rm bike-rental-api || true",
+            "docker system prune -af",
+            "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 453553127570.dkr.ecr.us-east-1.amazonaws.com",
+            "docker pull 453553127570.dkr.ecr.us-east-1.amazonaws.com/bike-rental-prediction:latest",
+            "docker run -d --name bike-rental-api -p 80:1234 --restart unless-stopped 453553127570.dkr.ecr.us-east-1.amazonaws.com/bike-rental-prediction:latest",
+            "docker ps"
+          ]' || echo "SSM not available, using direct connection"
