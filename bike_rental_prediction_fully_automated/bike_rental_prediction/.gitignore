@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+env/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Models and runs (large files)
+models_backup_aug6/
+runs/
+training_runs/
+*.pt
+*.pkl
+*.pth
+
+# MLflow (old)
+mlruns/
+mlflow_artifacts/
+mlflow-ui.log
+
+# Logs
+*.log
+serve.log
+serve-debug.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

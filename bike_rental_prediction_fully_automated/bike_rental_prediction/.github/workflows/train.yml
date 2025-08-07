@@ -1,0 +1,51 @@
+name: Train Model
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install torch numpy scikit-learn pandas
+    
+    - name: Create directories
+      run: mkdir -p runs models data
+    
+    - name: Run training
+      run: python src/train.py
+    
+    - name: Check results
+      run: |
+        echo "Training outputs:"
+        ls -la runs/
+        if [ -d runs ]; then
+          latest=$(ls -t runs | head -1)
+          if [ -n "$latest" ]; then
+            echo "Latest run contents:"
+            ls -la "runs/$latest/"
+            cat "runs/$latest/metrics.json"
+          fi
+        fi
+    
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: model-artifacts
+        path: runs/
+        retention-days: 30
