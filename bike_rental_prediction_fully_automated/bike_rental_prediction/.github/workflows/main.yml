@@ -7,17 +7,28 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+env:
+  EC2_PUBLIC_IP: "18.233.252.250"  # Fallback if secret not set
+
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-    - run: |
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
         pip install torch numpy scikit-learn pandas
-        python src/train.py
+    
+    - name: Run CI tests
+      run: |
+        python ci_test.py
 
   build-docker:
     runs-on: ubuntu-latest
@@ -51,6 +62,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+    
     - name: Deploy to EC2
       env:
         PRIVATE_KEY: ${{ secrets.EC2_PRIVATE_KEY }}
@@ -58,40 +76,37 @@ jobs:
         USER: ${{ secrets.EC2_USER }}
         ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
       run: |
+        # Use fallback if HOST is not set
+        if [ -z "$HOST" ]; then
+          HOST="18.233.252.250"
+          echo "Using fallback HOST: $HOST"
+        fi
+        
+        if [ -z "$USER" ]; then
+          USER="ubuntu"
+          echo "Using fallback USER: $USER"
+        fi
+        
         echo "$PRIVATE_KEY" > private_key.pem
         chmod 600 private_key.pem
         
         ssh -i private_key.pem -o StrictHostKeyChecking=no $USER@$HOST << 'ENDSSH'
-          echo "📦 Updating Docker container..."
-          
-          # Stop and remove old container
           docker stop bike-rental-api 2>/dev/null || true
           docker rm bike-rental-api 2>/dev/null || true
           
-          # Remove old image to force fresh pull
-          docker images | grep bike-rental-prediction | awk '{print $3}' | xargs -r docker rmi -f 2>/dev/null || true
-          
-          # Login to ECR
           aws ecr get-login-password --region us-east-1 | \
-            docker login --username AWS --password-stdin $ECR_REGISTRY
+            docker login --username AWS --password-stdin 453553127570.dkr.ecr.us-east-1.amazonaws.com
           
-          # Pull latest image
-          docker pull $ECR_REGISTRY/bike-rental-prediction:latest
+          docker pull 453553127570.dkr.ecr.us-east-1.amazonaws.com/bike-rental-prediction:latest
           
-          # Run new container
           docker run -d \
             --name bike-rental-api \
             -p 80:1234 \
             --restart unless-stopped \
-            $ECR_REGISTRY/bike-rental-prediction:latest
+            453553127570.dkr.ecr.us-east-1.amazonaws.com/bike-rental-prediction:latest
           
-          # Wait for container to start
           sleep 5
-          
-          # Verify deployment
-          docker ps | grep bike-rental-api
-          curl -f http://localhost/health || exit 1
-          echo "✅ Deployment successful"
+          docker ps
         ENDSSH
         
         rm -f private_key.pem
@@ -105,20 +120,48 @@ jobs:
     
     - name: Test production API
       run: |
-        API_URL="http://${{ secrets.EC2_HOST }}"
+        # Use the EC2_HOST secret or fallback to known IP
+        API_HOST="${{ secrets.EC2_HOST }}"
+        if [ -z "$API_HOST" ]; then
+          API_HOST="18.233.252.250"
+          echo "Using fallback host: $API_HOST"
+        fi
         
-        echo "🔍 Testing production API..."
+        API_URL="http://${API_HOST}"
         
-        # Test health
-        curl -f $API_URL/health
-        echo "✅ Health check passed"
+        echo "🔍 Testing production API at ${API_URL}..."
         
-        # Test root
-        curl -f $API_URL/
+        # Add timeout and retry logic
+        MAX_RETRIES=3
+        RETRY_COUNT=0
+        
+        while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+          echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
+          
+          # Test health endpoint with timeout
+          if curl -f --connect-timeout 10 --max-time 30 ${API_URL}/health; then
+            echo "✅ Health check passed"
+            break
+          else
+            echo "❌ Health check failed, retrying..."
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            sleep 10
+          fi
+        done
+        
+        if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
+          echo "❌ Health check failed after $MAX_RETRIES attempts"
+          exit 1
+        fi
+        
+        # Test root endpoint
+        curl -f --connect-timeout 10 --max-time 30 ${API_URL}/
         echo "✅ Root endpoint passed"
         
-        # Test predict
-        curl -f -X POST $API_URL/predict \
+        # Test predict endpoint
+        curl -f --connect-timeout 10 --max-time 30 -X POST ${API_URL}/predict \
           -H "Content-Type: application/json" \
           -d '{"features": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3]}'
         echo "✅ Predict endpoint passed"
+        
+        echo "✅ All integration tests passed!"
