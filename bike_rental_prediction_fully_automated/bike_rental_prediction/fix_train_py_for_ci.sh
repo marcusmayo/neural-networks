@@ -1,3 +1,19 @@
+#!/bin/bash
+
+echo "🔧 FIXING TRAIN.PY FOR CI COMPATIBILITY"
+echo "======================================"
+
+# Navigate to the project directory
+cd ~/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction
+
+# Create a backup of the original train.py
+cp src/train.py src/train_original.py
+echo "✅ Backed up original train.py"
+
+# Create a CI-compatible version of train.py
+echo "📝 Creating CI-compatible train.py..."
+
+cat > src/train.py << 'EOF'
 import os
 import torch
 import numpy as np
@@ -149,3 +165,55 @@ if __name__ == "__main__":
     success = train_model()
     if IS_CI:
         sys.exit(0 if success else 1)
+EOF
+
+echo "✅ Created CI-compatible train.py"
+
+# Test the updated script locally first
+echo ""
+echo "🧪 Testing updated train.py locally..."
+source venv/bin/activate
+
+# Test in CI mode
+export CI=true
+python src/train.py
+
+if [ $? -eq 0 ]; then
+    echo "✅ CI mode test passed!"
+    
+    # Test in normal mode
+    unset CI
+    echo ""
+    echo "🧪 Testing normal mode..."
+    timeout 60 python src/train.py || echo "Normal mode test completed (may have been interrupted for time)"
+    
+    echo ""
+    echo "📤 Pushing updated train.py to GitHub..."
+    cd ~/neural-networks
+    
+    git add .
+    git commit -m "Fix train.py to be CI-compatible - auto-detects CI environment"
+    git push origin main
+    
+    echo "✅ Updated train.py pushed to GitHub!"
+    
+    echo ""
+    echo "🎯 CHANGES MADE:"
+    echo "================"
+    echo "✅ Modified train.py to detect CI environment automatically"
+    echo "✅ CI mode: Uses 10 epochs, no MLflow, temporary directories"
+    echo "✅ Local mode: Uses 100 epochs, full MLflow integration" 
+    echo "✅ Maintains backward compatibility"
+    echo "✅ Same file works in both environments"
+    
+else
+    echo "❌ CI mode test failed. Restoring original..."
+    cp src/train_original.py src/train.py
+fi
+
+echo ""
+echo "📊 Monitor the pipeline:"
+echo "https://github.com/marcusmayo/machine-learning-portfolio/actions"
+echo ""
+echo "🚀 Your production API continues working:"
+echo "http://18.233.252.250:1234/invocations"

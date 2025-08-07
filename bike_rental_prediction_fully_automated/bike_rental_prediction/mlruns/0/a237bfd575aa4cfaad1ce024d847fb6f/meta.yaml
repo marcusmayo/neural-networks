@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ubuntu/neural-networks/bike_rental_prediction_fully_automated/bike_rental_prediction/mlruns/0/a237bfd575aa4cfaad1ce024d847fb6f/artifacts
+end_time: 1754573814745
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a237bfd575aa4cfaad1ce024d847fb6f
+run_name: vaunted-snail-99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754573810039
+status: 3
+tags: []
+user_id: ubuntu
