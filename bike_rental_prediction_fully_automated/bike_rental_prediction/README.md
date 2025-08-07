@@ -4,6 +4,8 @@ A complete end-to-end MLOps pipeline for predicting bike rental demand using mac
 
 Based on article from https://medium.com/analytics-vidhya/neural-network-to-predict-bike-sharing-rides-397e0358ba45
 
+Vibe coded with Claude and ChatGPT
+
 ## 📊 Overview
 
 This project implements a production-ready machine learning system that predicts hourly bike rental demand based on weather conditions, temporal features, and seasonal patterns. The model is deployed as a REST API on AWS EC2 and features automated testing, containerization, and continuous deployment.
