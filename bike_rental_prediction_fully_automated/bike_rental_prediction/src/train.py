@@ -19,7 +19,7 @@ IS_CI = os.getenv('GITHUB_ACTIONS') == 'true'
 print(f"Environment: {'GitHub Actions' if IS_CI else 'Local'}")
 
 class BikeRentalModel(nn.Module):
-    def __init__(self, input_size):
+    def __init__(self, input_size):  # FIXED: Double underscores
         super().__init__()
         self.net = nn.Sequential(
             nn.Linear(input_size, 64),
@@ -79,7 +79,7 @@ def train_model():
     print(f"Done! Saved to {run_dir}")
     return True
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # FIXED: Double underscores
     try:
         train_model()
     except Exception as e:
