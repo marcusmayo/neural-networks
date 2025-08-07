@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
 
 env:
   DOCKER_IMAGE: bike-rental-prediction
@@ -33,9 +33,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install torch pandas numpy scikit-learn
         
-    - name: Run CI tests (no MLflow)
+    - name: Run comprehensive CI tests
       run: |
-        python test_ci.py
+        python ci_test.py
 
   build-docker:
     runs-on: ubuntu-latest
@@ -102,11 +102,6 @@ jobs:
         EOF
         
         rm -f private_key.pem
-        
-    - name: Verify deployment
-      run: |
-        sleep 30
-        curl -f http://${{ secrets.EC2_HOST }}/health || echo "Deployment verification completed"
 
   integration-tests:
     runs-on: ubuntu-latest
@@ -116,28 +111,20 @@ jobs:
     steps:
     - name: Test production API
       run: |
-        echo "🧪 Testing production API..."
+        echo "🧪 Testing production API endpoints..."
         
-        # Test health endpoint
-        curl -f http://${{ secrets.EC2_HOST }}/health && echo "✅ Health check passed" || echo "⚠️ Health check failed"
+        # Health check
+        curl -f "http://${{ secrets.EC2_HOST }}/health" && echo "✅ Health check passed" || echo "⚠️ Health check failed"
         
-        # Test predictions endpoint
-        response=$(curl -s -X POST http://${{ secrets.EC2_HOST }}/invocations \
+        # Prediction test
+        response=$(curl -s -X POST "http://${{ secrets.EC2_HOST }}/invocations" \
           -H "Content-Type: application/json" \
           -d '{
-            "inputs": [
-              [0.99, -0.17, -1.47, 1.57, 1.29, -1.85, 0.03, -0.58, 1.69, -0.57,
-               -0.59, -0.30, -0.01, -0.29, -0.30, -0.30, -0.31, 3.33, -0.31, -0.30,
-               -0.30, -0.30, -0.30, -0.31, -0.21, -0.21, -0.20, -0.20, -0.21, -0.21,
-               -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21,
-               -0.21, -0.21, 4.78, -0.21, -0.21, -0.21, -0.21, -0.41, -0.41, -0.41,
-               -0.41, -0.41, 2.43]
-            ]
+            "inputs": [[0.99, -0.17, -1.47, 1.57, 1.29, -1.85, 0.03, -0.58, 1.69, -0.57, -0.59, -0.30, -0.01, -0.29, -0.30, -0.30, -0.31, 3.33, -0.31, -0.30, -0.30, -0.30, -0.30, -0.31, -0.21, -0.21, -0.20, -0.20, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, -0.21, 4.78, -0.21, -0.21, -0.21, -0.21, -0.41, -0.41, -0.41, -0.41, -0.41, 2.43]]
           }')
         
         if echo "$response" | grep -q "predictions"; then
-          echo "✅ Prediction API test passed"
-          echo "Response: $response"
+          echo "✅ Prediction API working: $response"
         else
-          echo "⚠️ Prediction API test completed with response: $response"
+          echo "⚠️ Prediction API response: $response"
         fi
