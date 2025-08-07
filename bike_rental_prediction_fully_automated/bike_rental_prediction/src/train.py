@@ -22,7 +22,7 @@ print(f"Environment: {'GitHub Actions' if IS_CI else 'Local'}")
 print(f"Working directory: {os.getcwd()}")
 
 class BikeRentalModel(nn.Module):
-    def __init__(self, input_size):
+    def __init__(self, input_size):  # FIXED: Double underscores
         super(BikeRentalModel, self).__init__()
         self.layers = nn.Sequential(
             nn.Linear(input_size, 64),
