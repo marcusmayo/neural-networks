@@ -62,22 +62,36 @@ jobs:
         chmod 600 private_key.pem
         
         ssh -i private_key.pem -o StrictHostKeyChecking=no $USER@$HOST << 'ENDSSH'
-          # Force update container
+          echo "📦 Updating Docker container..."
+          
+          # Stop and remove old container
           docker stop bike-rental-api 2>/dev/null || true
           docker rm bike-rental-api 2>/dev/null || true
-          docker system prune -f
           
-          # Pull and run latest
+          # Remove old image to force fresh pull
+          docker images | grep bike-rental-prediction | awk '{print $3}' | xargs -r docker rmi -f 2>/dev/null || true
+          
+          # Login to ECR
           aws ecr get-login-password --region us-east-1 | \
             docker login --username AWS --password-stdin $ECR_REGISTRY
+          
+          # Pull latest image
           docker pull $ECR_REGISTRY/bike-rental-prediction:latest
-          docker run -d --name bike-rental-api -p 80:1234 --restart unless-stopped \
+          
+          # Run new container
+          docker run -d \
+            --name bike-rental-api \
+            -p 80:1234 \
+            --restart unless-stopped \
             $ECR_REGISTRY/bike-rental-prediction:latest
           
-          # Verify
+          # Wait for container to start
           sleep 5
-          docker ps
-          curl -f http://localhost/health
+          
+          # Verify deployment
+          docker ps | grep bike-rental-api
+          curl -f http://localhost/health || exit 1
+          echo "✅ Deployment successful"
         ENDSSH
         
         rm -f private_key.pem
@@ -93,7 +107,7 @@ jobs:
       run: |
         API_URL="http://${{ secrets.EC2_HOST }}"
         
-        echo "🔍 Testing production API endpoints..."
+        echo "🔍 Testing production API..."
         
         # Test health
         curl -f $API_URL/health
@@ -104,9 +118,7 @@ jobs:
         echo "✅ Root endpoint passed"
         
         # Test predict
-        curl -X POST $API_URL/predict \
+        curl -f -X POST $API_URL/predict \
           -H "Content-Type: application/json" \
           -d '{"features": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 0.1, 0.2, 0.3]}'
         echo "✅ Predict endpoint passed"
-        
-        echo "✅ All integration tests passed!"
