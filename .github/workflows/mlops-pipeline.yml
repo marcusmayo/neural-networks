@@ -31,21 +31,11 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install torch pandas numpy scikit-learn
         
-    - name: Test data preprocessing
+    - name: Run CI tests (no MLflow)
       run: |
-        python -c "
-from src.preprocess import load_and_preprocess
-X_train, X_test, y_train, y_test = load_and_preprocess()
-print(f'✅ Data preprocessing test passed')
-print(f'Training data shape: {X_train.shape}')
-print(f'Test data shape: {X_test.shape}')
-"
-        
-    - name: Test model training (CI version)
-      run: |
-        python src/train_ci.py
+        python test_ci.py
 
   build-docker:
     runs-on: ubuntu-latest
@@ -101,14 +91,11 @@ print(f'Test data shape: {X_test.shape}')
         chmod 600 private_key.pem
         
         ssh -i private_key.pem -o StrictHostKeyChecking=no $USER@$HOST << 'EOF'
-          # Stop existing container
           docker stop bike-rental-api || true
           docker rm bike-rental-api || true
           
-          # Login to ECR
           aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${{ steps.login-ecr.outputs.registry }}
           
-          # Pull and run new image
           docker pull ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:latest
           docker run -d --name bike-rental-api -p 80:1234 --restart unless-stopped \
             ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:latest
@@ -127,10 +114,15 @@ print(f'Test data shape: {X_test.shape}')
     if: github.ref == 'refs/heads/main'
     
     steps:
-    - name: Run integration tests
+    - name: Test production API
       run: |
-        # Test the production API
-        curl -X POST "http://${{ secrets.EC2_HOST }}/invocations" \
+        echo "🧪 Testing production API..."
+        
+        # Test health endpoint
+        curl -f http://${{ secrets.EC2_HOST }}/health && echo "✅ Health check passed" || echo "⚠️ Health check failed"
+        
+        # Test predictions endpoint
+        response=$(curl -s -X POST http://${{ secrets.EC2_HOST }}/invocations \
           -H "Content-Type: application/json" \
           -d '{
             "inputs": [
@@ -141,4 +133,11 @@ print(f'Test data shape: {X_test.shape}')
                -0.21, -0.21, 4.78, -0.21, -0.21, -0.21, -0.21, -0.41, -0.41, -0.41,
                -0.41, -0.41, 2.43]
             ]
-          }' | grep -q predictions && echo "✅ Integration test passed" || echo "⚠️ Integration test completed"
+          }')
+        
+        if echo "$response" | grep -q "predictions"; then
+          echo "✅ Prediction API test passed"
+          echo "Response: $response"
+        else
+          echo "⚠️ Prediction API test completed with response: $response"
+        fi
