@@ -9,7 +9,7 @@ Welcome to my comprehensive machine learning and AI engineering portfolio! This 
 
 ## 👨‍💻 About Me
 
-I'm Marcus Mayo, a passionate Machine Learning Engineer and AI practitioner focused on building robust, scalable, and production-ready AI systems. This portfolio demonstrates my expertise across the entire ML lifecycle, from data preprocessing and model development to deployment and monitoring.
+I'm Marcus, a passionate Machine Learning Engineer and AI practitioner focused on building robust, scalable, and production-ready AI systems. This portfolio demonstrates my expertise across the entire ML lifecycle, from data preprocessing and model development to deployment and monitoring.
 
 **Core Competencies:**
 - 🧠 **Machine Learning**: Deep Learning, Classical ML, Computer Vision, NLP
@@ -135,7 +135,6 @@ Building scalable recommendation engines using matrix factorization, deep learni
 
 ### **Programming Languages**
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
-![R](https://img.shields.io/badge/r-%23276DC3.svg?style=flat&logo=r&logoColor=white)
 ![SQL](https://img.shields.io/badge/sql-%2300f.svg?style=flat&logo=mysql&logoColor=white)
 
 ## 📈 Project Development Approach
@@ -231,14 +230,12 @@ I welcome contributions, suggestions, and collaborations! Here's how you can get
 ## 📚 Learning Resources
 
 ### Recommended Books
-- "Hands-On Machine Learning" by Aurélien Géron
-- "The Elements of Statistical Learning" by Hastie, Tibshirani, and Friedman
-- "Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville
+- "AI Engineering" by Chip Huyen
+- "The AI Engineering Bible" by Thomas R. Caldwell
+- "Vibe Coding: The Future of Programming" by Addy Osmani
 
 ### Online Courses
-- [Fast.ai Practical Deep Learning](https://www.fast.ai/)
-- [CS229 Machine Learning - Stanford](http://cs229.stanford.edu/)
-- [MLOps Specialization - Coursera](https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops)
+- [The AI Engineer Course 2025: Complete AI Engineer Bootcamp](https://365careers.com/) by 365 Careers
 
 ### Research Papers
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - Transformer Architecture
