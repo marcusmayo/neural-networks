@@ -51,7 +51,7 @@ A complete end-to-end MLOps pipeline for predicting hourly bike rental demand, s
 
 **🛠️ Tech Stack:** PyTorch, Flask, Docker, AWS (EC2, ECR), GitHub Actions, NumPy, Pandas
 
-**🔗 Live Demo:** [http://18.233.252.250](http://18.233.252.250)
+
 
 ```python
 # Example API Usage
@@ -63,55 +63,129 @@ print(f"Predicted bike rentals: {response.json()['prediction']}")
 
 ---
 
-### 🔮 [Advanced Time Series Forecasting](./time_series_forecasting/) *(Coming Soon)*
-> **Multi-horizon forecasting with state-of-the-art models**
+### 🎭 [Sentiment Analysis Web App](./sentiment_analysis_webapp/) *(Coming Soon)*
+> **Real-time sentiment analysis with modern transformers**
 
-Advanced time series analysis using Transformer architectures, LSTM networks, and statistical methods for multi-step ahead forecasting.
+Web application for analyzing sentiment in text using Hugging Face Transformers, deployed as a scalable REST API.
 
 **Planned Features:**
-- Multiple forecasting horizons (short, medium, long-term)
-- Ensemble methods combining neural and statistical approaches
-- Uncertainty quantification and prediction intervals
-- Real-time data ingestion and model updating
+- Hugging Face Transformers integration
+- Flask/FastAPI web framework
+- Real-time sentiment prediction
+- EC2 cloud hosting with auto-scaling
+- Support for IMDb Reviews and Twitter datasets
 
 ---
 
-### 🖼️ [Computer Vision Pipeline](./computer_vision/) *(Coming Soon)*
-> **End-to-end image classification and object detection**
+### 🖼️ [Image Classifier on CIFAR-10](./cifar10_classifier/) *(Coming Soon)*
+> **CNN-based image classification with MLflow tracking**
 
-Comprehensive computer vision projects including custom CNN architectures, transfer learning, and real-time inference systems.
+Deep learning image classifier using PyTorch CNNs with comprehensive model tracking and cloud storage integration.
 
 **Planned Features:**
-- Custom CNN architectures for specific domains
-- Transfer learning with pre-trained models
-- Real-time inference with optimized models
-- Edge deployment capabilities
+- Custom CNN architecture in PyTorch
+- MLflow experiment tracking and model versioning
+- S3 storage for model artifacts
+- CIFAR-10 dataset with data augmentation
+- Performance benchmarking and visualization
 
 ---
 
-### 💬 [Natural Language Processing Suite](./nlp_projects/) *(Coming Soon)*
-> **Text analysis, sentiment classification, and language understanding**
+### 📈 [Time Series Forecasting (Weather/Energy)](./time_series_forecasting/) *(Coming Soon)*
+> **LSTM-based forecasting with automated scheduling**
 
-NLP projects covering text preprocessing, embedding techniques, transformer models, and conversational AI systems.
+Advanced time series prediction system using LSTM networks with automated data pipeline and scheduling.
 
 **Planned Features:**
-- Sentiment analysis with custom embeddings
-- Text classification and named entity recognition
-- Transformer fine-tuning for domain-specific tasks
-- Conversational AI chatbot development
+- LSTM neural networks in PyTorch
+- Apache Airflow scheduler on EC2
+- NOAA Climate Data integration
+- NYISO Energy Load Data processing
+- Multi-horizon forecasting capabilities
 
 ---
 
-### 📊 [Recommendation Systems](./recommendation_systems/) *(Coming Soon)*
-> **Collaborative filtering and content-based recommendations**
+### 📰 [Text Summarizer with Transformers](./text_summarizer/) *(Coming Soon)*
+> **Transformer-based text summarization with interactive UI**
 
-Building scalable recommendation engines using matrix factorization, deep learning, and hybrid approaches.
+Fine-tuned transformer models for automatic text summarization with user-friendly web interface.
 
 **Planned Features:**
-- Collaborative filtering algorithms
-- Content-based recommendation systems
-- Deep learning approaches (Neural Collaborative Filtering)
-- Real-time recommendation APIs
+- Hugging Face transformer fine-tuning
+- Gradio interactive UI
+- EC2 inference server deployment
+- CNN/DailyMail and BBC News datasets
+- Extractive and abstractive summarization
+
+---
+
+### 🎯 [Object Detection with YOLOv5](./object_detection/) *(Coming Soon)*
+> **Real-time object detection with bounding box visualization**
+
+Computer vision system for real-time object detection using pre-trained YOLOv5 models with inference API.
+
+**Planned Features:**
+- Pre-trained YOLOv5 model integration
+- Real-time bounding box visualization
+- EC2 inference server with REST API
+- COCO Dataset and Open Images Dataset
+- Multi-object detection and classification
+
+---
+
+### 🔍 [Tabular Fraud Detection with Explainability](./fraud_detection/) *(Coming Soon)*
+> **XGBoost-based fraud detection with model interpretability**
+
+Machine learning system for fraud detection with comprehensive explainability using SHAP and LIME.
+
+**Planned Features:**
+- XGBoost ensemble learning
+- SHAP/LIME explainability integration
+- Scikit-learn preprocessing pipeline
+- MLflow experiment tracking
+- Kaggle Credit Card Fraud Detection dataset
+
+---
+
+### 🎙️ [Voice Command Recognizer](./voice_recognition/) *(Coming Soon)*
+> **Speech-to-text system with audio processing**
+
+Audio processing system for voice command recognition using state-of-the-art speech models.
+
+**Planned Features:**
+- Audio preprocessing and feature extraction
+- Wav2Vec speech-to-text model
+- EC2 REST API deployment
+- Google Speech Commands Dataset
+- Real-time audio stream processing
+
+---
+
+### 📄 [News Article Classifier with Streamlit UI](./news_classifier/) *(Coming Soon)*
+> **NLP text classification with interactive dashboard**
+
+News article classification system with comprehensive NLP pipeline and interactive Streamlit dashboard.
+
+**Planned Features:**
+- Complete NLP preprocessing pipeline
+- Multi-class text classification
+- Interactive Streamlit UI on EC2
+- AG News Corpus and News Category datasets
+- Real-time classification and visualization
+
+---
+
+### 🔧 [MLOps Pipeline with Docker + MLflow + S3 + EC2](./complete_mlops/) *(Coming Soon)*
+> **End-to-end MLOps infrastructure and deployment**
+
+Comprehensive MLOps pipeline demonstrating enterprise-level practices with containerization and cloud deployment.
+
+**Planned Features:**
+- Dockerized model training and inference
+- MLflow model logging and versioning
+- S3 artifact storage and data management
+- Microservice deployment architecture
+- Multi-dataset pipeline support (extensible framework)
 
 ## 🛠️ Technologies & Tools
 
@@ -248,7 +322,7 @@ I'm always interested in discussing machine learning, collaborating on projects,
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/marcus-mayo)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/marcusmayo)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:marcus.mayo@example.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:m87864139@gmail.com)
 
 **Let's build the future with AI together! 🤖**
 
