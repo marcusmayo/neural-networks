@@ -343,5 +343,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *⭐ If you find this portfolio helpful, please consider giving it a star! It helps others discover these projects and motivates continued development.*
 
-**Last Updated:** $(date +"%B %Y")  
+Last updated: ![Last commit](https://img.shields.io/github/last-commit/marcusmayo/machine-learning-portfolio?label=Last%20updated)
+
 **Status:** 🚀 Actively Maintained
