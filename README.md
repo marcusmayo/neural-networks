@@ -51,8 +51,6 @@ A complete end-to-end MLOps pipeline for predicting hourly bike rental demand, s
 
 **🛠️ Tech Stack:** PyTorch, Flask, Docker, AWS (EC2, ECR), GitHub Actions, NumPy, Pandas
 
-
-
 ```python
 # Example API Usage
 import requests
@@ -60,6 +58,48 @@ response = requests.post('http://18.233.252.250/predict',
                         json={'features': [0.1] * 53})
 print(f"Predicted bike rentals: {response.json()['prediction']}")
 ```
+
+---
+
+### 🕵️ [Fraud Detection - Enterprise MLOps with Explainability](./fraud-detection-mlops/)
+> **Production-Ready Fraud Detection with SHAP/LIME and Full SageMaker Pipeline**
+
+Complete end-to-end MLOps pipeline for credit card fraud detection using AWS SageMaker, demonstrating enterprise-level practices with automated deployment, monitoring, and model explainability for production-ready fraud prevention.
+
+**🎯 Highlights:**
+- **XGBoost Model**: Optimized gradient boosting with class imbalance handling (scale_pos_weight=100)
+- **Time-Based Validation**: Chronological data splits with rolling backtests for temporal stability
+- **Model Explainability**: SHAP global importance + LIME local explanations with visualizations
+- **Cost-Aware Decision Making**: Threshold optimization curves with expected value analysis
+- **SageMaker Pipeline**: End-to-end automated training, evaluation, and deployment
+- **Model Registry**: Automated model versioning with conditional approval gates
+- **Real-time Inference**: Sub-100ms fraud detection with probability + decision outputs
+- **Production Economics**: Enterprise-grade system operational for <$2/day
+
+**🛠️ Tech Stack:** XGBoost, SageMaker, SHAP, LIME, Model Registry, CloudWatch, S3, Boto3
+
+```python
+# Example API Usage
+import boto3
+runtime = boto3.client('sagemaker-runtime')
+response = runtime.invoke_endpoint(
+    EndpointName='fraud-detection-endpoint-1755128252',
+    ContentType='text/csv',
+    Body='0.5,-1.2,0.8,...'  # PCA features
+)
+result = json.loads(response['Body'].read())
+print(f"Fraud probability: {result['probability']:.3f}")
+print(f"Decision: {'FRAUD' if result['prediction'] > 0.5 else 'LEGITIMATE'}")
+```
+
+**📊 Production Performance:**
+- **AUC-PR**: 0.7720 (precision-recall optimized for imbalanced data)
+- **AUC-ROC**: 0.9763 (outstanding discrimination capability)
+- **Dataset Scale**: 284,807 credit card transactions with 0.17% fraud rate
+- **Response Time**: <100ms real-time transaction processing
+- **Infrastructure Cost**: $0.05/hour real-time endpoint + $0.10 per training job
+- **Uptime SLA**: 99.9% production-grade reliability
+- **Regulatory Compliance**: SHAP/LIME explainability for audit requirements
 
 ---
 
@@ -130,20 +170,6 @@ Computer vision system for real-time object detection using pre-trained YOLOv5 m
 - EC2 inference server with REST API
 - COCO Dataset and Open Images Dataset
 - Multi-object detection and classification
-
----
-
-### 🔍 [Tabular Fraud Detection with Explainability](./fraud_detection/) *(Coming Soon)*
-> **XGBoost-based fraud detection with model interpretability**
-
-Machine learning system for fraud detection with comprehensive explainability using SHAP and LIME.
-
-**Planned Features:**
-- XGBoost ensemble learning
-- SHAP/LIME explainability integration
-- Scikit-learn preprocessing pipeline
-- MLflow experiment tracking
-- Kaggle Credit Card Fraud Detection dataset
 
 ---
 
@@ -278,6 +304,7 @@ Each project includes its own detailed README with specific setup and execution 
 | Project | Model Type | Accuracy/Score | Response Time | Deployment |
 |---------|------------|----------------|---------------|------------|
 | Bike Rental Prediction | Neural Network | MSE: 0.15 | <100ms | ✅ Production |
+| Fraud Detection | XGBoost | AUC-PR: 0.7720, AUC-ROC: 0.9763 | <100ms | ✅ Production |
 | Time Series Forecasting | Transformer | MAPE: 8.2% | <50ms | 🔄 Development |
 | Computer Vision | CNN | 94.5% | <200ms | 📋 Planned |
 | NLP Classification | BERT | F1: 0.91 | <150ms | 📋 Planned |
@@ -314,35 +341,4 @@ I welcome contributions, suggestions, and collaborations! Here's how you can get
 ### Research Papers
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - Transformer Architecture
 - [BERT: Pre-training of Deep Bidirectional Transformers](https://arxiv.org/abs/1810.04805)
-- [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
-
-## 📞 Contact & Connect
-
-I'm always interested in discussing machine learning, collaborating on projects, or exploring new opportunities!
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/marcus-mayo)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/marcusmayo)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:m87864139@gmail.com)
-
-**Let's build the future with AI together! 🤖**
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- The amazing open-source ML community
-- Contributors to PyTorch, TensorFlow, and Scikit-learn
-- AWS for cloud infrastructure and services
-- GitHub for hosting and CI/CD capabilities
-
----
-
-*⭐ If you find this portfolio helpful, please consider giving it a star! It helps others discover these projects and motivates continued development.*
-
-Last updated: ![Last commit](https://img.shields.io/github/last-commit/marcusmayo/machine-learning-portfolio?label=Last%20updated)
-
-**Status:** 🚀 Actively Maintained
+- [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper/2015
