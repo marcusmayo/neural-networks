@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+build/
+dist/
+*.egg-info/
+
+# AWS
+.aws/
+*.tar.gz
+model_artifacts/
+
+# Data files
+*_fixed.csv
+train.csv
+valid.csv
+test.csv
+creditcard.csv
+
+# Logs
+logs/*.log
+*.json.bak
+response.json
+
+# Environment
+.env
+.venv
+env/
+venv/
