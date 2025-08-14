@@ -4,6 +4,8 @@
 
 Complete end-to-end MLOps pipeline for credit card fraud detection using AWS SageMaker, XGBoost, and explainability tools. This project demonstrates advanced machine learning engineering practices with automated deployment, monitoring, and model explainability for production-ready fraud prevention.
 
+Vibe coded with ChatGPT and Claude on AWS infrastructure.
+
 ## 🏆 Key Achievements
 
 - **Model Performance**: AUC-PR = 0.7720, AUC-ROC = 0.9763
