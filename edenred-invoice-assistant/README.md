@@ -27,7 +27,7 @@ The **Edenred Invoice Assistant** is an intelligent chatbot designed to help sup
 
 ## 🎮 **Interactive Demo**
 
-### [🌟 **Demo Landing Page**](frontend/demo.html) ← Start Here!
+[🌟 Demo Landing Page](https://marcusmayo.github.io/machine-learning-portfolio/edenred-invoice-assistant/frontend/demo.html) ← Start Here!
 
 Experience the full project with:
 - Live chatbot interface
@@ -315,3 +315,4 @@ This project demonstrates production ML deployment skills including:
 
 ### 🏷️ Tags
 `machine-learning` `aws` `sagemaker` `lambda` `nlp` `chatbot` `serverless` `huggingface` `production-ml` `api-gateway`
+
