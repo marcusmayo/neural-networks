@@ -7,16 +7,22 @@
 
 Welcome to my comprehensive machine learning and AI engineering portfolio! This repository showcases end-to-end ML projects, from research and experimentation to production-ready deployments with complete MLOps pipelines.
 
-## 👨‍💻 About Me
+👨‍💻 About Me
+I'm Marcus, a passionate Machine Learning Engineer and AI practitioner focused on building robust, scalable, and production-ready AI systems. This portfolio demonstrates my expertise across the entire ML lifecycle, from data preprocessing and model development to deployment and monitoring. These projects showcase modern AI-augmented development practices, leveraging advanced AI assistants (Claude, Gemini, ChatGPT) to accelerate development cycles while maintaining enterprise-grade code quality and architectural excellence.
 
-I'm Marcus, a passionate Machine Learning Engineer and AI practitioner focused on building robust, scalable, and production-ready AI systems. This portfolio demonstrates my expertise across the entire ML lifecycle, from data preprocessing and model development to deployment and monitoring.
+Core Competencies:
 
-**Core Competencies:**
-- 🧠 **Machine Learning**: Deep Learning, Classical ML, Computer Vision, NLP
-- 🔧 **MLOps**: CI/CD pipelines, model versioning, containerization, cloud deployment
-- ☁️ **Cloud Platforms**: AWS, Azure, GCP
-- 📊 **Data Engineering**: ETL pipelines, data preprocessing, feature engineering
-- 🐍 **Programming**: Python, PyTorch, TensorFlow, Scikit-learn, Flask, FastAPI
+⦁	🧠 Machine Learning: Deep Learning, Classical ML, Computer Vision, NLP
+
+⦁	🔧 MLOps: CI/CD pipelines, model versioning, containerization, cloud deployment
+
+⦁	☁️ Cloud Platforms: AWS, Azure, GCP
+
+⦁	📊 Data Engineering: ETL pipelines, data preprocessing, feature engineering
+
+⦁	🐍 Programming: Python, PyTorch, TensorFlow, Scikit-learn, Flask, FastAPI
+
+⦁	🤖 AI-Augmented Development: Advanced prompt engineering, AI-assisted coding, rapid prototyping with LLM collaboration
 
 ## 🎯 Portfolio Objectives
 
