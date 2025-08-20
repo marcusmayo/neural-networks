@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Edenred Invoice Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #FF6B7A 0%, #FF4757 50%, #E74C3C 100%);
+            min-height: 100vh;
+            display: flex;
+            padding: 40px 20px;
+            position: relative;
+        }
+        
+        .main-container {
+            display: flex;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+        
+        .chat-container {
+            flex: 1;
+            max-width: 900px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .chat-header {
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .chat-header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .chat-header p {
+            font-size: 16px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        .status-indicator {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #2ED573;
+        }
+        
+        .status-dot.offline {
+            background: #FF4757;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+            min-height: 400px;
+            max-height: 500px;
+        }
+        
+        .message {
+            margin-bottom: 20px;
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .user-message {
+            text-align: right;
+        }
+        
+        .user-message .message-content {
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            padding: 16px 20px;
+            border-radius: 20px 20px 8px 20px;
+            display: inline-block;
+            max-width: 80%;
+            word-wrap: break-word;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+        
+        .bot-message {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        
+        .bot-message-content {
+            flex: 1;
+        }
+        
+        .bot-message .message-content {
+            background: #F8F9FA;
+            color: #333;
+            padding: 16px 20px;
+            border-radius: 20px 20px 20px 8px;
+            max-width: 80%;
+            word-wrap: break-word;
+            font-size: 15px;
+            line-height: 1.5;
+            border: 1px solid #E9ECEF;
+        }
+        
+        .message-time {
+            font-size: 12px;
+            color: #999;
+            margin-top: 8px;
+        }
+        
+        .message-content ul {
+            margin: 12px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .message-content li {
+            padding: 4px 0;
+            position: relative;
+            padding-left: 16px;
+        }
+        
+        .message-content li:before {
+            content: "•";
+            color: #FF4757;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .typing-indicator {
+            display: none;
+            align-items: center;
+            gap: 12px;
+            padding: 0 30px;
+            margin-bottom: 20px;
+        }
+        
+        .typing-indicator .avatar {
+            width: 32px;
+            height: 32px;
+            font-size: 14px;
+        }
+        
+        .typing-text {
+            color: #666;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+        
+        .typing-dots span {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #666;
+            animation: typing 1.4s infinite;
+        }
+        
+        .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+            30% { transform: translateY(-10px); opacity: 1; }
+        }
+        
+        .chat-input-container {
+            padding: 30px;
+            background: white;
+            border-top: 1px solid #E9ECEF;
+        }
+        
+        .suggestions {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .suggestion-btn {
+            background: #F8F9FA;
+            border: 1px solid #DEE2E6;
+            color: #495057;
+            padding: 12px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+        
+        .suggestion-btn:hover, .suggestion-btn:focus {
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            border-color: #FF4757;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 12px;
+            align-items: flex-end;
+        }
+        
+        .message-input {
+            flex: 1;
+            padding: 16px 20px;
+            border: 2px solid #E9ECEF;
+            border-radius: 25px;
+            font-size: 16px;
+            resize: none;
+            max-height: 120px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            background: white;
+        }
+        
+        .message-input:focus {
+            outline: none;
+            border-color: #FF4757;
+        }
+        
+        .message-input::placeholder {
+            color: #999;
+        }
+        
+        .send-btn {
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            border: none;
+            padding: 16px 18px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.2s;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 52px;
+            height: 52px;
+        }
+        
+        .send-btn:hover:not(:disabled) {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 71, 87, 0.4);
+        }
+        
+        .send-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .lambda-config {
+            width: 280px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            height: fit-content;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .lambda-config h3 {
+            color: #666;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .lambda-input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #E0E0E0;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-bottom: 12px;
+            font-family: monospace;
+            background: white;
+            color: #333;
+        }
+        
+        .lambda-input:focus {
+            outline: none;
+            border-color: #FF4757;
+        }
+        
+        .update-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            border: none;
+            padding: 10px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .update-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+        }
+        
+        .current-url {
+            font-size: 11px;
+            color: #999;
+            margin-top: 8px;
+            word-break: break-all;
+            line-height: 1.3;
+        }
+        
+        .error-message {
+            background: #F8D7DA;
+            color: #721C24;
+            padding: 12px 16px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 1px solid #F5C6CB;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .warning-message {
+            background: #FFF3CD;
+            color: #856404;
+            padding: 12px 16px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 1px solid #FFEAA7;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .samsung-notice {
+            background: #D1ECF1;
+            color: #0C5460;
+            padding: 12px 16px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 1px solid #BEE5EB;
+            font-size: 14px;
+        }
+        
+        .debug-info {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #00ff00;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-family: monospace;
+            max-width: 300px;
+            word-wrap: break-word;
+            z-index: 1000;
+            display: none;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 1200px) {
+            .main-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .lambda-config {
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px 10px;
+            }
+            
+            .chat-container {
+                border-radius: 15px;
+            }
+            
+            .chat-header {
+                padding: 20px;
+            }
+            
+            .chat-header h1 {
+                font-size: 24px;
+            }
+            
+            .chat-messages {
+                padding: 20px;
+                min-height: 300px;
+            }
+            
+            .chat-input-container {
+                padding: 20px;
+            }
+            
+            .suggestions {
+                gap: 8px;
+            }
+            
+            .suggestion-btn {
+                padding: 10px 14px;
+                font-size: 13px;
+            }
+            
+            .message-input {
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            .lambda-config {
+                padding: 16px;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>Edenred Invoice Assistant</h1>
+                <p>Get help with invoices, payments, and supplier portal questions</p>
+                <div class="status-indicator">
+                    <div class="status-dot" id="statusDot"></div>
+                    <span id="statusText">Connecting...</span>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="avatar">EA</div>
+                    <div class="bot-message-content">
+                        <div class="message-content">
+                            Hello! I'm your Edenred Invoice Assistant. I can help you with:
+                            <ul>
+                                <li>Submitting invoices</li>
+                                <li>Payment status questions</li>
+                                <li>Bank details updates</li>
+                                <li>Portal navigation</li>
+                                <li>Approval processes</li>
+                            </ul>
+                            What can I help you with today?
+                        </div>
+                        <div class="message-time" id="initialTime"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="avatar">EA</div>
+                <div class="typing-text">
+                    <span>Assistant is typing</span>
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <div class="suggestions">
+                    <button class="suggestion-btn" onclick="sendSuggestion('How do I submit an invoice?')">How do I submit an invoice?</button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Check payment status')">Check payment status</button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Update bank details')">Update bank details</button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Invoice was rejected')">Invoice was rejected</button>
+                </div>
+                
+                <div class="input-group">
+                    <textarea 
+                        id="messageInput" 
+                        class="message-input" 
+                        placeholder="Type your message here..."
+                        rows="1"
+                    ></textarea>
+                    <button id="sendBtn" class="send-btn" onclick="sendMessage()">
+                        ▶
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="lambda-config">
+            <h3>Lambda Function URL</h3>
+            <input 
+                type="text" 
+                id="lambdaUrl" 
+                class="lambda-input" 
+                value="https://zg4ja3aub5lvqzsbomo7nrhw7m0rjqms.lambda-url.us-east-1.on.aws/"
+                placeholder="Enter Lambda URL..."
+            >
+            <button class="update-btn" onclick="updateLambdaUrl()">Update</button>
+            <div class="current-url">
+                <strong>Current:</strong><br>
+                <span id="currentUrl">https://zg4ja3aub5lvqzsbomo7nrhw7m0rjqms.lambda-url.us-east-1.on.aws/</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="debug-info" id="debugInfo"></div>
+
+    <script>
+        let LAMBDA_URL = 'https://zg4ja3aub5lvqzsbomo7nrhw7m0rjqms.lambda-url.us-east-1.on.aws/';
+        let debugMode = false;
+        let tapCount = 0;
+        let connectionStatus = 'offline';
+        
+        // Enhanced Samsung detection
+        const isSamsung = /Samsung|SM-|SCH-|SPH-|SGH-/i.test(navigator.userAgent);
+        const isAndroid = /Android/i.test(navigator.userAgent);
+        const isTablet = /tablet|ipad/i.test(navigator.userAgent) || (isAndroid && !/mobile/i.test(navigator.userAgent));
+        
+        // Samsung Knox bypass endpoints - these are public CORS proxies
+        const SAMSUNG_BYPASS_ENDPOINTS = [
+            // Allorigins (most compatible with Samsung)
+            {
+                name: 'AllOrigins Proxy',
+                url: `https://api.allorigins.win/raw?url=${encodeURIComponent(LAMBDA_URL)}`,
+                method: 'POST'
+            },
+            // Cors-anywhere (requires request)
+            {
+                name: 'CORS-Anywhere',
+                url: `https://cors-anywhere.herokuapp.com/${LAMBDA_URL}`,
+                method: 'POST'
+            },
+            // ThingProxy (GET method conversion)
+            {
+                name: 'ThingProxy',
+                url: `https://thingproxy.freeboard.io/fetch/${LAMBDA_URL}`,
+                method: 'POST'
+            },
+            // Original endpoint (last resort)
+            {
+                name: 'Direct Lambda',
+                url: LAMBDA_URL,
+                method: 'POST'
+            }
+        ];
+
+        function debug(message) {
+            const timestamp = new Date().toLocaleTimeString();
+            const logMessage = `[${timestamp}] ${message}`;
+            
+            if (debugMode) {
+                const debugElement = document.getElementById('debugInfo');
+                debugElement.style.display = 'block';
+                debugElement.textContent = logMessage;
+            }
+            
+            console.log(`[SAMSUNG DEBUG] ${logMessage}`);
+        }
+
+        // Triple-tap to enable debug mode
+        document.addEventListener('click', function() {
+            tapCount++;
+            setTimeout(() => { tapCount = 0; }, 1000);
+            if (tapCount === 3) {
+                debugMode = !debugMode;
+                debug(debugMode ? 'Debug mode enabled' : 'Debug mode disabled');
+                if (!debugMode) {
+                    document.getElementById('debugInfo').style.display = 'none';
+                }
+            }
+        });
+
+        function updateConnectionStatus(online, message = '') {
+            connectionStatus = online ? 'online' : 'offline';
+            const statusDot = document.getElementById('statusDot');
+            const statusText = document.getElementById('statusText');
+            
+            if (online) {
+                statusDot.className = 'status-dot';
+                statusText.textContent = 'Online';
+            } else {
+                statusDot.className = 'status-dot offline';
+                statusText.textContent = 'Offline';
+            }
+            
+            if (message) {
+                debug(`Status: ${online ? 'Online' : 'Offline'} - ${message}`);
+            }
+        }
+
+        function updateLambdaUrl() {
+            const newUrl = document.getElementById('lambdaUrl').value.trim();
+            if (newUrl) {
+                LAMBDA_URL = newUrl.endsWith('/') ? newUrl : newUrl + '/';
+                document.getElementById('currentUrl').textContent = LAMBDA_URL;
+                
+                // Update Samsung bypass endpoints
+                SAMSUNG_BYPASS_ENDPOINTS[0].url = `https://api.allorigins.win/raw?url=${encodeURIComponent(LAMBDA_URL)}`;
+                SAMSUNG_BYPASS_ENDPOINTS[1].url = `https://cors-anywhere.herokuapp.com/${LAMBDA_URL}`;
+                SAMSUNG_BYPASS_ENDPOINTS[2].url = `https://thingproxy.freeboard.io/fetch/${LAMBDA_URL}`;
+                SAMSUNG_BYPASS_ENDPOINTS[3].url = LAMBDA_URL;
+                
+                addMessage("Lambda URL updated successfully! Testing connection...", false);
+                testConnection();
+            }
+        }
+
+        function getCurrentTime() {
+            const now = new Date();
+            return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        }
+
+        function addMessage(content, isUser = false) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            const currentTime = getCurrentTime();
+            
+            if (isUser) {
+                messageDiv.className = 'message user-message';
+                messageDiv.innerHTML = `
+                    <div class="message-content">${content}</div>
+                    <div class="message-time">${currentTime}</div>
+                `;
+            } else {
+                messageDiv.className = 'message bot-message';
+                messageDiv.innerHTML = `
+                    <div class="avatar">EA</div>
+                    <div class="bot-message-content">
+                        <div class="message-content">${content}</div>
+                        <div class="message-time">${currentTime}</div>
+                    </div>
+                `;
+            }
+            
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function showError(message, type = 'error') {
+            const messagesContainer = document.getElementById('chatMessages');
+            const errorDiv = document.createElement('div');
+            errorDiv.className = type === 'warning' ? 'warning-message' : 'error-message';
+            errorDiv.innerHTML = message;
+            messagesContainer.appendChild(errorDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            document.getElementById('typingIndicator').style.display = 'flex';
+            const messagesContainer = document.getElementById('chatMessages');
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function hideTypingIndicator() {
+            document.getElementById('typingIndicator').style.display = 'none';
+        }
+
+        // Samsung Knox bypass strategy
+        async function sendViaSamsungBypass(message, endpointIndex = 0) {
+            if (endpointIndex >= SAMSUNG_BYPASS_ENDPOINTS.length) {
+                throw new Error('All Samsung bypass methods failed');
+            }
+
+            const endpoint = SAMSUNG_BYPASS_ENDPOINTS[endpointIndex];
+            debug(`Trying ${endpoint.name} (${endpointIndex + 1}/${SAMSUNG_BYPASS_ENDPOINTS.length})`);
+
+            try {
+                let response;
+                
+                if (endpoint.name === 'AllOrigins Proxy') {
+                    // AllOrigins requires special handling
+                    response = await fetch(endpoint.url, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ message: message })
+                    });
+                } else if (endpoint.name === 'ThingProxy') {
+                    // ThingProxy uses GET with query params
+                    const queryUrl = `${endpoint.url}?message=${encodeURIComponent(message)}`;
+                    response = await fetch(queryUrl, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                } else {
+                    // Standard POST
+                    response = await fetch(endpoint.url, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json',
+                            'X-Requested-With': 'XMLHttpRequest'
+                        },
+                        body: JSON.stringify({ message: message })
+                    });
+                }
+
+                debug(`${endpoint.name} response: ${response.status}`);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                debug(`${endpoint.name} success: ${JSON.stringify(data).substring(0, 100)}`);
+
+                if (data.response) {
+                    updateConnectionStatus(true, `Connected via ${endpoint.name}`);
+                    return data;
+                } else {
+                    throw new Error(`Invalid response format from ${endpoint.name}`);
+                }
+
+            } catch (error) {
+                debug(`${endpoint.name} failed: ${error.message}`);
+                
+                // Try next endpoint
+                return await sendViaSamsungBypass(message, endpointIndex + 1);
+            }
+        }
+
+        // XMLHttpRequest fallback for Samsung
+        function sendViaXHR(message, url = LAMBDA_URL) {
+            return new Promise((resolve, reject) => {
+                debug(`Trying XMLHttpRequest to ${url}`);
+                
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', url, true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.setRequestHeader('Accept', 'application/json');
+                xhr.timeout = 15000;
+
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                        debug(`XHR response status: ${xhr.status}`);
+                        
+                        if (xhr.status === 200) {
+                            try {
+                                const data = JSON.parse(xhr.responseText);
+                                debug(`XHR success: ${JSON.stringify(data).substring(0, 100)}`);
+                                resolve(data);
+                            } catch (e) {
+                                debug(`XHR JSON parse error: ${e.message}`);
+                                reject(new Error(`JSON parse error: ${e.message}`));
+                            }
+                        } else if (xhr.status === 0) {
+                            debug('XHR blocked (Samsung Knox likely)');
+                            reject(new Error('Request blocked by device security'));
+                        } else {
+                            debug(`XHR HTTP error: ${xhr.status} ${xhr.statusText}`);
+                            reject(new Error(`HTTP ${xhr.status}: ${xhr.statusText}`));
+                        }
+                    }
+                };
+
+                xhr.onerror = () => {
+                    debug('XHR network error');
+                    reject(new Error('Network error'));
+                };
+                
+                xhr.ontimeout = () => {
+                    debug('XHR timeout');
+                    reject(new Error('Request timeout'));
+                };
+
+                try {
+                    xhr.send(JSON.stringify({ message: message }));
+                } catch (e) {
+                    debug(`XHR send error: ${e.message}`);
+                    reject(new Error(`Send error: ${e.message}`));
+                }
+            });
+        }
+
+        // Main message sending function
+        async function sendMessageToAPI(message) {
+            debug(`Sending message: "${message}" (Samsung: ${isSamsung}, Android: ${isAndroid})`);
+
+            if (isSamsung) {
+                debug('Samsung device detected - using bypass strategies');
+                
+                try {
+                    // Strategy 1: Samsung Knox bypass proxies
+                    return await sendViaSamsungBypass(message);
+                } catch (error) {
+                    debug(`All bypass methods failed: ${error.message}`);
+                    
+                    try {
+                        // Strategy 2: XMLHttpRequest with original URL
+                        return await sendViaXHR(message);
+                    } catch (xhrError) {
+                        debug(`XHR also failed: ${xhrError.message}`);
+                        throw new Error('Samsung device security is blocking all connection methods');
+                    }
+                }
+            } else {
+                // Non-Samsung devices - standard approach
+                debug('Non-Samsung device - using standard fetch');
+                
+                try {
+                    const response = await fetch(LAMBDA_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({ message: message })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    const data = await response.json();
+                    updateConnectionStatus(true, 'Direct connection successful');
+                    return data;
+                } catch (error) {
+                    debug(`Standard fetch failed: ${error.message}`);
+                    throw error;
+                }
+            }
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+
+            if (!message) return;
+
+            addMessage(message, true);
+            input.value = '';
+            
+            const sendBtn = document.getElementById('sendBtn');
+            sendBtn.disabled = true;
+            showTypingIndicator();
+
+            try {
+                const response = await sendMessageToAPI(message);
+                
+                if (response && response.response) {
+                    // Format the response with proper line breaks and bullets
+                    let formattedResponse = response.response
+                        .replace(/\n/g, '<br>')
+                        .replace(/• /g, '<li>')
+                        .replace(/<li>/g, '</li><li>')
+                        .replace(/<\/li><li>([^<]+)<br>/g, '<ul><li>$1</li>')
+                        .replace(/(<li>[^<]+<\/li>)+/g, match => `<ul>${match}</ul>`)
+                        .replace(/<\/li><li><\/li>/g, '</li></ul><br><ul><li>')
+                        .replace(/<ul><\/li>/g, '<ul>')
+                        .replace(/<li><\/li><\/ul>/g, '</ul>');
+                    
+                    addMessage(formattedResponse);
+                } else {
+                    throw new Error('Invalid response format');
+                }
+            } catch (error) {
+                debug(`Final error: ${error.message}`);
+                updateConnectionStatus(false, error.message);
+                
+                if (isSamsung) {
+                    showError(`
+                        <div class="samsung-notice">
+                            <strong>Samsung Device Detected:</strong><br>
+                            Your device's security settings are blocking the connection. 
+                            Try enabling "Allow cross-site tracking" in Chrome settings 
+                            or use Samsung Internet browser.<br><br>
+                            For immediate help, email: <strong>ap-support@edenred.com</strong>
+                        </div>
+                    `);
+                } else {
+                    showError(`Connection Error: ${error.message}`);
+                }
+                
+                addMessage("I'm currently having trouble connecting. For immediate assistance with your invoice questions, please email ap-support@edenred.com with your supplier ID and invoice details.");
+            } finally {
+                sendBtn.disabled = false;
+                hideTypingIndicator();
+            }
+        }
+
+        function sendSuggestion(text) {
+            document.getElementById('messageInput').value = text;
+            sendMessage();
+        }
+
+        async function testConnection() {
+            debug('Testing initial connection...');
+            
+            try {
+                const response = await sendMessageToAPI('connection test');
+                if (response && response.response) {
+                    debug('Initial connection test successful');
+                    updateConnectionStatus(true, 'Connection test passed');
+                }
+            } catch (error) {
+                debug(`Initial connection test failed: ${error.message}`);
+                updateConnectionStatus(false, 'Connection test failed');
+                
+                if (isSamsung) {
+                    showError(`
+                        <div class="samsung-notice">
+                            <strong>Samsung Device Security Notice:</strong><br>
+                            Your ${isTablet ? 'tablet' : 'phone'} is blocking the connection due to enhanced security settings. 
+                            You can still get help by emailing <strong>ap-support@edenred.com</strong>
+                        </div>
+                    `, 'warning');
+                }
+            }
+        }
+
+        // Enhanced input handling
+        document.getElementById('messageInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        // Auto-resize textarea
+        document.getElementById('messageInput').addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+
+        // Lambda URL input handling
+        document.getElementById('lambdaUrl').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                updateLambdaUrl();
+            }
+        });
+
+        // Initialize
+        window.addEventListener('load', function() {
+            document.getElementById('initialTime').textContent = getCurrentTime();
+            debug(`Chatbot loaded (Samsung: ${isSamsung}, Tablet: ${isTablet}, Android: ${isAndroid})`);
+            
+            if (isSamsung) {
+                debug('Samsung device detected - enhanced security mode active');
+            }
+            
+            // Test connection after 1 second
+            setTimeout(testConnection, 1000);
+        });
+
+        // Error handling
+        window.addEventListener('error', function(e) {
+            debug(`JavaScript Error: ${e.message} at ${e.filename}:${e.lineno}`);
+        });
+
+        window.addEventListener('unhandledrejection', function(e) {
+            debug(`Unhandled Promise Rejection: ${e.reason}`);
+        });
+    </script>
+</body>
+</html>
