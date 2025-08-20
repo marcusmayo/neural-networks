@@ -12,11 +12,27 @@
 ### 🌟 **[Interactive Demo Landing Page](https://marcusmayo.github.io/machine-learning-portfolio/edenred-invoice-assistant/frontend/demo_page.html)**
 *Professional demo showcase with project overview, features, and tech stack*
 
-### 🚀 **[Live AI Chatbot](https://marcusmayo.github.io/machine-learning-portfolio/edenred-invoice-assistant/frontend/chatbot_mobile.html)**
+### 🚀 **[Live AI Chatbot](https://marcusmayo.github.io/machine-learning-portfolio/edenred-invoice-assistant/frontend/chatbot.html)**
 *Full-featured chatbot with real AWS SageMaker AI responses*
 
 ### 📱 **Download for Offline Use**
-Right-click and "Save as": [chatbot_mobile.html](frontend/chatbot_mobile.html) - *Works without internet after download*
+Right-click and "Save as": [chatbot.html](frontend/chatbot.html) - *Works without internet after download*
+
+---
+
+## ⚠️ **Platform Compatibility**
+
+### 💻 **Desktop/Laptop Support**
+- **✅ Full AWS Lambda Integration**: Complete AI functionality with real-time SageMaker responses
+- **✅ All Browsers**: Chrome, Firefox, Safari, Edge
+- **✅ Real-time AI Processing**: Sub-second response times
+
+### 📱 **Mobile Device Limitations**
+- **⚠️ Samsung Knox Security**: Samsung devices (Galaxy phones/tablets) block AWS Lambda URLs due to enhanced security policies
+- **⚠️ iOS Security Restrictions**: Some iOS devices may have similar CORS limitations
+- **🔧 Workaround**: Mobile users can access the chatbot interface but may experience connection issues with live AI responses
+
+**For best experience, use on desktop/laptop computers where full AWS Lambda integration is available.**
 
 ---
 
@@ -90,15 +106,15 @@ Resubmit button.
 
 ## 🎯 **Demo Features Showcase**
 
-### ⚡ **Real-Time AI Responses**
+### ⚡ **Real-Time AI Responses** *(Desktop Only)*
 - **Sub-second response times** via optimized AWS Lambda
 - **95%+ accuracy** on trained scenarios
 - **Live SageMaker inference** with HuggingFace models
 
 ### 🛡️ **Production-Ready Reliability**
-- **100% uptime** with intelligent fallback responses
 - **Robust error handling** for all edge cases
-- **CORS-enabled** for cross-origin requests
+- **CORS-enabled** for cross-origin requests on compatible platforms
+- **Professional fallback messages** for unsupported devices
 
 ### 📱 **Modern User Experience**
 - **Responsive design** works on all devices
@@ -113,7 +129,7 @@ Resubmit button.
 
 ---
 
-## 📊 **Demo Performance Metrics**
+## 📊 **Demo Performance Metrics** *(Desktop Browsers)*
 
 | Metric | Performance |
 |--------|-------------|
@@ -137,10 +153,12 @@ graph TB
     E --> F[Fine-tuned HuggingFace Model]
     G[Training Data S3] --> E
     H[CloudWatch] --> D
+    I[Mobile Security] -.->|Blocks| C
     
     style A fill:#e1f5fe
     style E fill:#fff3e0
     style F fill:#f3e5f5
+    style I fill:#ffebee
 ```
 
 ### **Live AWS Resources**
@@ -150,16 +168,22 @@ graph TB
 - **API Gateway**: RESTful endpoints with CORS configuration
 - **CloudWatch**: 24/7 monitoring and logging
 
+### **Mobile Security Challenges**
+- **Samsung Knox**: Enterprise security policies block direct AWS Lambda URLs
+- **CORS Restrictions**: Mobile browsers enforce stricter cross-origin policies
+- **Proxy Limitations**: Most public CORS proxies are also blocked by modern mobile security
+
 ---
 
 ## 🏆 **Key Achievements**
 
 ✅ **End-to-End ML Pipeline**: Data preparation → Model training → Production deployment  
 ✅ **Cloud-Native Architecture**: Serverless AWS infrastructure with auto-scaling  
-✅ **Production Deployment**: Real working chatbot handling live user queries  
-✅ **Error Resilience**: Multi-layer fallback system ensuring 100% response rate  
+✅ **Production Deployment**: Real working chatbot handling live user queries on desktop  
+✅ **Error Resilience**: Multi-layer fallback system ensuring graceful degradation  
 ✅ **Modern Frontend**: Professional web interface with responsive design  
 ✅ **Enterprise Security**: Proper CORS, IAM roles, and secure endpoints  
+✅ **Cross-Platform Compatibility**: UI works on all devices, AI backend optimized for desktop  
 
 ---
 
@@ -173,6 +197,7 @@ graph TB
 | **Frontend Development** | HTML5, CSS3, JavaScript, responsive design, UX/UI |
 | **DevOps & Deployment** | GitHub Pages, CI/CD, production monitoring, logging |
 | **Data Engineering** | JSONL processing, training data preparation, model serving |
+| **Security & Compatibility** | CORS handling, mobile security research, cross-platform testing |
 
 ---
 
@@ -185,6 +210,25 @@ This project demonstrates a **complete production ML deployment** that solves re
 - **Scalability**: Handles multiple concurrent users with serverless architecture
 - **Reliability**: Production-ready error handling and monitoring
 - **User Experience**: Professional interface design and real-time interactions
+- **Platform Awareness**: Understanding of modern web security and mobile limitations
+
+---
+
+## 🔧 **Technical Learnings**
+
+### **Mobile Security Challenges**
+This project revealed important insights about modern web security:
+
+- **Samsung Knox**: Enterprise-grade security on consumer devices blocks many cloud services
+- **CORS Evolution**: Mobile browsers enforce increasingly strict cross-origin policies  
+- **Proxy Limitations**: Traditional CORS bypass methods are being blocked by modern security
+- **Platform Strategy**: Enterprise web applications should primarily target desktop platforms
+
+### **Production Deployment Insights**
+- **AWS Lambda**: Excellent for desktop browser compatibility
+- **SageMaker**: Reliable model serving with sub-second inference times
+- **GitHub Pages**: Professional hosting for frontend demos
+- **Error Handling**: Critical for graceful degradation across platforms
 
 ---
 
@@ -194,6 +238,56 @@ This project demonstrates a **complete production ML deployment** that solves re
 
 ### **[🌟 Start with the Demo Landing Page](https://marcusmayo.github.io/machine-learning-portfolio/edenred-invoice-assistant/frontend/demo_page.html)**
 
-### **[🤖 Or Jump Straight to the Chatbot](https://marcusmayo.github.io/machine-learning-portfolio/edenred-invoice-assistant/frontend/chatbot_mobile.html)**
+### **[🤖 Try the Live Chatbot (Desktop Recommended)](https://marcusmayo.github.io/machine-learning-portfolio/edenred-invoice-assistant/frontend/chatbot.html)**
 
-*Experience the future of automated customer support powered by AWS and AI*
+*Experience the future of automated customer support powered by AWS and AI - optimized for desktop browsers*
+
+---
+
+## 📝 **Usage Notes**
+
+- **Best Experience**: Use Chrome, Firefox, Safari, or Edge on desktop/laptop
+- **Mobile Access**: Interface works on mobile but AI responses require desktop browser
+- **Offline Capability**: Download the HTML file for offline demonstration
+- **Lambda Configuration**: Built-in endpoint configuration panel for easy testing
+
+---
+
+## 📁 **Project Structure**
+
+```
+edenred-invoice-assistant/
+├── frontend/
+│   ├── chatbot.html                 # Main chatbot interface
+│   ├── demo_page.html              # Professional demo landing page
+│   └── screenshots/                # Demo screenshots
+├── lambda/
+│   └── lambda_function.py          # AWS Lambda function code
+├── training/
+│   ├── instructions.jsonl          # Training data
+│   └── training_script.py          # Model fine-tuning script
+└── README.md                       # This file
+```
+
+---
+
+## 🌟 **Future Enhancements**
+
+- **Mobile SDK Integration**: Direct mobile app integration bypassing browser security
+- **Advanced NLP**: Implement intent recognition and entity extraction
+- **Multi-language Support**: Expand to support multiple languages
+- **Analytics Dashboard**: Real-time usage analytics and performance monitoring
+- **Voice Integration**: Add speech-to-text and text-to-speech capabilities
+
+---
+
+## 📧 **Contact & Collaboration**
+
+This project showcases production-ready machine learning engineering capabilities. For questions, collaboration opportunities, or technical discussions about AWS, ML deployment, or web security challenges, feel free to reach out.
+
+**Project Highlights:**
+- ✅ Complete end-to-end ML pipeline
+- ✅ Production AWS deployment  
+- ✅ Professional frontend design
+- ✅ Real-world security insights
+- ✅ Enterprise-grade error handling
