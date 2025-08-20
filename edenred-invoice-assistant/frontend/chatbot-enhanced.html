@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edenred Invoice Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #ff4757 0%, #c44569 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chat-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 800px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .chat-header h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .chat-header p {
+            opacity: 0.9;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .status-indicator {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #00ff88;
+            animation: pulse 2s infinite;
+        }
+
+        .status-dot.offline {
+            background: #ff4757;
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f8fafc;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .message.user {
+            flex-direction: row-reverse;
+        }
+
+        .message-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .message.user .message-avatar {
+            background: linear-gradient(135deg, #ff4757 0%, #c44569 100%);
+            color: white;
+        }
+
+        .message.assistant .message-avatar {
+            background: linear-gradient(135deg, #ff6b7a 0%, #ff5252 100%);
+            color: white;
+        }
+
+        .message-content {
+            background: white;
+            padding: 12px 16px;
+            border-radius: 18px;
+            max-width: 70%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .message.user .message-content {
+            background: linear-gradient(135deg, #ff4757 0%, #c44569 100%);
+            color: white;
+        }
+
+        .message-time {
+            font-size: 11px;
+            opacity: 0.6;
+            margin-top: 4px;
+        }
+
+        .chat-input-container {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .input-wrapper {
+            display: flex;
+            gap: 12px;
+            align-items: flex-end;
+        }
+
+        .chat-input {
+            flex: 1;
+            border: 2px solid #e2e8f0;
+            border-radius: 25px;
+            padding: 12px 20px;
+            font-size: 14px;
+            resize: none;
+            min-height: 20px;
+            max-height: 100px;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .chat-input:focus {
+            border-color: #ff4757;
+        }
+
+        .send-button {
+            background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            font-size: 20px;
+        }
+
+        .send-button:hover {
+            transform: scale(1.05);
+        }
+
+        .send-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .typing-indicator {
+            display: none;
+            padding: 12px 16px;
+            background: white;
+            border-radius: 18px;
+            max-width: 70%;
+        }
+
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #cbd5e0;
+            animation: typing 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes typing {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1); }
+        }
+
+        .config-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            width: 250px;
+        }
+
+        .config-panel h3 {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #4a5568;
+        }
+
+        .config-panel input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .config-panel button {
+            background: #ff4757;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            width: 100%;
+        }
+
+        .suggestions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .suggestion {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .suggestion:hover {
+            background: #cbd5e0;
+        }
+
+        .error-message {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 10px 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-size: 13px;
+            border: 1px solid #feb2b2;
+        }
+
+        .samsung-notice {
+            background: #bee3f8;
+            color: #2b6cb0;
+            padding: 10px 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-size: 13px;
+            border: 1px solid #90cdf4;
+        }
+
+        .debug-info {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #00ff00;
+            padding: 6px 10px;
+            border-radius: 5px;
+            font-size: 10px;
+            font-family: monospace;
+            max-width: 250px;
+            word-wrap: break-word;
+            z-index: 1000;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .config-panel {
+                display: none;
+            }
+            
+            .chat-container {
+                width: 100%;
+                height: 100vh;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="config-panel">
+        <h3>Lambda Function URL</h3>
+        <input type="text" id="lambdaUrl" placeholder="https://your-lambda-url.amazonaws.com/">
+        <button onclick="updateConfig()">Update</button>
+        <div style="margin-top: 10px; font-size: 11px; color: #666;">
+            Current: <span id="currentUrl">Not set</span>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Edenred Invoice Assistant</h1>
+            <p>Get help with invoices, payments, and supplier portal questions</p>
+            <div class="status-indicator">
+                <div class="status-dot" id="statusDot"></div>
+                <span id="statusText">Connecting...</span>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message assistant">
+                <div class="message-avatar">EA</div>
+                <div class="message-content">
+                    <div>Hello! I'm your Edenred Invoice Assistant. I can help you with:</div>
+                    <ul style="margin: 8px 0; padding-left: 20px;">
+                        <li>Submitting invoices</li>
+                        <li>Payment status questions</li>
+                        <li>Bank details updates</li>
+                        <li>Portal navigation</li>
+                        <li>Approval processes</li>
+                    </ul>
+                    <div>What can I help you with today?</div>
+                    <div class="message-time" id="initialTime"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <div class="suggestions">
+                <div class="suggestion" onclick="sendSuggestion(this)">How do I submit an invoice?</div>
+                <div class="suggestion" onclick="sendSuggestion(this)">Check payment status</div>
+                <div class="suggestion" onclick="sendSuggestion(this)">Update bank details</div>
+                <div class="suggestion" onclick="sendSuggestion(this)">Invoice was rejected</div>
+            </div>
+            
+            <div class="input-wrapper">
+                <textarea 
+                    id="messageInput" 
+                    class="chat-input" 
+                    placeholder="Type your message here..."
+                    rows="1"
+                ></textarea>
+                <button id="sendButton" class="send-button" onclick="sendMessage()">
+                    ➤
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="debug-info" id="debugInfo"></div>
+
+    <script>
+        // Configuration
+        let LAMBDA_URL = 'https://zg4ja3aub5lvqzsbomo7nrhw7m0rjqms.lambda-url.us-east-1.on.aws/';
+        let debugMode = false;
+        let tapCount = 0;
+        let connectionStatus = 'offline';
+
+        // Enhanced Samsung detection
+        const isSamsung = /Samsung|SM-|SCH-|SPH-|SGH-/i.test(navigator.userAgent);
+        const isAndroid = /Android/i.test(navigator.userAgent);
+        const isTablet = /tablet|ipad/i.test(navigator.userAgent) || (isAndroid && !/mobile/i.test(navigator.userAgent));
+
+        // Enhanced Samsung Knox bypass endpoints with working proxies
+        const SAMSUNG_BYPASS_ENDPOINTS = [
+            {
+                name: 'Proxy1 (AllOrigins)',
+                url: `https://api.allorigins.win/get?url=${encodeURIComponent(LAMBDA_URL)}`,
+                method: 'GET'
+            },
+            {
+                name: 'Proxy2 (CORS-IO)',
+                url: `https://cors.io/?${LAMBDA_URL}`,
+                method: 'POST'
+            },
+            {
+                name: 'Proxy3 (JSONProxy)',
+                url: `https://jsonp.afeld.me/?url=${encodeURIComponent(LAMBDA_URL)}`,
+                method: 'POST'
+            },
+            {
+                name: 'Proxy4 (Public API)',
+                url: `https://public-api.wordpress.com/rest/v1.1/proxy/?url=${encodeURIComponent(LAMBDA_URL)}`,
+                method: 'POST'
+            },
+            {
+                name: 'Direct Lambda',
+                url: LAMBDA_URL,
+                method: 'POST'
+            }
+        ];
+
+        // Offline fallback responses for Samsung devices
+        const OFFLINE_RESPONSES = {
+            'invoice was rejected': 'Go to Invoices → All, click the rejected invoice, and review the Rejection Reason in the Activity panel. Correct the issue and use the Resubmit button.',
+            'check payment status': 'Open Payments → Remittances in the portal to download remittance advice PDFs. You can also enable email remittances under Settings → Notifications.',
+            'update bank details': 'Go to Settings → Bank Details in the supplier portal, enter your new account and routing/SWIFT information, and complete the two-factor verification. Changes are reviewed within 1–2 business days for security.',
+            'how do i submit an invoice': 'Log in to the supplier portal, navigate to Invoices → Create, enter the PO number (if applicable), upload your PDF or XML, review the preview, and click Submit.',
+            'submit': 'Log in to the supplier portal, navigate to Invoices → Create, enter the PO number (if applicable), upload your PDF or XML, review the preview, and click Submit.',
+            'payment': 'Open Payments → Remittances in the portal to download remittance advice PDFs. You can also enable email remittances under Settings → Notifications.',
+            'bank': 'Go to Settings → Bank Details in the supplier portal, enter your new account and routing/SWIFT information, and complete the two-factor verification. Changes are reviewed within 1–2 business days for security.',
+            'rejected': 'Go to Invoices → All, click the rejected invoice, and review the Rejection Reason in the Activity panel. Correct the issue and use the Resubmit button.',
+            'password': 'To reset your password, go to the supplier portal login page and click the "Forgot Password" link. You will receive an email with instructions to set a new password.',
+            'contact': 'Email ap-support@edenred.com with your supplier ID, invoice number, and PO (if applicable). For urgent issues, include URGENT in the subject line.',
+            'help': 'I can help you with invoice submissions, payment status, bank details, approval processes, and portal navigation. For immediate assistance, email ap-support@edenred.com',
+            'default': 'I can help you with invoice and payment questions. Common topics include: submitting invoices, checking payment status, updating bank details, rejected invoices, and password resets. For immediate assistance, email ap-support@edenred.com with your supplier ID and invoice number.'
+        };
+
+        // Debug function
+        function debug(message) {
+            const timestamp = new Date().toLocaleTimeString();
+            const logMessage = `[${timestamp}] ${message}`;
+            
+            if (debugMode) {
+                const debugElement = document.getElementById('debugInfo');
+                debugElement.style.display = 'block';
+                debugElement.textContent = logMessage;
+            }
+            
+            console.log(`[DEBUG] ${logMessage}`);
+        }
+
+        // Triple-tap to enable debug mode
+        document.addEventListener('click', function() {
+            tapCount++;
+            setTimeout(() => { tapCount = 0; }, 1000);
+            if (tapCount === 3) {
+                debugMode = !debugMode;
+                debug(debugMode ? 'Debug mode enabled' : 'Debug mode disabled');
+                if (!debugMode) {
+                    document.getElementById('debugInfo').style.display = 'none';
+                }
+            }
+        });
+
+        // Initialize
+        document.getElementById('initialTime').textContent = new Date().toLocaleTimeString();
+        
+        // Pre-populate Lambda URL
+        document.getElementById('lambdaUrl').value = LAMBDA_URL;
+        document.getElementById('currentUrl').textContent = LAMBDA_URL.substring(0, 50) + (LAMBDA_URL.length > 50 ? '...' : '');
+        
+        // Load saved URL (override default if exists)
+        const savedUrl = localStorage.getItem('lambdaUrl');
+        if (savedUrl) {
+            LAMBDA_URL = savedUrl;
+            document.getElementById('lambdaUrl').value = savedUrl;
+            document.getElementById('currentUrl').textContent = savedUrl.substring(0, 50) + (savedUrl.length > 50 ? '...' : '');
+            
+            // Update Samsung bypass endpoints with saved URL
+            SAMSUNG_BYPASS_ENDPOINTS[0].url = `https://api.allorigins.win/get?url=${encodeURIComponent(savedUrl)}`;
+            SAMSUNG_BYPASS_ENDPOINTS[1].url = `https://cors.io/?${savedUrl}`;
+            SAMSUNG_BYPASS_ENDPOINTS[2].url = `https://jsonp.afeld.me/?url=${encodeURIComponent(savedUrl)}`;
+            SAMSUNG_BYPASS_ENDPOINTS[3].url = `https://public-api.wordpress.com/rest/v1.1/proxy/?url=${encodeURIComponent(savedUrl)}`;
+            SAMSUNG_BYPASS_ENDPOINTS[4].url = savedUrl;
+        }
+
+        // Auto-resize textarea
+        const messageInput = document.getElementById('messageInput');
+        messageInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 100) + 'px';
+        });
+
+        // Send message on Enter (but allow Shift+Enter for new lines)
+        messageInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        function updateConnectionStatus(online, message = '') {
+            connectionStatus = online ? 'online' : 'offline';
+            const statusDot = document.getElementById('statusDot');
+            const statusText = document.getElementById('statusText');
+            
+            if (online) {
+                statusDot.className = 'status-dot';
+                statusText.textContent = 'Online';
+            } else {
+                statusDot.className = 'status-dot offline';
+                statusText.textContent = 'Offline';
+            }
+            
+            if (message) {
+                debug(`Status: ${online ? 'Online' : 'Offline'} - ${message}`);
+            }
+        }
+
+        function updateConfig() {
+            const url = document.getElementById('lambdaUrl').value.trim();
+            if (url) {
+                LAMBDA_URL = url;
+                document.getElementById('currentUrl').textContent = url.substring(0, 50) + (url.length > 50 ? '...' : '');
+                localStorage.setItem('lambdaUrl', url);
+                
+                // Update Samsung bypass endpoints with new URL
+                SAMSUNG_BYPASS_ENDPOINTS[0].url = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+                SAMSUNG_BYPASS_ENDPOINTS[1].url = `https://cors.io/?${url}`;
+                SAMSUNG_BYPASS_ENDPOINTS[2].url = `https://jsonp.afeld.me/?url=${encodeURIComponent(url)}`;
+                SAMSUNG_BYPASS_ENDPOINTS[3].url = `https://public-api.wordpress.com/rest/v1.1/proxy/?url=${encodeURIComponent(url)}`;
+                SAMSUNG_BYPASS_ENDPOINTS[4].url = url;
+                
+                addMessage('System: Lambda URL updated successfully!', 'assistant');
+                testConnection();
+            }
+        }
+
+        function sendSuggestion(element) {
+            const text = element.textContent;
+            messageInput.value = text;
+            sendMessage();
+        }
+
+        // Samsung Knox bypass strategy with offline fallback
+        async function sendViaSamsungBypass(message, endpointIndex = 0) {
+            if (endpointIndex >= SAMSUNG_BYPASS_ENDPOINTS.length) {
+                debug('All proxy methods failed - switching to offline mode');
+                return getOfflineResponse(message);
+            }
+
+            const endpoint = SAMSUNG_BYPASS_ENDPOINTS[endpointIndex];
+            debug(`Trying ${endpoint.name} (${endpointIndex + 1}/${SAMSUNG_BYPASS_ENDPOINTS.length})`);
+
+            try {
+                let response;
+                
+                if (endpoint.name.includes('AllOrigins')) {
+                    // AllOrigins GET method
+                    const url = `${endpoint.url}&callback=?`;
+                    response = await fetch(url, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    
+                    const data = await response.json();
+                    if (data.contents) {
+                        const lambdaResponse = JSON.parse(data.contents);
+                        if (lambdaResponse.response) {
+                            updateConnectionStatus(true, `Connected via ${endpoint.name}`);
+                            return lambdaResponse;
+                        }
+                    }
+                    throw new Error('Invalid AllOrigins response');
+                    
+                } else if (endpoint.name.includes('CORS-IO')) {
+                    // CORS.IO proxy
+                    response = await fetch(endpoint.url, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-Requested-With': 'XMLHttpRequest'
+                        },
+                        body: JSON.stringify({ message: message })
+                    });
+                    
+                } else if (endpoint.name.includes('JSONProxy')) {
+                    // JSONProxy method
+                    response = await fetch(endpoint.url, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    
+                } else if (endpoint.name.includes('Public API')) {
+                    // WordPress public API proxy
+                    response = await fetch(endpoint.url, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ message: message })
+                    });
+                    
+                } else {
+                    // Direct Lambda
+                    response = await fetch(endpoint.url, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({ message: message })
+                    });
+                }
+
+                debug(`${endpoint.name} response: ${response.status}`);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                debug(`${endpoint.name} success`);
+
+                if (data.response) {
+                    updateConnectionStatus(true, `Connected via ${endpoint.name}`);
+                    return data;
+                } else {
+                    throw new Error(`Invalid response format from ${endpoint.name}`);
+                }
+
+            } catch (error) {
+                debug(`${endpoint.name} failed: ${error.message}`);
+                // Try next endpoint
+                return await sendViaSamsungBypass(message, endpointIndex + 1);
+            }
+        }
+
+        // Offline response system for Samsung devices
+        function getOfflineResponse(message) {
+            debug('Using offline response system');
+            updateConnectionStatus(false, 'Using offline mode');
+            
+            const messageLower = message.toLowerCase().trim();
+            
+            // Check for exact matches
+            for (const [key, response] of Object.entries(OFFLINE_RESPONSES)) {
+                if (messageLower === key) {
+                    debug(`Offline exact match: ${key}`);
+                    return { response: response, status: 'offline' };
+                }
+            }
+            
+            // Check for keyword matches
+            for (const [key, response] of Object.entries(OFFLINE_RESPONSES)) {
+                if (key !== 'default' && messageLower.includes(key)) {
+                    debug(`Offline keyword match: ${key}`);
+                    return { response: response, status: 'offline' };
+                }
+            }
+            
+            // Default response
+            debug('Using default offline response');
+            return { response: OFFLINE_RESPONSES.default, status: 'offline' };
+        }
+
+        // XMLHttpRequest fallback for Samsung
+        function sendViaXHR(message, url = LAMBDA_URL) {
+            return new Promise((resolve, reject) => {
+                debug(`Trying XMLHttpRequest to ${url}`);
+                
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', url, true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.setRequestHeader('Accept', 'application/json');
+                xhr.timeout = 15000;
+
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                        debug(`XHR response status: ${xhr.status}`);
+                        
+                        if (xhr.status === 200) {
+                            try {
+                                const data = JSON.parse(xhr.responseText);
+                                debug(`XHR success`);
+                                resolve(data);
+                            } catch (e) {
+                                debug(`XHR JSON parse error: ${e.message}`);
+                                reject(new Error(`JSON parse error: ${e.message}`));
+                            }
+                        } else if (xhr.status === 0) {
+                            debug('XHR blocked (Samsung Knox likely)');
+                            reject(new Error('Request blocked by device security'));
+                        } else {
+                            debug(`XHR HTTP error: ${xhr.status} ${xhr.statusText}`);
+                            reject(new Error(`HTTP ${xhr.status}: ${xhr.statusText}`));
+                        }
+                    }
+                };
+
+                xhr.onerror = () => {
+                    debug('XHR network error');
+                    reject(new Error('Network error'));
+                };
+                
+                xhr.ontimeout = () => {
+                    debug('XHR timeout');
+                    reject(new Error('Request timeout'));
+                };
+
+                try {
+                    xhr.send(JSON.stringify({ message: message }));
+                } catch (e) {
+                    debug(`XHR send error: ${e.message}`);
+                    reject(new Error(`Send error: ${e.message}`));
+                }
+            });
+        }
+
+        // Enhanced message sending with Samsung bypass and offline fallback
+        async function sendMessageToAPI(message) {
+            debug(`Sending message: "${message}" (Samsung: ${isSamsung}, Android: ${isAndroid})`);
+
+            if (isSamsung) {
+                debug('Samsung device detected - using bypass strategies and offline fallback');
+                
+                try {
+                    const result = await sendViaSamsungBypass(message);
+                    if (result.status === 'offline') {
+                        debug('Using offline response system for Samsung');
+                        updateConnectionStatus(false, 'Offline mode - Samsung security blocking connection');
+                        // Show offline notice
+                        showOfflineNotice();
+                        return result;
+                    }
+                    return result;
+                } catch (error) {
+                    debug(`Samsung bypass failed, trying XHR: ${error.message}`);
+                    
+                    try {
+                        const xhrResult = await sendViaXHR(message);
+                        updateConnectionStatus(true, 'Connected via XMLHttpRequest');
+                        return xhrResult;
+                    } catch (xhrError) {
+                        debug(`XHR also failed, using offline mode: ${xhrError.message}`);
+                        const offlineResult = getOfflineResponse(message);
+                        showOfflineNotice();
+                        return offlineResult;
+                    }
+                }
+            } else {
+                // Non-Samsung devices - standard approach
+                debug('Non-Samsung device - using standard fetch');
+                
+                const response = await fetch(LAMBDA_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: message
+                    })
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.response) {
+                    updateConnectionStatus(true, 'Direct connection successful');
+                    return data;
+                } else {
+                    throw new Error(data.error || 'Unknown error occurred');
+                }
+            }
+        }
+
+        function showOfflineNotice() {
+            // Only show once per session
+            if (window.offlineNoticeShown) return;
+            window.offlineNoticeShown = true;
+            
+            const messagesContainer = document.getElementById('chatMessages');
+            const noticeDiv = document.createElement('div');
+            noticeDiv.className = 'samsung-notice';
+            noticeDiv.innerHTML = `
+                <strong>📱 Samsung Offline Mode:</strong><br>
+                Your device's security is blocking the live connection, but I can still help with common questions using my built-in knowledge base.<br><br>
+                <strong>For complex issues:</strong> Email ap-support@edenred.com
+            `;
+            messagesContainer.appendChild(noticeDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        async function sendMessage() {
+            const message = messageInput.value.trim();
+            if (!message) return;
+
+            if (!LAMBDA_URL) {
+                alert('Lambda URL not configured. Please check the config panel or contact support.');
+                return;
+            }
+
+            // Add user message
+            addMessage(message, 'user');
+            messageInput.value = '';
+            messageInput.style.height = 'auto';
+
+            // Show typing indicator
+            showTypingIndicator();
+
+            // Disable send button
+            const sendButton = document.getElementById('sendButton');
+            sendButton.disabled = true;
+
+            try {
+                const data = await sendMessageToAPI(message);
+                hideTypingIndicator();
+
+                if (data && data.response) {
+                    if (data.status === 'offline') {
+                        // Offline mode response
+                        addMessage(`${data.response}`, 'assistant');
+                    } else {
+                        // Online response
+                        addMessage(data.response, 'assistant');
+                    }
+                } else {
+                    addMessage(`Error: ${data.error || 'Unknown error occurred'}`, 'assistant');
+                }
+
+            } catch (error) {
+                hideTypingIndicator();
+                debug(`Final error: ${error.message}`);
+                updateConnectionStatus(false, error.message);
+                
+                // For Samsung devices, try offline mode as last resort
+                if (isSamsung) {
+                    debug('Samsung error - using offline fallback');
+                    const offlineResult = getOfflineResponse(message);
+                    addMessage(offlineResult.response, 'assistant');
+                    showOfflineNotice();
+                } else {
+                    // Show error for non-Samsung devices
+                    const messagesContainer = document.getElementById('chatMessages');
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'error-message';
+                    errorDiv.textContent = `Connection error: ${error.message}`;
+                    messagesContainer.appendChild(errorDiv);
+                    
+                    addMessage(`I'm currently having trouble connecting. Please try refreshing the page or contact ap-support@edenred.com for assistance.`, 'assistant');
+                    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                }
+
+            } finally {
+                sendButton.disabled = false;
+            }
+        }
+
+        function addMessage(content, sender) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+
+            const time = new Date().toLocaleTimeString();
+            const avatar = sender === 'user' ? 'You' : 'EA';
+
+            messageDiv.innerHTML = `
+                <div class="message-avatar">${avatar}</div>
+                <div class="message-content">
+                    <div>${content}</div>
+                    <div class="message-time">${time}</div>
+                </div>
+            `;
+
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            const messagesContainer = document.getElementById('chatMessages');
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message assistant';
+            typingDiv.id = 'typingIndicator';
+            
+            typingDiv.innerHTML = `
+                <div class="message-avatar">EA</div>
+                <div class="typing-indicator" style="display: block;">
+                    <div class="typing-dots">
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                    </div>
+                </div>
+            `;
+
+            messagesContainer.appendChild(typingDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function hideTypingIndicator() {
+            const typingIndicator = document.getElementById('typingIndicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+        }
+
+        async function testConnection() {
+            debug('Testing initial connection...');
+            
+            try {
+                const response = await sendMessageToAPI('connection test');
+                if (response && response.response) {
+                    debug('Initial connection test successful');
+                    updateConnectionStatus(true, 'Connection test passed');
+                }
+            } catch (error) {
+                debug(`Initial connection test failed: ${error.message}`);
+                updateConnectionStatus(false, 'Connection test failed');
+            }
+        }
+
+        // Initialize connection test
+        setTimeout(() => {
+            debug(`Chatbot loaded (Samsung: ${isSamsung}, Tablet: ${isTablet}, Android: ${isAndroid})`);
+            testConnection();
+        }, 1000);
+
+        // Error handling
+        window.addEventListener('error', function(e) {
+            debug(`JavaScript Error: ${e.message} at ${e.filename}:${e.lineno}`);
+        });
+
+        window.addEventListener('unhandledrejection', function(e) {
+            debug(`Unhandled Promise Rejection: ${e.reason}`);
+        });
+    </script>
+</body>
+</html>
