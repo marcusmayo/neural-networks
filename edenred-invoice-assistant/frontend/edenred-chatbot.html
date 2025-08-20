@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Edenred Invoice Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #FF6B7A 0%, #FF4757 50%, #E74C3C 100%);
+            min-height: 100vh;
+            display: flex;
+            padding: 40px 20px;
+            position: relative;
+        }
+        
+        .main-container {
+            display: flex;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+        
+        .chat-container {
+            flex: 1;
+            max-width: 900px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .chat-header {
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .chat-header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .chat-header p {
+            font-size: 16px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        
+        .status-indicator {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #2ED573;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+            min-height: 400px;
+            max-height: 500px;
+        }
+        
+        .message {
+            margin-bottom: 20px;
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .user-message {
+            text-align: right;
+        }
+        
+        .user-message .message-content {
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            padding: 16px 20px;
+            border-radius: 20px 20px 8px 20px;
+            display: inline-block;
+            max-width: 80%;
+            word-wrap: break-word;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+        
+        .bot-message {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        
+        .bot-message-content {
+            flex: 1;
+        }
+        
+        .bot-message .message-content {
+            background: #F8F9FA;
+            color: #333;
+            padding: 16px 20px;
+            border-radius: 20px 20px 20px 8px;
+            max-width: 80%;
+            word-wrap: break-word;
+            font-size: 15px;
+            line-height: 1.5;
+            border: 1px solid #E9ECEF;
+        }
+        
+        .message-time {
+            font-size: 12px;
+            color: #999;
+            margin-top: 8px;
+        }
+        
+        .message-content ul {
+            margin: 12px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .message-content li {
+            padding: 4px 0;
+            position: relative;
+            padding-left: 16px;
+        }
+        
+        .message-content li:before {
+            content: "•";
+            color: #FF4757;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .typing-indicator {
+            display: none;
+            align-items: center;
+            gap: 12px;
+            padding: 0 30px;
+            margin-bottom: 20px;
+        }
+        
+        .typing-indicator .avatar {
+            width: 32px;
+            height: 32px;
+            font-size: 14px;
+        }
+        
+        .typing-text {
+            color: #666;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+        
+        .typing-dots span {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #666;
+            animation: typing 1.4s infinite;
+        }
+        
+        .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+            30% { transform: translateY(-10px); opacity: 1; }
+        }
+        
+        .chat-input-container {
+            padding: 30px;
+            background: white;
+            border-top: 1px solid #E9ECEF;
+        }
+        
+        .suggestions {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .suggestion-btn {
+            background: #F8F9FA;
+            border: 1px solid #DEE2E6;
+            color: #495057;
+            padding: 12px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+        
+        .suggestion-btn:hover, .suggestion-btn:focus {
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            border-color: #FF4757;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 12px;
+            align-items: flex-end;
+        }
+        
+        .message-input {
+            flex: 1;
+            padding: 16px 20px;
+            border: 2px solid #E9ECEF;
+            border-radius: 25px;
+            font-size: 16px;
+            resize: none;
+            max-height: 120px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            background: white;
+        }
+        
+        .message-input:focus {
+            outline: none;
+            border-color: #FF4757;
+        }
+        
+        .message-input::placeholder {
+            color: #999;
+        }
+        
+        .send-btn {
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            border: none;
+            padding: 16px 18px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.2s;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 52px;
+            height: 52px;
+        }
+        
+        .send-btn:hover:not(:disabled) {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 71, 87, 0.4);
+        }
+        
+        .send-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .lambda-config {
+            width: 280px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            height: fit-content;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .lambda-config h3 {
+            color: #666;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .lambda-input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #E0E0E0;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-bottom: 12px;
+            font-family: monospace;
+            background: white;
+            color: #333;
+        }
+        
+        .lambda-input:focus {
+            outline: none;
+            border-color: #FF4757;
+        }
+        
+        .update-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #FF4757, #FF6B7A);
+            color: white;
+            border: none;
+            padding: 10px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .update-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+        }
+        
+        .current-url {
+            font-size: 11px;
+            color: #999;
+            margin-top: 8px;
+            word-break: break-all;
+            line-height: 1.3;
+        }
+        
+        .error-message {
+            background: #F8D7DA;
+            color: #721C24;
+            padding: 12px 16px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 1px solid #F5C6CB;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 1200px) {
+            .main-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .lambda-config {
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px 10px;
+            }
+            
+            .chat-container {
+                border-radius: 15px;
+            }
+            
+            .chat-header {
+                padding: 20px;
+            }
+            
+            .chat-header h1 {
+                font-size: 24px;
+            }
+            
+            .chat-messages {
+                padding: 20px;
+                min-height: 300px;
+            }
+            
+            .chat-input-container {
+                padding: 20px;
+            }
+            
+            .suggestions {
+                gap: 8px;
+            }
+            
+            .suggestion-btn {
+                padding: 10px 14px;
+                font-size: 13px;
+            }
+            
+            .message-input {
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+            
+            .lambda-config {
+                padding: 16px;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>Edenred Invoice Assistant</h1>
+                <p>Get help with invoices, payments, and supplier portal questions</p>
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    Online
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="avatar">EA</div>
+                    <div class="bot-message-content">
+                        <div class="message-content">
+                            Hello! I'm your Edenred Invoice Assistant. I can help you with:
+                            <ul>
+                                <li>Submitting invoices</li>
+                                <li>Payment status questions</li>
+                                <li>Bank details updates</li>
+                                <li>Portal navigation</li>
+                                <li>Approval processes</li>
+                            </ul>
+                            What can I help you with today?
+                        </div>
+                        <div class="message-time" id="initialTime"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="avatar">EA</div>
+                <div class="typing-text">
+                    <span>Assistant is typing</span>
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <div class="suggestions">
+                    <button class="suggestion-btn" onclick="sendSuggestion('How do I submit an invoice?')">How do I submit an invoice?</button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Check payment status')">Check payment status</button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Update bank details')">Update bank details</button>
+                    <button class="suggestion-btn" onclick="sendSuggestion('Invoice was rejected')">Invoice was rejected</button>
+                </div>
+                
+                <div class="input-group">
+                    <textarea 
+                        id="messageInput" 
+                        class="message-input" 
+                        placeholder="Type your message here..."
+                        rows="1"
+                    ></textarea>
+                    <button id="sendBtn" class="send-btn" onclick="sendMessage()">
+                        ▶
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="lambda-config">
+            <h3>Lambda Function URL</h3>
+            <input 
+                type="text" 
+                id="lambdaUrl" 
+                class="lambda-input" 
+                value="https://zg4ja3aub5lvqzsbomo7nrhw7m0rjqms.lambda-url.us-east-1.on.aws/"
+                placeholder="Enter Lambda URL..."
+            >
+            <button class="update-btn" onclick="updateLambdaUrl()">Update</button>
+            <div class="current-url">
+                <strong>Current:</strong><br>
+                <span id="currentUrl">https://zg4ja3aub5lvqzsbomo7nrhw7m0rjqms.lambda-url.us-east-1.on.aws/</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let LAMBDA_URL = 'https://zg4ja3aub5lvqzsbomo7nrhw7m0rjqms.lambda-url.us-east-1.on.aws/';
+        
+        // Enhanced error handling and fallback strategies
+        const FALLBACK_STRATEGIES = [
+            // Strategy 1: Direct fetch
+            (message) => directFetch(message),
+            // Strategy 2: With timeout and retry
+            (message) => fetchWithRetry(message),
+            // Strategy 3: XMLHttpRequest fallback
+            (message) => sendWithXHR(message)
+        ];
+
+        function updateLambdaUrl() {
+            const newUrl = document.getElementById('lambdaUrl').value.trim();
+            if (newUrl) {
+                LAMBDA_URL = newUrl.endsWith('/') ? newUrl : newUrl + '/';
+                document.getElementById('currentUrl').textContent = LAMBDA_URL;
+                addMessage("Lambda URL updated successfully!", false);
+            }
+        }
+
+        function getCurrentTime() {
+            const now = new Date();
+            return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        }
+
+        function addMessage(content, isUser = false) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            const currentTime = getCurrentTime();
+            
+            if (isUser) {
+                messageDiv.className = 'message user-message';
+                messageDiv.innerHTML = `
+                    <div class="message-content">${content}</div>
+                    <div class="message-time">${currentTime}</div>
+                `;
+            } else {
+                messageDiv.className = 'message bot-message';
+                messageDiv.innerHTML = `
+                    <div class="avatar">EA</div>
+                    <div class="bot-message-content">
+                        <div class="message-content">${content}</div>
+                        <div class="message-time">${currentTime}</div>
+                    </div>
+                `;
+            }
+            
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            document.getElementById('typingIndicator').style.display = 'flex';
+            const messagesContainer = document.getElementById('chatMessages');
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function hideTypingIndicator() {
+            document.getElementById('typingIndicator').style.display = 'none';
+        }
+
+        async function directFetch(message) {
+            const response = await fetch(LAMBDA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                    'Cache-Control': 'no-cache'
+                },
+                body: JSON.stringify({ message: message })
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+
+            return await response.json();
+        }
+
+        async function fetchWithRetry(message, retries = 2) {
+            for (let i = 0; i <= retries; i++) {
+                try {
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 15000);
+
+                    const response = await fetch(LAMBDA_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json',
+                            'X-Requested-With': 'XMLHttpRequest'
+                        },
+                        body: JSON.stringify({ message: message }),
+                        signal: controller.signal
+                    });
+
+                    clearTimeout(timeoutId);
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    return await response.json();
+                } catch (error) {
+                    if (i === retries) throw error;
+                    await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1)));
+                }
+            }
+        }
+
+        function sendWithXHR(message) {
+            return new Promise((resolve, reject) => {
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', LAMBDA_URL, true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.setRequestHeader('Accept', 'application/json');
+                xhr.timeout = 15000;
+
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            try {
+                                const data = JSON.parse(xhr.responseText);
+                                resolve(data);
+                            } catch (e) {
+                                reject(new Error(`JSON parse error: ${e.message}`));
+                            }
+                        } else {
+                            reject(new Error(`HTTP ${xhr.status}: ${xhr.statusText}`));
+                        }
+                    }
+                };
+
+                xhr.onerror = () => reject(new Error('Network error'));
+                xhr.ontimeout = () => reject(new Error('Request timeout'));
+
+                xhr.send(JSON.stringify({ message: message }));
+            });
+        }
+
+        async function sendMessageToAPI(message) {
+            for (let i = 0; i < FALLBACK_STRATEGIES.length; i++) {
+                try {
+                    console.log(`Trying strategy ${i + 1}/${FALLBACK_STRATEGIES.length}`);
+                    const result = await FALLBACK_STRATEGIES[i](message);
+                    
+                    if (result && result.response) {
+                        console.log(`Strategy ${i + 1} succeeded`);
+                        return result;
+                    }
+                } catch (error) {
+                    console.log(`Strategy ${i + 1} failed:`, error.message);
+                    if (i === FALLBACK_STRATEGIES.length - 1) {
+                        throw error;
+                    }
+                }
+            }
+            throw new Error('All strategies failed');
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+
+            if (!message) return;
+
+            addMessage(message, true);
+            input.value = '';
+            
+            const sendBtn = document.getElementById('sendBtn');
+            sendBtn.disabled = true;
+            showTypingIndicator();
+
+            try {
+                const response = await sendMessageToAPI(message);
+                
+                if (response && response.response) {
+                    // Format the response with proper line breaks and bullets
+                    let formattedResponse = response.response
+                        .replace(/\n/g, '<br>')
+                        .replace(/• /g, '<li>')
+                        .replace(/<li>/g, '</li><li>')
+                        .replace(/<\/li><li>([^<]+)<br>/g, '<ul><li>$1</li>')
+                        .replace(/(<li>[^<]+<\/li>)+/g, match => `<ul>${match}</ul>`)
+                        .replace(/<\/li><li><\/li>/g, '</li></ul><br><ul><li>')
+                        .replace(/<ul><\/li>/g, '<ul>')
+                        .replace(/<li><\/li><\/ul>/g, '</ul>');
+                    
+                    addMessage(formattedResponse);
+                } else {
+                    throw new Error('Invalid response format');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error-message';
+                errorDiv.textContent = `Connection Error: ${error.message}`;
+                document.getElementById('chatMessages').appendChild(errorDiv);
+                
+                addMessage("I'm currently having trouble connecting. Please try refreshing the page or contact ap-support@edenred.com for assistance.");
+            } finally {
+                sendBtn.disabled = false;
+                hideTypingIndicator();
+            }
+        }
+
+        function sendSuggestion(text) {
+            document.getElementById('messageInput').value = text;
+            sendMessage();
+        }
+
+        // Enhanced input handling
+        document.getElementById('messageInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        // Auto-resize textarea
+        document.getElementById('messageInput').addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+
+        // Lambda URL input handling
+        document.getElementById('lambdaUrl').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                updateLambdaUrl();
+            }
+        });
+
+        // Initialize
+        window.addEventListener('load', function() {
+            document.getElementById('initialTime').textContent = getCurrentTime();
+            console.log('Edenred Invoice Assistant loaded');
+            
+            // Test connection on load
+            setTimeout(async () => {
+                try {
+                    await sendMessageToAPI('connection test');
+                    console.log('Initial connection test successful');
+                } catch (error) {
+                    console.log('Initial connection test failed:', error.message);
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
