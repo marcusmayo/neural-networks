@@ -327,7 +327,7 @@ aws cloudformation wait stack-delete-complete --stack-name digital-chain-stack
 ![Vite Dev Server](digital-value-chain/screenshots/vite-server.png)
 *React development server running with network access enabled*
 
-![FastAPI Backend](digital-value-chain/screenshots/fastapi-backend.png)
+![FastAPI Backend]([digital-value-chain/screenshots/fastapi-backend.png](https://github.com/marcusmayo/machine-learning-portfolio/blob/812c1c84acd3a15748fb86cfbfe794df4ffbdce2/digital-value-chain/screenshots/fastapi-backend.png))
 *FastAPI backend running locally for development and testing*
 
 ---
