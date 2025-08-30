@@ -309,25 +309,25 @@ aws cloudformation wait stack-delete-complete --stack-name digital-chain-stack
 - Production-ready configuration
 
 ### Frontend Dashboard
-![Empty State](digital-value-chain/screenshots/dashboard-empty.png)
+![Empty State](screenshots/dashboard-empty.png)
 *Initial dashboard showing empty state with clear call-to-action*
 
-![Populated Dashboard](digital-value-chain/screenshots/dashboard-populated.png) 
+![Populated Dashboard](screenshots/dashboard-populated.png) 
 *Dashboard with 8 sample offers loaded from DynamoDB via API Gateway*
 
 ### Backend API Response
-![API Health Check](digital-value-chain/screenshots/api-health.png)
+![API Health Check](screenshots/api-health.png)
 *API Gateway endpoint returning health check with available endpoints*
 
 ### Infrastructure Deployment
-![CloudFormation Stack](digital-value-chain/screenshots/cloudformation.png)
+![CloudFormation Stack](screenshots/cloudformation.png)
 *AWS SAM CloudFormation stack deployment showing all resources being created*
 
 ### Development Environment
-![Vite Dev Server](digital-value-chain/screenshots/vite-server.png)
+![Vite Dev Server](screenshots/vite-server.png)
 *React development server running with network access enabled*
 
-![FastAPI Backend]([digital-value-chain/screenshots/fastapi-backend.png](https://github.com/marcusmayo/machine-learning-portfolio/blob/812c1c84acd3a15748fb86cfbfe794df4ffbdce2/digital-value-chain/screenshots/fastapi-backend.png))
+![FastAPI Backend](screenshots/fastapi-backend.png)
 *FastAPI backend running locally for development and testing*
 
 ---
