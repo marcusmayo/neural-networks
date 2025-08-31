@@ -66,14 +66,14 @@ The serverless architecture ensures the platform remains responsive whether serv
 Complete evidence of successful full-stack deployment with comprehensive screenshots and logs:
 
 **Frontend Deployment:**
-- **React Dashboard**: `screenshots/dashboard-empty.png` - Professional interface with clear UX
-- **Populated Dashboard**: `screenshots/dashboard-populated.png` - Real-time data integration
-- **Development Server**: `screenshots/vite-server.png` - Vite development environment
+- **React Dashboard**: ![Dashboard (empty)](./screenshots/dashboard-empty.png) - Professional interface with clear UX
+- **Populated Dashboard**: ![Dashboard (populated)](./screenshots/dashboard-populated.png) - Real-time data integration
+- **Development Server**: ![Vite dev server](./screenshots/vite-server.png) - Vite development environment
 
 **Backend & Infrastructure:**
-- **API Health Check**: `screenshots/api-health.png` - Live REST endpoints validation
-- **CloudFormation Stack**: `screenshots/cloudformation.png` - Complete AWS infrastructure deployment
-- **Backend Logs**: `screenshots/fastapi-backend.png` - Production server validation
+- **API Health Check**: ![API health](./screenshots/api-health.png) - Live REST endpoints validation
+- **CloudFormation Stack**: ![CloudFormation](./screenshots/cloudformation.png) - Complete AWS infrastructure deployment
+- **Backend Logs**: ![FastAPI backend](./screenshots/fastapi-backend.png) - Production server validation
 
 **Production URLs (Deployment Evidence):**
 - **Frontend**: `http://18.232.96.171:5174` (React dashboard - screenshot documented)
