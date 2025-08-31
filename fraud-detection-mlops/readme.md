@@ -42,14 +42,18 @@ This project demonstrates **enterprise-grade cost optimization** through strateg
 The `artifacts/` folder contains comprehensive evidence of successful production deployment:
 
 **Model Explainability Results:**
-- `explainability_results.json` - Complete SHAP and LIME analysis data
-- `shap_summary.png` - Global feature importance visualization
-- `shap_importance.png` - Feature ranking and impact analysis
-- `lime_explanation_0.png` through `lime_explanation_4.png` - Local explanation examples
+- ![Explainability_Results](./artifacts/explainability_results.json) - Complete SHAP and LIME analysis data
+- ![SHAP Summary](./artifacts/shap_summary.png) - Global feature importance visualization
+- ![SHAP Importance](./artifacts/shap_importance.png) - Feature ranking and impact analysis
+- ![LIME Example 0](./artifacts/lime_explanation_0.png) - Local explanation examples
+- ![LIME Example 1](./artifacts/lime_explanation_1.png) - Local explanation examples
+- ![LIME Example 2](./artifacts/lime_explanation_2.png) - Local explanation examples
+- ![LIME Example 3](./artifacts/lime_explanation_3.png) - Local explanation examples
+- ![LIME Example 4](./artifacts/lime_explanation_4.png) - Local explanation examples
 
 **Deployment & Execution Evidence:**
-- `deployment_evidence.json` - Production endpoint deployment logs and metadata
-- `execution_evidence.json` - Pipeline execution history and performance metrics
+- ![Deployment_Evidence](./artifacts/deployment_evidence.json) - Production endpoint deployment logs and metadata
+- ![Execution_Evidence](./artifacts/execution_evidence.json) - Pipeline execution history and performance metrics
 
 **Visual Proof of Concept:**
 - SHAP summary plots demonstrating model interpretability
