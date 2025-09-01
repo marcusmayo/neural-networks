@@ -23,15 +23,15 @@ A production-ready machine learning system that fine-tunes a TinyLlama 1.1B mode
 *Due to cost optimization, live infrastructure has been temporarily suspended. Screenshots below demonstrate full system capabilities:*
 
 **Web Interface - Compliance Questions & Responses:**
-![GRC Chatbot Interface](screenshot_placeholder_web_ui.png)
+![GRC Chatbot Interface](screenshots/chatbot-frontpage.png)
 *Professional ChatGPT-style interface with conversation history and response time tracking*
 
 **Training Performance & Metrics:**
-![Training Logs](screenshot_placeholder_training.png)  
+![Training Logs](screenshots/training-evidence.png)  
 *Training completed in 0.8 minutes with loss improvement from 2.3 → 2.09*
 
 **AWS SageMaker Deployment:**
-![SageMaker Endpoint](screenshot_placeholder_sagemaker.png)
+![SageMaker Endpoint](screenshots/sagemaker-evidence.png)
 *Production endpoint successfully deployed and serving predictions*
 
 ### 🚀 Local Demo Setup
@@ -100,7 +100,7 @@ Response time: 4.9s
 ## Installation & Setup
 
 ### **Prerequisites**
-- Python 3.8+ 
+- Python 3.10+ 
 - AWS Account with SageMaker access
 - 16GB+ RAM for training (8GB for inference only)
 
