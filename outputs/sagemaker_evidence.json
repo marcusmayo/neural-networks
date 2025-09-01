@@ -1,0 +1,16 @@
+{
+  "project": "GRC Compliance LLM",
+  "endpoint_name": "grc-compliance-working-1756742260",
+  "endpoint_arn": "arn:aws:sagemaker:us-east-1:453553127570:endpoint/grc-compliance-working-1756742260",
+  "status": "InService",
+  "creation_time": "2025-09-01 15:57:42.212000+00:00",
+  "last_modified": "2025-09-01 16:03:17.768000+00:00",
+  "deployment_initiated": "2025-09-01 15:57:42",
+  "model_data": "s3://grc-compliance-data-1756738456/demo-model/compliance-20250901.tar.gz",
+  "evidence_type": "SageMaker deployment proof",
+  "captured_at": "2025-09-01 16:16:11",
+  "notes": "Endpoint successfully created - demonstrates SageMaker deployment capability",
+  "instance_type": 1,
+  "instance_count": 1,
+  "variant_name": "AllTraffic"
+}

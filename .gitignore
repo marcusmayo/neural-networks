@@ -1,0 +1,78 @@
+# Large model files (use download script instead)
+outputs/compliance-tinyllama-lora/final/pytorch_model.bin
+outputs/compliance-tinyllama-lora/final/model.safetensors
+outputs/compliance-tinyllama-lora/final/pytorch_model-*.bin
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+*.key
+*.pem
+
+# Logs and databases
+*.log
+logs/
+*.sqlite3
+*.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Model training outputs (keep results, not checkpoints)
+outputs/compliance-tinyllama-lora/checkpoint-*/
+outputs/*/runs/
+outputs/*/logs/
+
+# AWS and deployment
+.aws/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars

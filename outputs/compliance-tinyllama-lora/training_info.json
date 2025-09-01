@@ -1,0 +1,10 @@
+{
+  "model": "TinyLlama-1.1B-Chat-v1.0",
+  "method": "LoRA (CPU optimized)",
+  "dataset": "GRC Compliance Q&A",
+  "samples": 14,
+  "epochs": 2,
+  "lora_r": 8,
+  "lora_alpha": 32,
+  "status": "completed"
+}

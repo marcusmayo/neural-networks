@@ -1,0 +1,6 @@
+{
+  "endpoint_name": "grc-compliance-working-1756742260",
+  "model_data": "s3://grc-compliance-data-1756738456/demo-model/compliance-20250901.tar.gz",
+  "status": "deploying",
+  "created_at": "2025-09-01 15:57:42"
+}
