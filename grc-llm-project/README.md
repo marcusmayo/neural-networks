@@ -10,10 +10,6 @@
 
 A production-ready machine learning system that fine-tunes a TinyLlama 1.1B model using LoRA (Low-Rank Adaptation) for governance, risk, and compliance question-answering. The system provides instant, accurate responses to compliance queries across SOC 2, ISO 27001, and HIPAA frameworks - addressing a real business need similar to what Drata and other compliance automation platforms solve.
 
-## Development Notes
-
-This project was developed with AI assistance from ChatGPT and Claude for code generation, debugging, and documentation. All technical decisions, architecture choices, and final implementations were reviewed and validated by the developer.
-
 **Key Achievements:**
 - ✅ **100% accuracy** on evaluation dataset
 - ✅ **0.8-minute training time** with efficient LoRA fine-tuning
@@ -27,25 +23,25 @@ This project was developed with AI assistance from ChatGPT and Claude for code g
 *Due to cost optimization, live infrastructure has been temporarily suspended. Screenshots below demonstrate full system capabilities:*
 
 **Web Interface - Compliance Questions & Responses:**
-![GRC Chatbot Interface](screenshots/chatbot-frontpage.png)
+![GRC Chatbot Interface](screenshot_placeholder_web_ui.png)
 *Professional ChatGPT-style interface with conversation history and response time tracking*
 
 **Training Performance & Metrics:**
-![Training Logs](screenshots/training-evidence.png)  
+![Training Logs](screenshot_placeholder_training.png)  
 *Training completed in 0.8 minutes with loss improvement from 2.3 → 2.09*
 
 **AWS SageMaker Deployment:**
-![SageMaker Endpoint](screenshots/sagemaker-evidence.png)
+![SageMaker Endpoint](screenshot_placeholder_sagemaker.png)
 *Production endpoint successfully deployed and serving predictions*
 
 ### 🚀 Local Demo Setup
 ```bash
 # Quick start for local testing
-git clone https://github.com/your-username/grc-llm-project
-cd grc-llm-project
+git clone https://github.com/marcusmayo/machine-learning-portfolio
+cd machine-learning-portfolio/grc-llm-projct
 pip install -r requirements.txt
 python download_model.py
-streamlit run app/streamlit_app.py
+streamlit run app/streamlit_cloud_app.py
 ```
 
 ## Technical Architecture
@@ -104,15 +100,15 @@ Response time: 4.9s
 ## Installation & Setup
 
 ### **Prerequisites**
-- Python 3.10+ 
+- Python 3.8+ 
 - AWS Account with SageMaker access
 - 16GB+ RAM for training (8GB for inference only)
 
 ### **Environment Setup**
 ```bash
 # Clone repository
-git clone https://github.com/your-username/grc-llm-project
-cd grc-llm-project
+git clone https://github.com/marcusmayo/machine-learning-portfolio
+cd machine-learning-portfolio/grc-llm-project
 
 # Install dependencies
 pip install -r requirements.txt
@@ -121,7 +117,7 @@ pip install -r requirements.txt
 python download_model.py
 
 # Verify installation
-python src/test_model_loading.py
+python src/test_compliance_model.py
 ```
 
 ### **AWS Configuration**
@@ -130,10 +126,10 @@ python src/test_model_loading.py
 aws configure
 
 # Create S3 bucket for model artifacts
-aws s3 mb s3://your-grc-model-bucket
+aws s3 mb s3://grc-compliance-data-{your-account-id}
 
 # Upload training data
-aws s3 cp data/ s3://your-grc-model-bucket/data/ --recursive
+aws s3 cp data/ s3://grc-compliance-data-{your-account-id}/data/ --recursive
 ```
 
 ## Usage Examples
@@ -159,14 +155,14 @@ streamlit run app/streamlit_app.py --server.port 8501
 
 ### **AWS SageMaker Deployment**
 ```bash
-# Train model on SageMaker
-python pipelines/train_sagemaker.py
+# Train model with LoRA
+python src/train_qlora_fixed.py
 
 # Deploy endpoint
-python infra/deploy_endpoint.py
+python src/deploy_sagemaker_correc...
 
-# Test endpoint
-python app/test_endpoint.py
+# Test inference
+python src/inference.py "What does ISO 27001 say about access reviews?"
 ```
 
 ## Performance Metrics
@@ -193,7 +189,7 @@ python app/test_endpoint.py
 
 ### **1. Local Development**
 ```bash
-streamlit run app/streamlit_app.py
+streamlit run app/streamlit_cloud_app.py --server.port 8501
 # Access: http://localhost:8501
 ```
 
@@ -206,10 +202,11 @@ streamlit run app/streamlit_app.py
 ### **3. AWS Production**
 ```bash
 # SageMaker endpoint deployment
-python infra/deploy_endpoint.py
+python src/deploy_sagemaker_correc...
 
-# EC2 with public access
-python infra/deploy_ec2.py
+# EC2 with public access (manual setup required)
+# Upload files to EC2 instance and run:
+streamlit run app/streamlit_cloud_app.py --server.port 8501 --server.address 0.0.0.0
 # Access: http://your-ec2-ip:8501
 ```
 
@@ -276,10 +273,11 @@ grc-llm-project/
 - **AWS SageMaker**: ML model training and deployment platform
 - **Streamlit**: Rapid web application development
 - **boto3**: AWS SDK for Python integration
+- **AI-Assisted Development**: Leveraged ChatGPT and Claude for rapid code generation and documentation while maintaining technical oversight
 
 ### **Training Pipeline**
 ```python
-# Simplified training workflow
+# Simplified training workflow (from src/train_qlora_fixed.py)
 from peft import LoraConfig, get_peft_model
 
 # 1. Load base model
@@ -316,14 +314,12 @@ model.save_pretrained("outputs/compliance-tinyllama-lora")
 - [ ] **Automated retraining** pipeline for new regulations
 - [ ] **High availability deployment** across regions
 
----
+## Technical Contact
 
-## 📞 Contact
-
-**Marcus Mayo, MS, SPC6, RTE, PMP, PMI-ACP**  
-📧 **Email:** [marcus.mayo@gmail.com](mailto:marcus.mayo@gmail.com)  
-💼 **LinkedIn:** [Marcus Mayo | LinkedIn](https://www.linkedin.com/in/marcus-mayo-ms-spc6-rte-pmp-pmi-acp/)  
-🐙 **GitHub:** [@marcusmayo](https://github.com/marcusmayo)  
+**Project Owner**: [Your Name]  
+**Email**: your.email@domain.com  
+**LinkedIn**: [Your LinkedIn Profile]  
+**Portfolio**: [Your Portfolio Website]
 
 ---
 
@@ -336,7 +332,6 @@ This project demonstrates several key ML engineering capabilities:
 - **Production Thinking**: SageMaker deployment with proper monitoring and scaling
 - **Full-Stack Development**: From data preparation to web interface deployment
 - **Cost Consciousness**: Strategic decision to use screenshots vs live demos for portfolio presentation
-- **AI-Assisted Development**: Leveraged ChatGPT and Claude for rapid code generation and documentation while maintaining technical oversight
 
 Built with enterprise scalability and compliance requirements in mind, suitable for organizations requiring automated GRC assistance similar to Drata, Vanta, or Compliance.ai platforms.
 
