@@ -10,6 +10,10 @@
 
 A production-ready machine learning system that fine-tunes a TinyLlama 1.1B model using LoRA (Low-Rank Adaptation) for governance, risk, and compliance question-answering. The system provides instant, accurate responses to compliance queries across SOC 2, ISO 27001, and HIPAA frameworks - addressing a real business need similar to what Drata and other compliance automation platforms solve.
 
+## Development Notes
+
+This project was developed with AI assistance from ChatGPT and Claude for code generation, debugging, and documentation. All technical decisions, architecture choices, and final implementations were reviewed and validated by the developer.
+
 **Key Achievements:**
 - ✅ **100% accuracy** on evaluation dataset
 - ✅ **0.8-minute training time** with efficient LoRA fine-tuning
@@ -332,6 +336,7 @@ This project demonstrates several key ML engineering capabilities:
 - **Production Thinking**: SageMaker deployment with proper monitoring and scaling
 - **Full-Stack Development**: From data preparation to web interface deployment
 - **Cost Consciousness**: Strategic decision to use screenshots vs live demos for portfolio presentation
+- **AI-Assisted Development**: Leveraged ChatGPT and Claude for rapid code generation and documentation while maintaining technical oversight
 
 Built with enterprise scalability and compliance requirements in mind, suitable for organizations requiring automated GRC assistance similar to Drata, Vanta, or Compliance.ai platforms.
 
