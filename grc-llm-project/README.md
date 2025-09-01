@@ -312,12 +312,14 @@ model.save_pretrained("outputs/compliance-tinyllama-lora")
 - [ ] **Automated retraining** pipeline for new regulations
 - [ ] **High availability deployment** across regions
 
-## Technical Contact
+---
 
-**Project Owner**: [Your Name]  
-**Email**: your.email@domain.com  
-**LinkedIn**: [Your LinkedIn Profile]  
-**Portfolio**: [Your Portfolio Website]
+## 📞 Contact
+
+**Marcus Mayo, MS, SPC6, RTE, PMP, PMI-ACP**  
+📧 **Email:** [marcus.mayo@gmail.com](mailto:marcus.mayo@gmail.com)  
+💼 **LinkedIn:** [Marcus Mayo | LinkedIn](https://www.linkedin.com/in/marcus-mayo-ms-spc6-rte-pmp-pmi-acp/)  
+🐙 **GitHub:** [@marcusmayo](https://github.com/marcusmayo)  
 
 ---
 
