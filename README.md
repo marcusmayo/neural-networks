@@ -1,51 +1,99 @@
 # 🚀 Machine Learning & AI Engineering Portfolio
 
-[![GitHub stars](https://img.shields.io/github/stars/marcusmayo/machine-learning-portfolio)](https://github.com/marcusmayo/machine-learning-portfolio/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/marcusmayo/machine-learning-portfolio)](https://github.com/marcusmayo/machine-learning-portfolio/network)
+[![GitHub stars](https://img.shields.io/github/stars/marcusmayo/machine-learning-portfolio?style=social)](https://github.com/marcusmayo/machine-learning-portfolio/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/marcusmayo/machine-learning-portfolio?style=social)](https://github.com/marcusmayo/machine-learning-portfolio/network)
 [![GitHub issues](https://img.shields.io/github/issues/marcusmayo/machine-learning-portfolio)](https://github.com/marcusmayo/machine-learning-portfolio/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Welcome to my comprehensive machine learning and AI engineering portfolio! This repository showcases end-to-end ML projects, from research and experimentation to production-ready deployments with complete MLOps pipelines.
+Welcome to my comprehensive machine-learning and AI engineering portfolio! This repository showcases end-to-end ML projects, from research and experimentation to production-ready deployments with complete MLOps pipelines.
 
-👨‍💻 About Me
-I'm Marcus, a passionate Machine Learning Engineer and AI practitioner focused on building robust, scalable, and production-ready AI systems. This portfolio demonstrates my expertise across the entire ML lifecycle, from data preprocessing and model development to deployment and monitoring. These projects showcase modern AI-augmented development practices, leveraging advanced AI assistants (Claude, Gemini, ChatGPT) to accelerate development cycles while maintaining enterprise-grade code quality and architectural excellence.
+## 👨‍💻 About Me
 
-Core Competencies:
+I'm Marcus, a passionate Machine Learning Engineer and AI practitioner focused on building robust, scalable and production-ready AI systems. This portfolio demonstrates my expertise across the entire ML lifecycle, from data preprocessing and model development to deployment and monitoring. These projects showcase modern AI-augmented development practices, leveraging advanced AI assistants (Claude, Gemini, ChatGPT) to accelerate development cycles while maintaining enterprise-grade code quality and architectural excellence.
 
-⦁	🧠 Machine Learning: Deep Learning, Classical ML, Computer Vision, NLP
+### **Core Competencies:**
 
-⦁	🔧 MLOps: CI/CD pipelines, model versioning, containerization, cloud deployment
+- 🧠 **Machine Learning** — Deep learning, classical ML, computer vision, NLP
+- 🔧 **MLOps** — CI/CD pipelines, model versioning, containerization, cloud deployment
+- ☁️ **Cloud Platforms** — AWS, Azure, GCP
+- 📊 **Data Engineering** — ETL pipelines, data preprocessing, feature engineering
+- 🐍 **Programming** — Python, PyTorch, TensorFlow, scikit-learn, Flask, FastAPI
+- 🤖 **AI-Augmented Development** — Advanced prompt engineering, AI-assisted coding, rapid prototyping with LLM collaboration
 
-⦁	☁️ Cloud Platforms: AWS, Azure, GCP
+## 🧰 Overall Tech Stack Summary
 
-⦁	📊 Data Engineering: ETL pipelines, data preprocessing, feature engineering
+The table below summarizes the key technologies used across my completed projects and coursework. Each entry is grouped by its place in the machine-learning pipeline and includes a brief explanation written in plain language.
 
-⦁	🐍 Programming: Python, PyTorch, TensorFlow, Scikit-learn, Flask, FastAPI
-
-⦁	🤖 AI-Augmented Development: Advanced prompt engineering, AI-assisted coding, rapid prototyping with LLM collaboration
+| Pipeline Stage | Tool/Technology | Usage (Project/Course) | Simple Explanation |
+|---|---|---|---|
+| **Data Storage & Sources** | **AWS S3** | Fraud-Detection MLOps, Edenred Invoice Assistant, GRC-LLM — stores datasets and model artifacts | S3 is like a big cloud hard-drive. It keeps our data and trained models so we can load them later. |
+| | **DynamoDB** | Digital-Value-Chain serverless e-commerce — stores product offers and cart data | DynamoDB is a fast cloud database. It keeps items (like products) in a table so the app can read and write quickly. |
+| | **CSV/JSON files** | Pinecone Vector DB, Fraud-Detection MLOps, GRC-LLM — holds training tables and text data | These are simple text files that hold tables or lists. They let us load training data from our computer. |
+| | **Audio files** | Speech-Recognition project — WAV/MP3 clips for speech-to-text | Sound files are recordings. We feed them to the model to teach it to hear and transcribe speech. |
+| **Data Preprocessing & Feature Engineering** | **Pandas** | Bike-Rental Predictor, Pinecone Vector DB, Fraud-Detection — reading CSVs, cleaning and encoding data | Pandas is like a spreadsheet for Python. It helps us read tables, clean them and get them ready for training. |
+| | **NumPy** | All projects — math operations and array manipulation | NumPy lets us work with lists of numbers. It makes math operations fast and easy. |
+| | **scikit-learn** | Bike-Rental preprocessing, Fraud-Detection metrics & validation | scikit-learn has tools to split data, scale numbers and measure how good a model is. |
+| | **Librosa / soundfile / pydub / wave** | Speech-Recognition project — loading audio and extracting features | These libraries open sound files and turn them into numbers so a model can understand speech. |
+| | **sentence-transformers** | Pinecone Vector DB — converts text into numeric embeddings | This library takes sentences and turns them into long lists of numbers so we can compare meanings. |
+| | **dotenv** | Pinecone Vector DB — reads API keys from `.env` files | dotenv lets us keep secret keys in a file and load them into our program safely. |
+| **Embeddings & Vectorization** | **Pinecone** | Pinecone Vector DB — cloud vector store for semantic search | Pinecone is a special database that stores those long number lists (embeddings). It helps us search for similar texts. |
+| **Model Training** | **PyTorch** | Bike-Rental prediction — neural network training | PyTorch is a toolkit that lets us build and train neural networks. It teaches the computer to predict things. |
+| | **TensorFlow + Keras** | Simple neural network notebook — single-layer perceptron for MNIST digits | TensorFlow and Keras help us build a simple "brain" to recognize handwritten numbers. |
+| | **XGBoost (via SageMaker)** | Fraud-Detection MLOps — training the fraud classifier | XGBoost is a tree-based algorithm. It learns to tell normal transactions from fraudulent ones. |
+| | **Transformers (BERT/GPT/XLNet)** | LLMs coursework — exploring large language models | These models understand and generate text. We used them to learn about language processing. |
+| | **LoRA / PEFT** | GRC-LLM — efficient fine-tuning of TinyLlama | LoRA adapts a big language model using small extra pieces, saving time and cost. |
+| | **Whisper & speech_recognition** | Speech-Recognition project — transcribes audio to text | Whisper and the `speech_recognition` library help the app understand spoken words. |
+| | **OpenAI API** | LLMs coursework, LLM-Engineering app — chat and interview responses | This API calls a chat model like ChatGPT to answer questions. It lets our apps have conversations. |
+| **Model Evaluation & Explainability** | **scikit-learn metrics** | Fraud-Detection MLOps — AUC-ROC, precision/recall calculations | These measurements show how well the fraud model works. |
+| | **SHAP** | Fraud-Detection MLOps — global feature importance | SHAP tells us which features are most important for the model's decisions. |
+| | **LIME** | Fraud-Detection MLOps — local explanation for single predictions | LIME explains why the model made a particular decision for one example. |
+| | **Matplotlib / Seaborn** | Fraud-Detection MLOps — plotting feature importance and ROC/PR curves | These libraries draw charts to help us see model performance. |
+| **Deployment & Serving** | **Flask** | Bike-Rental API — REST endpoint for predictions | Flask lets us build a small web server so outside programs can ask for predictions. |
+| | **AWS SageMaker endpoints** | Fraud-Detection MLOps, GRC-LLM, Edenred Invoice Assistant — hosting trained models | SageMaker runs our trained models in the cloud so users can send requests and get answers. |
+| | **AWS Lambda** | Digital-Value-Chain and Edenred Invoice Assistant — serverless backend functions | Lambda runs small pieces of code only when needed. This saves money because there is no always-running server. |
+| | **AWS API Gateway** | Digital-Value-Chain and Invoice Assistant — routes HTTP requests to Lambda | API Gateway receives web requests and sends them to the right Lambda function. |
+| | **AWS EC2** | Bike-Rental API deployment — hosts the REST service and runs CI tests | EC2 is a virtual machine in the cloud. We used it to run our bike-rental API in production. |
+| | **Docker** | Bike-Rental project — containerizes the API for consistent deployment | Docker packages our app and its dependencies so it runs the same everywhere. |
+| | **GitHub Actions** | Bike-Rental project — CI/CD pipeline for testing and deployment | GitHub Actions automatically tests code and deploys it when we push changes. |
+| | **AWS SAM / CloudFormation** | Digital-Value-Chain — infrastructure as code for serverless stack | SAM and CloudFormation are templates that tell AWS how to build all the resources we need. |
+| | **CloudWatch** | Edenred Invoice Assistant — monitoring and logging for Lambda | CloudWatch records logs and metrics so we can see what our Lambda functions are doing. |
+| | **GitHub Pages** | Edenred Invoice Assistant — hosts the static chat interface | GitHub Pages serves our HTML and JavaScript files so users can access the chatbot in a browser. |
+| | **Streamlit** | GRC-LLM and LLM-Engineering app — interactive web front-ends | Streamlit makes it easy to create a chat interface or dashboard from Python code. |
+| | **Stripe** | Digital-Value-Chain — handles payment checkout | Stripe processes credit-card payments securely. |
+| | **Boto3** | Digital-Value-Chain, GRC-LLM — Python SDK to access AWS services | Boto3 lets our Python code talk to AWS services like DynamoDB, S3 and SageMaker. |
+| **DevOps & Infrastructure** | **Git** | All projects — version control and collaboration | Git keeps track of code changes and lets multiple people work together. |
+| | **AWS IAM** | Fraud-Detection MLOps and Invoice Assistant — role-based access control | IAM is a permission system. It decides who can use which AWS resources. |
+| | **Cost-optimization strategies** | Fraud-Detection MLOps and Edenred Invoice Assistant — turning off endpoints when idle | To save money, we shut down cloud resources when they are not being used and restart them only when needed. |
+| **Front-end & User Interface** | **React 18 + Vite** | Digital-Value-Chain — modern, responsive e-commerce dashboard | React builds interactive web pages, and Vite makes development fast. |
+| | **HTML / CSS / JavaScript** | Edenred Invoice Assistant — static chat interface | These are the basic building blocks of web pages. |
+| | **Streamlit** | GRC-LLM and LLM-Engineering — simple Python web apps | Streamlit makes it easy to build a chat interface or dashboard from Python code. |
+| **LLM Tools & Frameworks** | **LangChain / LangGraph** | LangChain & LangGraph coursework — chain and graph structures for LLMs | LangChain and LangGraph help build complex chat flows. They handle prompts, output parsing and memory. |
+| | **OpenAI Chat models (ChatGPT/GPT-4)** | LLM coursework & LLM-Engineering app — used for text generation and interviews | These models chat with users, answer questions and conduct mock interviews. |
+| | **PEFT / LoRA** | GRC-LLM — parameter-efficient fine-tuning | LoRA is a trick to train large models cheaply by adding small adapter layers. |
 
 ## 🎯 Portfolio Objectives
 
 This repository serves multiple purposes:
 
 ### 🔬 **Research & Development**
-Exploring cutting-edge ML techniques, experimenting with new algorithms, and implementing research papers to stay current with the latest advancements in AI.
+Exploring cutting-edge ML techniques, experimenting with new algorithms and implementing research papers to stay current with the latest advancements in AI.
 
 ### 🏗️ **Production-Ready Solutions**
-Building complete MLOps pipelines that demonstrate enterprise-level practices including automated testing, containerization, CI/CD, monitoring, and scalable deployment strategies.
+Building complete MLOps pipelines that demonstrate enterprise-level practices including automated testing, containerization, CI/CD, monitoring and scalable deployment strategies.
 
 ### 📚 **Learning & Growth**
-Documenting my journey in machine learning, sharing knowledge through well-documented code, and contributing to the ML community.
+Documenting my journey in machine learning, sharing knowledge through well-documented code and contributing to the ML community.
 
 ### 💼 **Professional Showcase**
-Demonstrating practical skills in machine learning engineering, data science, and AI system architecture for potential collaborators and employers.
+Demonstrating practical skills in machine learning engineering, data science and AI system architecture for potential collaborators and employers.
 
 ## 🗂️ Featured Projects
 
 ### 🛡️ [GRC Compliance LLM - AI-Powered Compliance Assistant](./grc-llm-project/)
+
 > **Production-Ready LoRA Fine-tuning with AWS SageMaker and Cost-Optimized Architecture**
 
-Enterprise-grade compliance question-answering system that fine-tunes a TinyLlama 1.1B model using LoRA (Low-Rank Adaptation) for governance, risk, and compliance queries across SOC 2, ISO 27001, and HIPAA frameworks.
+Enterprise-grade compliance question-answering system that fine-tunes a TinyLlama 1.1B model using LoRA (Low-Rank Adaptation) for governance, risk and compliance queries across SOC 2, ISO 27001 and HIPAA frameworks.
 
 **🎯 Highlights:**
 - **LoRA Fine-tuning**: Parameter-efficient adaptation of TinyLlama 1.1B with 99% cost reduction vs full training
@@ -69,8 +117,7 @@ model = PeftModel.from_pretrained(model, "outputs/compliance-tinyllama-lora")
 
 # Ask compliance question
 response = model.generate("Which SOC 2 control covers password requirements?")
-# Output: "SOC 2 CC6.1 covers password requirements: organizations must 
-#          implement complexity, length, and rotation policies."
+# Output: "SOC 2 CC6.1 covers password requirements: organizations must implement complexity, length, and rotation policies."
 ```
 
 **📊 Production Performance:**
@@ -82,9 +129,8 @@ response = model.generate("Which SOC 2 control covers password requirements?")
 - **Cost Optimization**: 99%+ savings vs full model training through LoRA adapters
 - **Business Value**: Instant compliance query resolution for audit preparation
 
----
-
 ### 🤖 [Edenred Invoice Assistant - Production AI Chatbot](./edenred-invoice-assistant/)
+
 > **End-to-End ML Pipeline: Training to Production with Cost-Optimized AWS SageMaker**
 
 Complete production-ready AI chatbot for invoice and payment support, showcasing enterprise-level ML deployment with intelligent cost management and serverless architecture.
@@ -100,7 +146,7 @@ Complete production-ready AI chatbot for invoice and payment support, showcasing
 **🛠️ Tech Stack:** AWS SageMaker, Lambda, API Gateway, HuggingFace Transformers, Python, HTML/CSS/JS, CloudWatch
 
 ```python
-# Example API Usage - Production Endpoint with Intelligent Fallbacks
+# Example API Usage – Production Endpoint with Intelligent Fallbacks
 import requests
 response = requests.post(
     'https://zg4ja3aub5lvqzsbomo7nrhw7m0rjqms.lambda-url.us-east-1.on.aws/',
@@ -113,13 +159,12 @@ print(f"AI Response: {response.json()['response']}")
 - **Response Time**: <1 second average (optimized fallback system)
 - **Accuracy Rate**: 95%+ on trained invoice/payment scenarios (pattern-based)
 - **Uptime**: 100% with intelligent fallback handling
-- **Cost Efficiency**: 90%+ reduction vs. always-on SageMaker
+- **Cost Efficiency**: 90%+ reduction vs always-on SageMaker
 - **Training Validation**: Complete ML pipeline with successful SageMaker fine-tuning
 - **Demo**: [Live Interactive Chatbot](https://marcusmayo.github.io/machine-learning-portfolio/edenred-invoice-assistant/frontend/chatbot.html)
 
----
-
 ### 🚴 [Bike Rental Prediction - MLOps Pipeline](./bike_rental_prediction_fully_automated/)
+
 > **Production-Ready ML System with Full CI/CD**
 
 A complete end-to-end MLOps pipeline for predicting hourly bike rental demand, showcasing enterprise-level practices.
@@ -128,43 +173,40 @@ A complete end-to-end MLOps pipeline for predicting hourly bike rental demand, s
 - **Neural Network Model**: PyTorch-based 3-layer feedforward network
 - **Feature Engineering**: 53 engineered features from temporal and weather data
 - **Production API**: Flask REST API deployed on AWS EC2
-- **CI/CD Pipeline**: Automated testing, building, and deployment via GitHub Actions
+- **CI/CD Pipeline**: Automated testing, building and deployment via GitHub Actions
 - **Containerization**: Docker-based deployment with AWS ECR
-- **Real-time Predictions**: Sub-100ms API response times
+- **Real-time Predictions**: Sub-100 ms API response times
 
 **🛠️ Tech Stack:** PyTorch, Flask, Docker, AWS (EC2, ECR), GitHub Actions, NumPy, Pandas
 
 ```python
 # Example API Usage
 import requests
-response = requests.post('http://18.233.252.250/predict', 
-                        json={'features': [0.1] * 53})
+response = requests.post('http://18.233.252.250/predict', json={'features': [0.1] * 53})
 print(f"Predicted bike rentals: {response.json()['prediction']}")
 ```
 
----
+### 🕵️ [Fraud Detection — Enterprise MLOps with Explainability](./fraud-detection-mlops/)
 
-### 🕵️ [Fraud Detection - Enterprise MLOps with Explainability](./fraud-detection-mlops/)
 > **Production-Ready Fraud Detection with SHAP/LIME and Cost-Optimized SageMaker Pipeline**
 
-Complete end-to-end MLOps pipeline for credit card fraud detection using AWS SageMaker, demonstrating enterprise-level practices with automated deployment, monitoring, model explainability, and intelligent cost management for production-ready fraud prevention.
+Complete end-to-end MLOps pipeline for credit card fraud detection using AWS SageMaker, demonstrating enterprise-level practices with automated deployment, monitoring, model explainability and intelligent cost management for production-ready fraud prevention.
 
 **🎯 Highlights:**
 - **XGBoost Model**: Optimized gradient boosting with class imbalance handling (scale_pos_weight=100)
 - **Time-Based Validation**: Chronological data splits with rolling backtests for temporal stability
-- **Model Explainability**: SHAP global importance + LIME local explanations with comprehensive artifacts
+- **Model Explainability**: SHAP global importance and LIME local explanations with comprehensive artifacts
 - **Cost Engineering**: Strategic endpoint management with 95%+ operational cost reduction
-- **SageMaker Pipeline**: Complete automated training, evaluation, and deployment with model registry
+- **SageMaker Pipeline**: Complete automated training, evaluation and deployment with model registry
 - **Production Validation**: Successfully deployed and validated real-time endpoint with comprehensive evidence
 - **Comprehensive Artifacts**: Complete explainability documentation for regulatory compliance
 
 **🛠️ Tech Stack:** XGBoost, SageMaker, SHAP, LIME, Model Registry, CloudWatch, S3, Boto3
 
 ```python
-# Example Production Pattern - Reactivation Ready
+# Example Production Pattern – Reactivation Ready
 import boto3
 runtime = boto3.client('sagemaker-runtime')
-# Endpoint can be reactivated instantly for production deployment
 response = runtime.invoke_endpoint(
     EndpointName='fraud-detection-endpoint-1755128252',
     ContentType='text/csv',
@@ -179,45 +221,36 @@ print(f"Decision: {'FRAUD' if result['prediction'] > 0.5 else 'LEGITIMATE'}")
 - **AUC-PR**: 0.7720 (precision-recall optimized for imbalanced data)
 - **AUC-ROC**: 0.9763 (outstanding discrimination capability)
 - **Dataset Scale**: 284,807 credit card transactions with 0.17% fraud rate
-- **Response Time**: <100ms real-time transaction processing (validated)
+- **Response Time**: <100 ms real-time transaction processing (validated)
 - **Cost Optimization**: 95%+ reduction with instant reactivation capability
 - **Deployment Evidence**: Comprehensive artifacts documenting successful production validation
 - **Regulatory Compliance**: Complete SHAP/LIME explainability documentation
 
----
+### 🏢 [Digital Value Chain — Enterprise Serverless E-commerce](./digital-value-chain/)
 
-### 🏢 [Digital Value Chain - Enterprise Serverless E-commerce](./digital-value-chain/)
 > **Full-Stack Serverless Platform with Cost-Optimized Architecture and AI-Assisted Development**
 
-Complete serverless e-commerce platform demonstrating enterprise-level architecture, modern development practices, intelligent cost management, and scalable cloud solutions built collaboratively with AI assistants.
+Complete serverless e-commerce platform demonstrating enterprise-level architecture, modern development practices, intelligent cost management and scalable cloud solutions built collaboratively with AI assistants.
 
 **🎯 Highlights:**
 - **Modern Frontend**: React 18 + Vite with responsive design and comprehensive screenshot documentation
 - **Cost-Optimized Serverless**: AWS Lambda + API Gateway with strategic resource management (95%+ cost reduction)
 - **NoSQL Database**: DynamoDB integration with proper data modeling and production validation
 - **Infrastructure as Code**: AWS SAM/CloudFormation with complete deployment evidence
-- **Enterprise Architecture**: CORS configuration, error handling, and production-ready security validation
+- **Enterprise Architecture**: CORS configuration, error handling and production-ready security validation
 - **AI-Augmented Development**: Collaborative problem-solving with ChatGPT and Claude demonstrating modern development workflows
 - **Real-World Problem Solving**: Resolved 7+ major technical challenges with comprehensive documentation
 
 **🛠️ Tech Stack:** React 18, AWS Lambda, API Gateway, DynamoDB, AWS SAM, Stripe, Vite, Python
 
 ```python
-# Example API Usage - Production Endpoints (Reactivation Ready)
+# Example API Usage – Production Endpoints (Reactivation Ready)
 import requests
-
-# Production URLs documented as deployment evidence
-# (EC2 deactivated for cost optimization - instant reactivation available)
 api_base = 'https://f59moopdx0.execute-api.us-east-1.amazonaws.com'
-
 # List all offers
-response = requests.get(f'{api_base}/offers')
-print(f"Available offers: {response.json()}")
-
-# Create new offer  
-response = requests.post(f'{api_base}/offers',
-    json={'sku': 'premium-001', 'name': 'Premium Plan', 'price': 99.99})
-print(f"Created offer: {response.json()}")
+print(requests.get(f'{api_base}/offers').json())
+# Create a new offer
+print(requests.post(f'{api_base}/offers', json={'sku': 'premium-001', 'name': 'Premium Plan', 'price': 99.99}).json())
 ```
 
 **📊 Production Performance & Evidence:**
@@ -227,12 +260,11 @@ print(f"Created offer: {response.json()}")
 - **Database**: DynamoDB with proper NoSQL design patterns and production validation
 - **Infrastructure**: Complete CloudFormation deployment with comprehensive screenshot evidence
 - **Cost Engineering**: Strategic EC2 management with instant reactivation capability
-- **Enterprise Ready**: CORS-enabled, error handling, monitoring integration documented
-- **Business Application**: Ideal for digital marketplaces, partner portals, and B2B platforms
-
----
+- **Enterprise Ready**: CORS-enabled, error handling and monitoring integration documented
+- **Business Application**: Ideal for digital marketplaces, partner portals and B2B platforms
 
 ### 🎭 [Sentiment Analysis Web App](./sentiment_analysis_webapp/) *(Coming Soon)*
+
 > **Real-time sentiment analysis with modern transformers**
 
 Web application for analyzing sentiment in text using Hugging Face Transformers, deployed as a scalable REST API.
@@ -244,9 +276,8 @@ Web application for analyzing sentiment in text using Hugging Face Transformers,
 - EC2 cloud hosting with auto-scaling
 - Support for IMDb Reviews and Twitter datasets
 
----
-
 ### 🖼️ [Image Classifier on CIFAR-10](./cifar10_classifier/) *(Coming Soon)*
+
 > **CNN-based image classification with MLflow tracking**
 
 Deep learning image classifier using PyTorch CNNs with comprehensive model tracking and cloud storage integration.
@@ -258,220 +289,20 @@ Deep learning image classifier using PyTorch CNNs with comprehensive model track
 - CIFAR-10 dataset with data augmentation
 - Performance benchmarking and visualization
 
----
-
 ### 📈 [Time Series Forecasting (Weather/Energy)](./time_series_forecasting/) *(Coming Soon)*
+
 > **LSTM-based forecasting with automated scheduling**
 
-Advanced time series prediction system using LSTM networks with automated data pipeline and scheduling.
-
-**Planned Features:**
-- LSTM neural networks in PyTorch
-- Apache Airflow scheduler on EC2
-- NOAA Climate Data integration
-- NYISO Energy Load Data processing
-- Multi-horizon forecasting capabilities
+Stay tuned for more exciting projects!
 
 ---
 
-### 📰 [Text Summarizer with Transformers](./text_summarizer/) *(Coming Soon)*
-> **Transformer-based text summarization with interactive UI**
+## 📫 Get In Touch
 
-Fine-tuned transformer models for automatic text summarization with user-friendly web interface.
-
-**Planned Features:**
-- Hugging Face transformer fine-tuning
-- Gradio interactive UI
-- EC2 inference server deployment
-- CNN/DailyMail and BBC News datasets
-- Extractive and abstractive summarization
+- **LinkedIn**: [Connect with me](https://linkedin.com/in/marcusmayo)
+- **Email**: marcusmayo@hotmail.com
+- **Portfolio**: [Live Projects](https://github.com/marcusmayo/machine-learning-portfolio)
 
 ---
 
-### 🎯 [Object Detection with YOLOv5](./object_detection/) *(Coming Soon)*
-> **Real-time object detection with bounding box visualization**
-
-Computer vision system for real-time object detection using pre-trained YOLOv5 models with inference API.
-
-**Planned Features:**
-- Pre-trained YOLOv5 model integration
-- Real-time bounding box visualization
-- EC2 inference server with REST API
-- COCO Dataset and Open Images Dataset
-- Multi-object detection and classification
-
----
-
-### 🎙️ [Voice Command Recognizer](./voice_recognition/) *(Coming Soon)*
-> **Speech-to-text system with audio processing**
-
-Audio processing system for voice command recognition using state-of-the-art speech models.
-
-**Planned Features:**
-- Audio preprocessing and feature extraction
-- Wav2Vec speech-to-text model
-- EC2 REST API deployment
-- Google Speech Commands Dataset
-- Real-time audio stream processing
-
----
-
-### 📄 [News Article Classifier with Streamlit UI](./news_classifier/) *(Coming Soon)*
-> **NLP text classification with interactive dashboard**
-
-News article classification system with comprehensive NLP pipeline and interactive Streamlit dashboard.
-
-**Planned Features:**
-- Complete NLP preprocessing pipeline
-- Multi-class text classification
-- Interactive Streamlit UI on EC2
-- AG News Corpus and News Category datasets
-- Real-time classification and visualization
-
-## 🛠️ Technologies & Tools
-
-### **Machine Learning Frameworks**
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=flat&logo=Keras&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
-
-### **Data Science & Analytics**
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat&logo=Matplotlib&logoColor=black)
-![Jupyter](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=flat&logo=jupyter&logoColor=white)
-
-### **MLOps & Deployment**
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat&logo=githubactions&logoColor=white)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat&logo=flask&logoColor=white)
-
-### **Programming Languages**
-![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
-![SQL](https://img.shields.io/badge/sql-%2300f.svg?style=flat&logo=mysql&logoColor=white)
-
-## 📈 Project Development Approach
-
-### 🔄 **Iterative Development Cycle**
-```
-Research → Experiment → Prototype → Deploy → Monitor → Iterate
-    ↑                                                      ↓
-    ←←←←←←←←←←←← Feedback & Improvement ←←←←←←←←←←←←←
-```
-
-### 📋 **Standard Project Structure**
-```
-project_name/
-├── data/                 # Raw and processed datasets
-├── notebooks/            # Jupyter notebooks for exploration
-├── src/                  # Source code modules
-│   ├── data/            # Data loading and preprocessing
-│   ├── models/          # Model architectures
-│   ├── training/        # Training scripts
-│   └── evaluation/      # Model evaluation
-├── tests/               # Unit and integration tests
-├── deployment/          # Deployment configurations
-├── docs/                # Documentation
-├── requirements.txt     # Dependencies
-├── Dockerfile          # Container configuration
-└── README.md           # Project documentation
-```
-
-### 🧪 **Quality Assurance**
-- **Code Quality**: Comprehensive testing, linting, and documentation
-- **Model Validation**: Cross-validation, holdout testing, performance monitoring
-- **Reproducibility**: Version control, environment management, seed setting
-- **Scalability**: Efficient algorithms, optimized inference, cloud deployment
-
-## 🚀 Getting Started
-
-### Prerequisites
-```bash
-# Python 3.8+
-python --version
-
-# Git
-git --version
-```
-
-### Quick Setup
-```bash
-# Clone the repository
-git clone https://github.com/marcusmayo/machine-learning-portfolio.git
-cd machine-learning-portfolio
-
-# Create virtual environment
-python -m venv ml_portfolio_env
-source ml_portfolio_env/bin/activate  # On Windows: ml_portfolio_env\Scripts\activate
-
-# Install dependencies (for specific projects)
-cd bike_rental_prediction_fully_automated
-pip install -r requirements.txt
-```
-
-### Running Projects
-Each project includes its own detailed README with specific setup and execution instructions.
-
-## 📊 Performance Metrics & Benchmarks
-
-| Project | Model Type | Accuracy/Score | Response Time | Deployment |
-|---------|------------|----------------|---------------|------------|
-| GRC Compliance LLM | LoRA Fine-tuned Transformer | 100% accuracy | 4-22 seconds | ✅ Production-Validated |
-| Edenred Invoice Assistant | Fine-tuned Transformer | 95%+ accuracy | <1 second | ✅ Production |
-| Bike Rental Prediction | Neural Network | MSE: 0.15 | <100ms | ✅ Production |
-| Fraud Detection | XGBoost | AUC-PR: 0.7720, AUC-ROC: 0.9763 | <100ms | ✅ Production-Validated |
-| Digital Value Chain | Serverless Platform | N/A (Full-Stack) | <200ms | ✅ Production |
-| Time Series Forecasting | Transformer | MAPE: 8.2% | <50ms | 🔄 Development |
-| Computer Vision | CNN | 94.5% | <200ms | 📋 Planned |
-| NLP Classification | BERT | F1: 0.91 | <150ms | 📋 Planned |
-
-## 🤝 Contributing
-
-I welcome contributions, suggestions, and collaborations! Here's how you can get involved:
-
-### Ways to Contribute
-- 🐛 **Bug Reports**: Found an issue? Please open a GitHub issue
-- 💡 **Feature Requests**: Have ideas for improvements? Let's discuss them
-- 🔧 **Code Contributions**: Submit pull requests for enhancements
-- 📚 **Documentation**: Help improve project documentation
-- 🎓 **Knowledge Sharing**: Share insights and best practices
-
-### Contribution Guidelines
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes with proper testing
-4. Commit with clear messages (`git commit -m 'Add amazing feature'`)
-5. Push to your branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
-
-## 📚 Learning Resources
-
-### Recommended Books
-- "AI Engineering" by Chip Huyen
-- "The AI Engineering Bible" by Thomas R. Caldwell
-- "Vibe Coding: The Future of Programming" by Addy Osmani
-
-### Online Courses
-- [The AI Engineer Course 2025: Complete AI Engineer Bootcamp](https://365careers.com/) by 365 Careers
-
-### Research Papers
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - Transformer Architecture
-- [BERT: Pre-training of Deep Bidirectional Transformers](https://arxiv.org/abs/1810.04805)
-- [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper/2015)
-
-## 📞 Contact
-
-**Marcus Mayo, MS, SPC6, RTE, PMP, PMI-ACP**  
-📧 **Email:** [marcus.mayo@gmail.com](mailto:marcus.mayo@gmail.com)  
-💼 **LinkedIn:** [Marcus Mayo | LinkedIn](https://www.linkedin.com/in/marcus-mayo-ms-spc6-rte-pmp-pmi-acp/)  
-🐙 **GitHub:** [@marcusmayo](https://github.com/marcusmayo)  
-
----
-
-### 🏷️ **Portfolio Highlights**
-`machine-learning` `artificial-intelligence` `aws` `python` `production-ml` `mlops` `data-science` `deep-learning` `cloud-computing` `enterprise-ai` `serverless` `full-stack` `fine-tuning` `compliance-ai` `lora-adapters`
-
-*Ready to transform ideas into intelligent, scalable AI solutions that drive business value.*
+⭐ **Star this repository if you find it helpful!** Your support motivates me to keep building and sharing innovative ML solutions.
