@@ -23,25 +23,25 @@ CareCopilot represents a **strategic product vision** for transforming healthcar
 ### 🔍 **RAG-Powered Clinical Intelligence**
 Transform unstructured medical records into actionable insights through intelligent document retrieval and natural language understanding.
 
-![RAG System Status](carecopilot-demo/screenshots/system-status.png)
+![RAG System Status](./screenshots/system-status.png)
 *Real-time system health monitoring with 151 indexed medical documents*
 
-![RAG Query Interface](carecopilot-demo/screenshots/rag-demo.png)
+![RAG Query Interface](./screenshots/rag-demo.png)
 *Intuitive query interface designed for clinical workflow integration*
 
 ### 📊 **Intelligent Query Results**
 Advanced similarity matching delivers contextually relevant medical information with confidence scoring and source attribution.
 
-![RAG Results](carecopilot-demo/screenshots/rag-results.png)
+![RAG Results](./screenshots/rag-results.png)
 *33.4% similarity matching with sub-second response times and full source traceability*
 
 ### 🔄 **FHIR-Native Clinical Data Pipeline**
 Seamlessly convert free-text clinical notes into structured, interoperable FHIR resources ready for downstream healthcare systems.
 
-![FHIR Agent Interface](carecopilot-demo/screenshots/FHIR-input.png)
+![FHIR Agent Interface](./screenshots/FHIR-input.png)
 *Clinical note input interface with real-time patient context*
 
-![FHIR Conversion Results](carecopilot-demo/screenshots/FHIR-results.png)
+![FHIR Conversion Results](./screenshots/FHIR-results.png)
 *Automated extraction of 5 resources, 2 conditions, and 2 medications with 99.8% confidence*
 
 ---
