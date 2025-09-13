@@ -1,0 +1,3324 @@
+[
+  {
+    "id": "3b1b5e61-14a9-48cf-9059-8912020cd672",
+    "patient_id": "PT67307",
+    "patient": {
+      "id": "PT67307",
+      "name": "Robert Miller",
+      "date_of_birth": "1961-08-16",
+      "gender": "Male",
+      "mrn": "MRN740753",
+      "metadata": {
+        "age": 64,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Robert Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Robert Miller\nMRN: MRN740753\nDOB: 1961-08-16\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Atorvastatin 20mg daily\n- Furosemide 40mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.7\u00b0F\nHeart Rate: 85 bpm\nBlood Pressure: 127/85 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Amanda Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051576",
+      "word_count": 65
+    }
+  },
+  {
+    "id": "d840d893-7daf-438d-8f72-475c7ebec468",
+    "patient_id": "PT67307",
+    "patient": {
+      "id": "PT67307",
+      "name": "Robert Miller",
+      "date_of_birth": "1961-08-16",
+      "gender": "Male",
+      "mrn": "MRN740753",
+      "metadata": {
+        "age": 64,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Robert Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Robert Miller\nMRN: MRN740753\nDOB: 1961-08-16\n\nDISCHARGE DIAGNOSES:\n1. Coronary Artery Disease\n\nDISCHARGE MEDICATIONS:\n- Aspirin 81mg daily\n- Omeprazole 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.0\u00b0F\nHeart Rate: 95 bpm\nBlood Pressure: 118/84 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Ashley Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051617",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "da198640-aa9a-408f-8a12-018b1aa5424a",
+    "patient_id": "PT67307",
+    "patient": {
+      "id": "PT67307",
+      "name": "Robert Miller",
+      "date_of_birth": "1961-08-16",
+      "gender": "Male",
+      "mrn": "MRN740753",
+      "metadata": {
+        "age": 64,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Robert Miller",
+    "content": "PROGRESS NOTE\n\nPatient: Robert Miller\nMRN: MRN740753\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Type 2 Diabetes Mellitus.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 92 bpm, BP 117/80\n\nLABORATORY RESULTS:\n- Glucose: 131 mg/dL\n- Hemoglobin: 11.5 g/dL\n\nASSESSMENT AND PLAN:\n1. Type 2 Diabetes Mellitus - Continue current management\n   - Medications: Lisinopril 10mg\n\nDr. David Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051646",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "9bb1906c-6665-4e27-b57f-66395595660f",
+    "patient_id": "PT67307",
+    "patient": {
+      "id": "PT67307",
+      "name": "Robert Miller",
+      "date_of_birth": "1961-08-16",
+      "gender": "Male",
+      "mrn": "MRN740753",
+      "metadata": {
+        "age": 64,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Robert Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Robert Miller\nMRN: MRN740753\nDOB: 1961-08-16\n\nDISCHARGE DIAGNOSES:\n1. Congestive Heart Failure\n\nDISCHARGE MEDICATIONS:\n- Furosemide 40mg daily\n- Levothyroxine 75mcg daily\n- Aspirin 81mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.3\u00b0F\nHeart Rate: 90 bpm\nBlood Pressure: 111/82 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Lisa Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051670",
+      "word_count": 71
+    }
+  },
+  {
+    "id": "8e40f0f3-8fa1-4eb7-8282-e4decd60d525",
+    "patient_id": "PT17068",
+    "patient": {
+      "id": "PT17068",
+      "name": "Amanda Miller",
+      "date_of_birth": "2001-07-03",
+      "gender": "Female",
+      "mrn": "MRN495288",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Amanda Miller",
+    "content": "PROGRESS NOTE\n\nPatient: Amanda Miller\nMRN: MRN495288\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Chronic Kidney Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 69 bpm, BP 111/84\n\nLABORATORY RESULTS:\n- Glucose: 112 mg/dL\n- Hemoglobin: 15.5 g/dL\n\nASSESSMENT AND PLAN:\n1. Chronic Kidney Disease - Continue current management\n   - Medications: Gabapentin 300mg, Metformin 500mg, Furosemide 40mg\n\nDr. David Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051720",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "a1c239c7-737c-4aa2-a5bb-f905c88c91b8",
+    "patient_id": "PT17068",
+    "patient": {
+      "id": "PT17068",
+      "name": "Amanda Miller",
+      "date_of_birth": "2001-07-03",
+      "gender": "Female",
+      "mrn": "MRN495288",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Amanda Miller",
+    "content": "PROGRESS NOTE\n\nPatient: Amanda Miller\nMRN: MRN495288\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Atrial Fibrillation.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 65 bpm, BP 122/89\n\nLABORATORY RESULTS:\n- Glucose: 145 mg/dL\n- Hemoglobin: 13.4 g/dL\n\nASSESSMENT AND PLAN:\n1. Atrial Fibrillation - Continue current management\n   - Medications: Amlodipine 5mg, Furosemide 40mg\n\nDr. Amanda Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051742",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "460b1398-14bf-4330-b920-32e119593990",
+    "patient_id": "PT17068",
+    "patient": {
+      "id": "PT17068",
+      "name": "Amanda Miller",
+      "date_of_birth": "2001-07-03",
+      "gender": "Female",
+      "mrn": "MRN495288",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Amanda Miller",
+    "content": "PROGRESS NOTE\n\nPatient: Amanda Miller\nMRN: MRN495288\n\nSUBJECTIVE:\nPatient reports stable symptoms related to COPD.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 80 bpm, BP 127/72\n\nLABORATORY RESULTS:\n- Glucose: 165 mg/dL\n- Hemoglobin: 15.7 g/dL\n\nASSESSMENT AND PLAN:\n1. COPD - Continue current management\n   - Medications: Sertraline 50mg\n\nDr. John Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051762",
+      "word_count": 52
+    }
+  },
+  {
+    "id": "e1ae5c0b-e4fe-4d77-a299-d62b79624d21",
+    "patient_id": "PT35995",
+    "patient": {
+      "id": "PT35995",
+      "name": "Joseph Garcia",
+      "date_of_birth": "1941-03-23",
+      "gender": "Female",
+      "mrn": "MRN455185",
+      "metadata": {
+        "age": 84,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Joseph Garcia",
+    "content": "PROGRESS NOTE\n\nPatient: Joseph Garcia\nMRN: MRN455185\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Congestive Heart Failure.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 97 bpm, BP 140/71\n\nLABORATORY RESULTS:\n- Glucose: 180 mg/dL\n- Hemoglobin: 15.0 g/dL\n\nASSESSMENT AND PLAN:\n1. Congestive Heart Failure - Continue current management\n   - Medications: Metformin 500mg, Aspirin 81mg, Levothyroxine 75mcg\n\nDr. Michael Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051797",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "aa7f90e4-e958-4757-a3f1-1498225b3ad2",
+    "patient_id": "PT35995",
+    "patient": {
+      "id": "PT35995",
+      "name": "Joseph Garcia",
+      "date_of_birth": "1941-03-23",
+      "gender": "Female",
+      "mrn": "MRN455185",
+      "metadata": {
+        "age": 84,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Garcia\nMRN: MRN455185\nDOB: 1941-03-23\n\nDISCHARGE DIAGNOSES:\n1. Hypertension\n\nDISCHARGE MEDICATIONS:\n- Omeprazole 20mg daily\n- Atorvastatin 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.7\u00b0F\nHeart Rate: 72 bpm\nBlood Pressure: 132/88 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Lisa Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051821",
+      "word_count": 65
+    }
+  },
+  {
+    "id": "cc1c2474-f2c8-4cb9-b0eb-5cf78732feab",
+    "patient_id": "PT35995",
+    "patient": {
+      "id": "PT35995",
+      "name": "Joseph Garcia",
+      "date_of_birth": "1941-03-23",
+      "gender": "Female",
+      "mrn": "MRN455185",
+      "metadata": {
+        "age": 84,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Garcia\nMRN: MRN455185\nDOB: 1941-03-23\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Gabapentin 300mg daily\n- Furosemide 40mg daily\n- Aspirin 81mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.6\u00b0F\nHeart Rate: 79 bpm\nBlood Pressure: 115/74 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. William Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051842",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "09e07771-05a2-4e9e-b16b-bbb70d265f83",
+    "patient_id": "PT36990",
+    "patient": {
+      "id": "PT36990",
+      "name": "Ashley Brown",
+      "date_of_birth": "1994-09-06",
+      "gender": "Male",
+      "mrn": "MRN443813",
+      "metadata": {
+        "age": 31,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Brown",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Brown\nMRN: MRN443813\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Congestive Heart Failure.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 91 bpm, BP 113/79\n\nLABORATORY RESULTS:\n- Glucose: 183 mg/dL\n- Hemoglobin: 11.4 g/dL\n\nASSESSMENT AND PLAN:\n1. Congestive Heart Failure - Continue current management\n   - Medications: Sertraline 50mg, Atorvastatin 20mg, Amlodipine 5mg\n\nDr. Joseph Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051876",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "2032a1c6-01c7-489c-beb6-33b8dc72417d",
+    "patient_id": "PT36990",
+    "patient": {
+      "id": "PT36990",
+      "name": "Ashley Brown",
+      "date_of_birth": "1994-09-06",
+      "gender": "Male",
+      "mrn": "MRN443813",
+      "metadata": {
+        "age": 31,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Brown",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Brown\nMRN: MRN443813\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Atrial Fibrillation.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 93 bpm, BP 130/82\n\nLABORATORY RESULTS:\n- Glucose: 186 mg/dL\n- Hemoglobin: 12.6 g/dL\n\nASSESSMENT AND PLAN:\n1. Atrial Fibrillation - Continue current management\n   - Medications: Amlodipine 5mg, Atorvastatin 20mg\n\nDr. James Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051896",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "2c253e5f-2934-45fe-9017-0ac436e9942b",
+    "patient_id": "PT36990",
+    "patient": {
+      "id": "PT36990",
+      "name": "Ashley Brown",
+      "date_of_birth": "1994-09-06",
+      "gender": "Male",
+      "mrn": "MRN443813",
+      "metadata": {
+        "age": 31,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Brown",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Brown\nMRN: MRN443813\nDOB: 1994-09-06\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Metformin 500mg daily\n- Omeprazole 20mg daily\n- Gabapentin 300mg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.2\u00b0F\nHeart Rate: 73 bpm\nBlood Pressure: 122/71 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Emily Garcia, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051919",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "01ba64c8-e2a8-443f-837c-5c7e63e6e866",
+    "patient_id": "PT94590",
+    "patient": {
+      "id": "PT94590",
+      "name": "Amanda Johnson",
+      "date_of_birth": "1977-07-18",
+      "gender": "Female",
+      "mrn": "MRN346331",
+      "metadata": {
+        "age": 48,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Amanda Johnson",
+    "content": "PROGRESS NOTE\n\nPatient: Amanda Johnson\nMRN: MRN346331\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Osteoarthritis.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 64 bpm, BP 134/76\n\nLABORATORY RESULTS:\n- Glucose: 105 mg/dL\n- Hemoglobin: 11.6 g/dL\n\nASSESSMENT AND PLAN:\n1. Osteoarthritis - Continue current management\n   - Medications: Amlodipine 5mg, Sertraline 50mg\n\nDr. David Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051954",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "d8f1758f-da4b-4ff2-8c55-77c56343e412",
+    "patient_id": "PT94590",
+    "patient": {
+      "id": "PT94590",
+      "name": "Amanda Johnson",
+      "date_of_birth": "1977-07-18",
+      "gender": "Female",
+      "mrn": "MRN346331",
+      "metadata": {
+        "age": 48,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Amanda Johnson",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Amanda Johnson\nMRN: MRN346331\nDOB: 1977-07-18\n\nDISCHARGE DIAGNOSES:\n1. Anxiety Disorder\n\nDISCHARGE MEDICATIONS:\n- Levothyroxine 75mcg daily\n- Furosemide 40mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.8\u00b0F\nHeart Rate: 66 bpm\nBlood Pressure: 140/76 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. John Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051972",
+      "word_count": 66
+    }
+  },
+  {
+    "id": "f5fa06e1-2206-484f-8481-8cc078745de3",
+    "patient_id": "PT94590",
+    "patient": {
+      "id": "PT94590",
+      "name": "Amanda Johnson",
+      "date_of_birth": "1977-07-18",
+      "gender": "Female",
+      "mrn": "MRN346331",
+      "metadata": {
+        "age": 48,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Amanda Johnson",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Amanda Johnson\nMRN: MRN346331\nDOB: 1977-07-18\n\nDISCHARGE DIAGNOSES:\n1. Congestive Heart Failure\n\nDISCHARGE MEDICATIONS:\n- Levothyroxine 75mcg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.3\u00b0F\nHeart Rate: 83 bpm\nBlood Pressure: 115/90 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jessica Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.051995",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "8294ddfe-6cc3-40f0-a793-2cc3d42c9d85",
+    "patient_id": "PT46694",
+    "patient": {
+      "id": "PT46694",
+      "name": "Lisa Martinez",
+      "date_of_birth": "2006-10-21",
+      "gender": "Male",
+      "mrn": "MRN242948",
+      "metadata": {
+        "age": 18,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Lisa Martinez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Lisa Martinez\nMRN: MRN242948\nDOB: 2006-10-21\n\nDISCHARGE DIAGNOSES:\n1. Atrial Fibrillation\n\nDISCHARGE MEDICATIONS:\n- Gabapentin 300mg daily\n- Furosemide 40mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.9\u00b0F\nHeart Rate: 79 bpm\nBlood Pressure: 126/77 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Robert Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052026",
+      "word_count": 66
+    }
+  },
+  {
+    "id": "bb09b599-8d82-4d0f-ad98-570eb9bb5ab3",
+    "patient_id": "PT46694",
+    "patient": {
+      "id": "PT46694",
+      "name": "Lisa Martinez",
+      "date_of_birth": "2006-10-21",
+      "gender": "Male",
+      "mrn": "MRN242948",
+      "metadata": {
+        "age": 18,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Lisa Martinez",
+    "content": "PROGRESS NOTE\n\nPatient: Lisa Martinez\nMRN: MRN242948\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Coronary Artery Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 80 bpm, BP 132/83\n\nLABORATORY RESULTS:\n- Glucose: 159 mg/dL\n- Hemoglobin: 16.4 g/dL\n\nASSESSMENT AND PLAN:\n1. Coronary Artery Disease - Continue current management\n   - Medications: Aspirin 81mg\n\nDr. Lisa Lopez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052045",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "f4d74bf7-b5cc-408d-96ca-f61f2f87d3eb",
+    "patient_id": "PT46694",
+    "patient": {
+      "id": "PT46694",
+      "name": "Lisa Martinez",
+      "date_of_birth": "2006-10-21",
+      "gender": "Male",
+      "mrn": "MRN242948",
+      "metadata": {
+        "age": 18,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Lisa Martinez",
+    "content": "PROGRESS NOTE\n\nPatient: Lisa Martinez\nMRN: MRN242948\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 77 bpm, BP 130/75\n\nLABORATORY RESULTS:\n- Glucose: 135 mg/dL\n- Hemoglobin: 10.2 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Amlodipine 5mg, Atorvastatin 20mg, Levothyroxine 75mcg\n\nDr. Amanda Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052069",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "d42d2bca-4c39-4aa5-84c6-887acce15bd8",
+    "patient_id": "PT46694",
+    "patient": {
+      "id": "PT46694",
+      "name": "Lisa Martinez",
+      "date_of_birth": "2006-10-21",
+      "gender": "Male",
+      "mrn": "MRN242948",
+      "metadata": {
+        "age": 18,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Lisa Martinez",
+    "content": "PROGRESS NOTE\n\nPatient: Lisa Martinez\nMRN: MRN242948\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Type 2 Diabetes Mellitus.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 71 bpm, BP 128/81\n\nLABORATORY RESULTS:\n- Glucose: 120 mg/dL\n- Hemoglobin: 12.5 g/dL\n\nASSESSMENT AND PLAN:\n1. Type 2 Diabetes Mellitus - Continue current management\n   - Medications: Gabapentin 300mg, Omeprazole 20mg, Lisinopril 10mg\n\nDr. Jessica Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052088",
+      "word_count": 62
+    }
+  },
+  {
+    "id": "83c7d401-6c53-4e57-ab2f-17e828d25ced",
+    "patient_id": "PT97850",
+    "patient": {
+      "id": "PT97850",
+      "name": "Emily Brown",
+      "date_of_birth": "1990-08-29",
+      "gender": "Female",
+      "mrn": "MRN225948",
+      "metadata": {
+        "age": 35,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Emily Brown",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Emily Brown\nMRN: MRN225948\nDOB: 1990-08-29\n\nDISCHARGE DIAGNOSES:\n1. Coronary Artery Disease\n\nDISCHARGE MEDICATIONS:\n- Aspirin 81mg daily\n- Atorvastatin 20mg daily\n- Amlodipine 5mg daily\n- Levothyroxine 75mcg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.1\u00b0F\nHeart Rate: 93 bpm\nBlood Pressure: 112/84 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jane Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052119",
+      "word_count": 75
+    }
+  },
+  {
+    "id": "97ebf8e9-3b90-4ec6-b171-86aa37626a8f",
+    "patient_id": "PT97850",
+    "patient": {
+      "id": "PT97850",
+      "name": "Emily Brown",
+      "date_of_birth": "1990-08-29",
+      "gender": "Female",
+      "mrn": "MRN225948",
+      "metadata": {
+        "age": 35,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Emily Brown",
+    "content": "PROGRESS NOTE\n\nPatient: Emily Brown\nMRN: MRN225948\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Osteoarthritis.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 87 bpm, BP 120/77\n\nLABORATORY RESULTS:\n- Glucose: 94 mg/dL\n- Hemoglobin: 10.8 g/dL\n\nASSESSMENT AND PLAN:\n1. Osteoarthritis - Continue current management\n   - Medications: Amlodipine 5mg, Aspirin 81mg, Sertraline 50mg\n\nDr. Lisa Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052140",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "cd48a5a4-a174-4169-bd58-02d56fdb3dad",
+    "patient_id": "PT97850",
+    "patient": {
+      "id": "PT97850",
+      "name": "Emily Brown",
+      "date_of_birth": "1990-08-29",
+      "gender": "Female",
+      "mrn": "MRN225948",
+      "metadata": {
+        "age": 35,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Emily Brown",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Emily Brown\nMRN: MRN225948\nDOB: 1990-08-29\n\nDISCHARGE DIAGNOSES:\n1. Osteoarthritis\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Gabapentin 300mg daily\n- Amlodipine 5mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.7\u00b0F\nHeart Rate: 98 bpm\nBlood Pressure: 118/72 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Ashley Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052159",
+      "word_count": 69
+    }
+  },
+  {
+    "id": "378efcdc-38e3-4b23-a485-caea7a2e7d13",
+    "patient_id": "PT32429",
+    "patient": {
+      "id": "PT32429",
+      "name": "Richard Smith",
+      "date_of_birth": "1963-09-05",
+      "gender": "Male",
+      "mrn": "MRN847847",
+      "metadata": {
+        "age": 62,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Richard Smith",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Richard Smith\nMRN: MRN847847\nDOB: 1963-09-05\n\nDISCHARGE DIAGNOSES:\n1. Congestive Heart Failure\n\nDISCHARGE MEDICATIONS:\n- Atorvastatin 20mg daily\n- Levothyroxine 75mcg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.8\u00b0F\nHeart Rate: 79 bpm\nBlood Pressure: 136/89 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. James Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052194",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "f2272bd8-99e9-4389-abe5-7184b3305273",
+    "patient_id": "PT32429",
+    "patient": {
+      "id": "PT32429",
+      "name": "Richard Smith",
+      "date_of_birth": "1963-09-05",
+      "gender": "Male",
+      "mrn": "MRN847847",
+      "metadata": {
+        "age": 62,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Richard Smith",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Richard Smith\nMRN: MRN847847\nDOB: 1963-09-05\n\nDISCHARGE DIAGNOSES:\n1. Type 2 Diabetes Mellitus\n\nDISCHARGE MEDICATIONS:\n- Gabapentin 300mg daily\n- Aspirin 81mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.8\u00b0F\nHeart Rate: 88 bpm\nBlood Pressure: 136/74 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jane Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052213",
+      "word_count": 68
+    }
+  },
+  {
+    "id": "9f2ff304-3145-4425-862d-f77de7741e4f",
+    "patient_id": "PT32429",
+    "patient": {
+      "id": "PT32429",
+      "name": "Richard Smith",
+      "date_of_birth": "1963-09-05",
+      "gender": "Male",
+      "mrn": "MRN847847",
+      "metadata": {
+        "age": 62,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Richard Smith",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Richard Smith\nMRN: MRN847847\nDOB: 1963-09-05\n\nDISCHARGE DIAGNOSES:\n1. Chronic Kidney Disease\n\nDISCHARGE MEDICATIONS:\n- Amlodipine 5mg daily\n- Levothyroxine 75mcg daily\n- Sertraline 50mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.8\u00b0F\nHeart Rate: 93 bpm\nBlood Pressure: 119/75 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Robert Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052232",
+      "word_count": 71
+    }
+  },
+  {
+    "id": "ee605d78-7bdd-403f-a023-5fa516ab7a67",
+    "patient_id": "PT32429",
+    "patient": {
+      "id": "PT32429",
+      "name": "Richard Smith",
+      "date_of_birth": "1963-09-05",
+      "gender": "Male",
+      "mrn": "MRN847847",
+      "metadata": {
+        "age": 62,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Smith",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Smith\nMRN: MRN847847\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Chronic Kidney Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 66 bpm, BP 112/72\n\nLABORATORY RESULTS:\n- Glucose: 148 mg/dL\n- Hemoglobin: 11.3 g/dL\n\nASSESSMENT AND PLAN:\n1. Chronic Kidney Disease - Continue current management\n   - Medications: Metformin 500mg, Amlodipine 5mg, Lisinopril 10mg\n\nDr. Lisa Garcia, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052253",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "c4177879-892e-4705-8ef8-6063c75491e5",
+    "patient_id": "PT22977",
+    "patient": {
+      "id": "PT22977",
+      "name": "Richard Garcia",
+      "date_of_birth": "1972-11-07",
+      "gender": "Male",
+      "mrn": "MRN206508",
+      "metadata": {
+        "age": 52,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Garcia",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Garcia\nMRN: MRN206508\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Type 2 Diabetes Mellitus.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 92 bpm, BP 139/90\n\nLABORATORY RESULTS:\n- Glucose: 140 mg/dL\n- Hemoglobin: 12.4 g/dL\n\nASSESSMENT AND PLAN:\n1. Type 2 Diabetes Mellitus - Continue current management\n   - Medications: Sertraline 50mg, Furosemide 40mg\n\nDr. William Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052294",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "21a6efd5-b4b4-4903-b3a8-bc55d75837b7",
+    "patient_id": "PT22977",
+    "patient": {
+      "id": "PT22977",
+      "name": "Richard Garcia",
+      "date_of_birth": "1972-11-07",
+      "gender": "Male",
+      "mrn": "MRN206508",
+      "metadata": {
+        "age": 52,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Richard Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Richard Garcia\nMRN: MRN206508\nDOB: 1972-11-07\n\nDISCHARGE DIAGNOSES:\n1. Anxiety Disorder\n\nDISCHARGE MEDICATIONS:\n- Omeprazole 20mg daily\n- Furosemide 40mg daily\n- Metformin 500mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.4\u00b0F\nHeart Rate: 91 bpm\nBlood Pressure: 113/82 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Michael Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052332",
+      "word_count": 70
+    }
+  },
+  {
+    "id": "b10c56eb-147c-438d-b4f5-40e1b594a819",
+    "patient_id": "PT22977",
+    "patient": {
+      "id": "PT22977",
+      "name": "Richard Garcia",
+      "date_of_birth": "1972-11-07",
+      "gender": "Male",
+      "mrn": "MRN206508",
+      "metadata": {
+        "age": 52,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Garcia",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Garcia\nMRN: MRN206508\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Type 2 Diabetes Mellitus.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 79 bpm, BP 136/82\n\nLABORATORY RESULTS:\n- Glucose: 160 mg/dL\n- Hemoglobin: 14.6 g/dL\n\nASSESSMENT AND PLAN:\n1. Type 2 Diabetes Mellitus - Continue current management\n   - Medications: Amlodipine 5mg\n\nDr. James Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052354",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "dfa5df7d-8f1d-4ed4-b8b8-104fbd200a05",
+    "patient_id": "PT85754",
+    "patient": {
+      "id": "PT85754",
+      "name": "James Jones",
+      "date_of_birth": "2000-03-11",
+      "gender": "Male",
+      "mrn": "MRN195249",
+      "metadata": {
+        "age": 25,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - James Jones",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: James Jones\nMRN: MRN195249\nDOB: 2000-03-11\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Gabapentin 300mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.1\u00b0F\nHeart Rate: 100 bpm\nBlood Pressure: 111/82 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. John Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052384",
+      "word_count": 65
+    }
+  },
+  {
+    "id": "24c1314c-bac8-44ce-8f1b-b6ab7c85b2ee",
+    "patient_id": "PT85754",
+    "patient": {
+      "id": "PT85754",
+      "name": "James Jones",
+      "date_of_birth": "2000-03-11",
+      "gender": "Male",
+      "mrn": "MRN195249",
+      "metadata": {
+        "age": 25,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - James Jones",
+    "content": "PROGRESS NOTE\n\nPatient: James Jones\nMRN: MRN195249\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Coronary Artery Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 97 bpm, BP 137/83\n\nLABORATORY RESULTS:\n- Glucose: 150 mg/dL\n- Hemoglobin: 10.6 g/dL\n\nASSESSMENT AND PLAN:\n1. Coronary Artery Disease - Continue current management\n   - Medications: Amlodipine 5mg, Lisinopril 10mg, Aspirin 81mg\n\nDr. John Garcia, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052404",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "ec142d10-2b0c-4ab6-8fbb-393359b868ac",
+    "patient_id": "PT52510",
+    "patient": {
+      "id": "PT52510",
+      "name": "Jane Garcia",
+      "date_of_birth": "2001-04-15",
+      "gender": "Female",
+      "mrn": "MRN793316",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Jane Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Jane Garcia\nMRN: MRN793316\nDOB: 2001-04-15\n\nDISCHARGE DIAGNOSES:\n1. Atrial Fibrillation\n\nDISCHARGE MEDICATIONS:\n- Amlodipine 5mg daily\n- Gabapentin 300mg daily\n- Levothyroxine 75mcg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.8\u00b0F\nHeart Rate: 79 bpm\nBlood Pressure: 117/90 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. David Jones, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052433",
+      "word_count": 70
+    }
+  },
+  {
+    "id": "1815e040-7e26-4ec6-94fd-f9fa10a8db86",
+    "patient_id": "PT52510",
+    "patient": {
+      "id": "PT52510",
+      "name": "Jane Garcia",
+      "date_of_birth": "2001-04-15",
+      "gender": "Female",
+      "mrn": "MRN793316",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Jane Garcia",
+    "content": "PROGRESS NOTE\n\nPatient: Jane Garcia\nMRN: MRN793316\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 90 bpm, BP 135/88\n\nLABORATORY RESULTS:\n- Glucose: 120 mg/dL\n- Hemoglobin: 16.2 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Sertraline 50mg, Furosemide 40mg, Atorvastatin 20mg\n\nDr. David Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052453",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "71d8ad6d-490e-495c-a501-00d40961cba5",
+    "patient_id": "PT69613",
+    "patient": {
+      "id": "PT69613",
+      "name": "Richard Miller",
+      "date_of_birth": "1975-05-08",
+      "gender": "Female",
+      "mrn": "MRN196649",
+      "metadata": {
+        "age": 50,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Miller",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Miller\nMRN: MRN196649\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 89 bpm, BP 134/86\n\nLABORATORY RESULTS:\n- Glucose: 104 mg/dL\n- Hemoglobin: 13.9 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Amlodipine 5mg, Omeprazole 20mg\n\nDr. Lisa Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052482",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "d9012489-f79d-4d2c-a57f-8e31cc48a884",
+    "patient_id": "PT69613",
+    "patient": {
+      "id": "PT69613",
+      "name": "Richard Miller",
+      "date_of_birth": "1975-05-08",
+      "gender": "Female",
+      "mrn": "MRN196649",
+      "metadata": {
+        "age": 50,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Richard Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Richard Miller\nMRN: MRN196649\nDOB: 1975-05-08\n\nDISCHARGE DIAGNOSES:\n1. Chronic Kidney Disease\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Gabapentin 300mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.3\u00b0F\nHeart Rate: 68 bpm\nBlood Pressure: 130/72 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Ashley Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052500",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "f4ed3bb8-9fe4-40be-a9d3-416a60d771d1",
+    "patient_id": "PT60790",
+    "patient": {
+      "id": "PT60790",
+      "name": "Ashley Hernandez",
+      "date_of_birth": "2001-07-28",
+      "gender": "Male",
+      "mrn": "MRN272912",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Hernandez",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Hernandez\nMRN: MRN272912\n\nSUBJECTIVE:\nPatient reports stable symptoms related to COPD.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 98 bpm, BP 112/78\n\nLABORATORY RESULTS:\n- Glucose: 92 mg/dL\n- Hemoglobin: 15.5 g/dL\n\nASSESSMENT AND PLAN:\n1. COPD - Continue current management\n   - Medications: Amlodipine 5mg, Omeprazole 20mg, Gabapentin 300mg\n\nDr. Michael Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052531",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "dbc44d34-27ec-4109-9d1b-d4de030dd942",
+    "patient_id": "PT60790",
+    "patient": {
+      "id": "PT60790",
+      "name": "Ashley Hernandez",
+      "date_of_birth": "2001-07-28",
+      "gender": "Male",
+      "mrn": "MRN272912",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Hernandez",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Hernandez\nMRN: MRN272912\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Osteoarthritis.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 71 bpm, BP 111/71\n\nLABORATORY RESULTS:\n- Glucose: 97 mg/dL\n- Hemoglobin: 12.5 g/dL\n\nASSESSMENT AND PLAN:\n1. Osteoarthritis - Continue current management\n   - Medications: Sertraline 50mg\n\nDr. Ashley Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052552",
+      "word_count": 52
+    }
+  },
+  {
+    "id": "ef0eed6b-cef1-4b90-97d3-dd23ab6bd834",
+    "patient_id": "PT60790",
+    "patient": {
+      "id": "PT60790",
+      "name": "Ashley Hernandez",
+      "date_of_birth": "2001-07-28",
+      "gender": "Male",
+      "mrn": "MRN272912",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Hernandez",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Hernandez\nMRN: MRN272912\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Congestive Heart Failure.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 64 bpm, BP 139/85\n\nLABORATORY RESULTS:\n- Glucose: 195 mg/dL\n- Hemoglobin: 14.9 g/dL\n\nASSESSMENT AND PLAN:\n1. Congestive Heart Failure - Continue current management\n   - Medications: Metformin 500mg\n\nDr. David Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052569",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "043a9b9b-e0fd-4df0-8c3f-b5e71d3615b0",
+    "patient_id": "PT23595",
+    "patient": {
+      "id": "PT23595",
+      "name": "Jane Garcia",
+      "date_of_birth": "1979-11-14",
+      "gender": "Female",
+      "mrn": "MRN244262",
+      "metadata": {
+        "age": 45,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Jane Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Jane Garcia\nMRN: MRN244262\nDOB: 1979-11-14\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Metformin 500mg daily\n- Gabapentin 300mg daily\n- Omeprazole 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.4\u00b0F\nHeart Rate: 82 bpm\nBlood Pressure: 128/83 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Robert Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052599",
+      "word_count": 69
+    }
+  },
+  {
+    "id": "4ff9a033-bc7a-4ebc-b72a-2f6feeb553b3",
+    "patient_id": "PT23595",
+    "patient": {
+      "id": "PT23595",
+      "name": "Jane Garcia",
+      "date_of_birth": "1979-11-14",
+      "gender": "Female",
+      "mrn": "MRN244262",
+      "metadata": {
+        "age": 45,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Jane Garcia",
+    "content": "PROGRESS NOTE\n\nPatient: Jane Garcia\nMRN: MRN244262\n\nSUBJECTIVE:\nPatient reports stable symptoms related to COPD.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 70 bpm, BP 134/78\n\nLABORATORY RESULTS:\n- Glucose: 96 mg/dL\n- Hemoglobin: 16.3 g/dL\n\nASSESSMENT AND PLAN:\n1. COPD - Continue current management\n   - Medications: Atorvastatin 20mg, Furosemide 40mg, Levothyroxine 75mcg\n\nDr. Richard Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052623",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "42bd4628-2d7a-41e2-9734-158aa7e8e8bc",
+    "patient_id": "PT44901",
+    "patient": {
+      "id": "PT44901",
+      "name": "Richard Hernandez",
+      "date_of_birth": "2007-06-24",
+      "gender": "Female",
+      "mrn": "MRN658964",
+      "metadata": {
+        "age": 18,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Hernandez",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Hernandez\nMRN: MRN658964\n\nSUBJECTIVE:\nPatient reports stable symptoms related to COPD.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 83 bpm, BP 110/89\n\nLABORATORY RESULTS:\n- Glucose: 111 mg/dL\n- Hemoglobin: 15.1 g/dL\n\nASSESSMENT AND PLAN:\n1. COPD - Continue current management\n   - Medications: Lisinopril 10mg, Gabapentin 300mg\n\nDr. Robert Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052656",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "50d96877-52ce-4bac-893b-41ca43cc87e1",
+    "patient_id": "PT44901",
+    "patient": {
+      "id": "PT44901",
+      "name": "Richard Hernandez",
+      "date_of_birth": "2007-06-24",
+      "gender": "Female",
+      "mrn": "MRN658964",
+      "metadata": {
+        "age": 18,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Hernandez",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Hernandez\nMRN: MRN658964\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Osteoarthritis.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 90 bpm, BP 120/89\n\nLABORATORY RESULTS:\n- Glucose: 168 mg/dL\n- Hemoglobin: 11.1 g/dL\n\nASSESSMENT AND PLAN:\n1. Osteoarthritis - Continue current management\n   - Medications: Levothyroxine 75mcg\n\nDr. Emily Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052674",
+      "word_count": 52
+    }
+  },
+  {
+    "id": "0f46ab98-f2f8-4b33-b22a-bb241de6b64a",
+    "patient_id": "PT44901",
+    "patient": {
+      "id": "PT44901",
+      "name": "Richard Hernandez",
+      "date_of_birth": "2007-06-24",
+      "gender": "Female",
+      "mrn": "MRN658964",
+      "metadata": {
+        "age": 18,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Richard Hernandez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Richard Hernandez\nMRN: MRN658964\nDOB: 2007-06-24\n\nDISCHARGE DIAGNOSES:\n1. Chronic Kidney Disease\n\nDISCHARGE MEDICATIONS:\n- Furosemide 40mg daily\n- Metformin 500mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.1\u00b0F\nHeart Rate: 70 bpm\nBlood Pressure: 127/80 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Amanda Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052692",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "9f1c5c24-32c9-40d1-8adc-af95c0ecc129",
+    "patient_id": "PT44901",
+    "patient": {
+      "id": "PT44901",
+      "name": "Richard Hernandez",
+      "date_of_birth": "2007-06-24",
+      "gender": "Female",
+      "mrn": "MRN658964",
+      "metadata": {
+        "age": 18,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Hernandez",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Hernandez\nMRN: MRN658964\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 69 bpm, BP 118/87\n\nLABORATORY RESULTS:\n- Glucose: 176 mg/dL\n- Hemoglobin: 16.7 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Sertraline 50mg\n\nDr. Jane Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052711",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "142d651f-87a7-45fa-a679-0701e8b886b2",
+    "patient_id": "PT65974",
+    "patient": {
+      "id": "PT65974",
+      "name": "Emily Garcia",
+      "date_of_birth": "1950-10-08",
+      "gender": "Male",
+      "mrn": "MRN241915",
+      "metadata": {
+        "age": 74,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Emily Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Emily Garcia\nMRN: MRN241915\nDOB: 1950-10-08\n\nDISCHARGE DIAGNOSES:\n1. Chronic Kidney Disease\n\nDISCHARGE MEDICATIONS:\n- Aspirin 81mg daily\n- Metformin 500mg daily\n- Lisinopril 10mg daily\n- Furosemide 40mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.1\u00b0F\nHeart Rate: 70 bpm\nBlood Pressure: 113/74 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jessica Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052740",
+      "word_count": 75
+    }
+  },
+  {
+    "id": "c31254ff-4d4b-4f61-9196-e4520a5d65cd",
+    "patient_id": "PT65974",
+    "patient": {
+      "id": "PT65974",
+      "name": "Emily Garcia",
+      "date_of_birth": "1950-10-08",
+      "gender": "Male",
+      "mrn": "MRN241915",
+      "metadata": {
+        "age": 74,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Emily Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Emily Garcia\nMRN: MRN241915\nDOB: 1950-10-08\n\nDISCHARGE DIAGNOSES:\n1. Hypertension\n\nDISCHARGE MEDICATIONS:\n- Aspirin 81mg daily\n- Gabapentin 300mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.2\u00b0F\nHeart Rate: 80 bpm\nBlood Pressure: 117/78 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Lisa Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052762",
+      "word_count": 65
+    }
+  },
+  {
+    "id": "c55928eb-c666-40d5-972d-6a49b2e71438",
+    "patient_id": "PT65974",
+    "patient": {
+      "id": "PT65974",
+      "name": "Emily Garcia",
+      "date_of_birth": "1950-10-08",
+      "gender": "Male",
+      "mrn": "MRN241915",
+      "metadata": {
+        "age": 74,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Emily Garcia",
+    "content": "PROGRESS NOTE\n\nPatient: Emily Garcia\nMRN: MRN241915\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 99 bpm, BP 128/81\n\nLABORATORY RESULTS:\n- Glucose: 197 mg/dL\n- Hemoglobin: 16.6 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Aspirin 81mg, Lisinopril 10mg\n\nDr. Michael Garcia, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052781",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "fece23cb-7735-4922-b15c-6d411704c646",
+    "patient_id": "PT65974",
+    "patient": {
+      "id": "PT65974",
+      "name": "Emily Garcia",
+      "date_of_birth": "1950-10-08",
+      "gender": "Male",
+      "mrn": "MRN241915",
+      "metadata": {
+        "age": 74,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Emily Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Emily Garcia\nMRN: MRN241915\nDOB: 1950-10-08\n\nDISCHARGE DIAGNOSES:\n1. Hypertension\n\nDISCHARGE MEDICATIONS:\n- Omeprazole 20mg daily\n- Levothyroxine 75mcg daily\n- Metformin 500mg daily\n- Sertraline 50mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.9\u00b0F\nHeart Rate: 84 bpm\nBlood Pressure: 115/76 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Richard Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052800",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "61fb52d2-387b-4b51-a1ec-31e98a12bce2",
+    "patient_id": "PT71931",
+    "patient": {
+      "id": "PT71931",
+      "name": "Emily Williams",
+      "date_of_birth": "1968-06-02",
+      "gender": "Female",
+      "mrn": "MRN538053",
+      "metadata": {
+        "age": 57,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Emily Williams",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Emily Williams\nMRN: MRN538053\nDOB: 1968-06-02\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Sertraline 50mg daily\n- Metformin 500mg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.9\u00b0F\nHeart Rate: 95 bpm\nBlood Pressure: 115/71 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. John Lopez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052831",
+      "word_count": 69
+    }
+  },
+  {
+    "id": "481455e2-9123-47f4-a24b-c8a847d50d5c",
+    "patient_id": "PT71931",
+    "patient": {
+      "id": "PT71931",
+      "name": "Emily Williams",
+      "date_of_birth": "1968-06-02",
+      "gender": "Female",
+      "mrn": "MRN538053",
+      "metadata": {
+        "age": 57,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Emily Williams",
+    "content": "PROGRESS NOTE\n\nPatient: Emily Williams\nMRN: MRN538053\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Hypertension.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 80 bpm, BP 132/89\n\nLABORATORY RESULTS:\n- Glucose: 98 mg/dL\n- Hemoglobin: 10.7 g/dL\n\nASSESSMENT AND PLAN:\n1. Hypertension - Continue current management\n   - Medications: Metformin 500mg, Omeprazole 20mg\n\nDr. John Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052856",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "01562434-c92e-4996-acbe-30e3a79257a5",
+    "patient_id": "PT71931",
+    "patient": {
+      "id": "PT71931",
+      "name": "Emily Williams",
+      "date_of_birth": "1968-06-02",
+      "gender": "Female",
+      "mrn": "MRN538053",
+      "metadata": {
+        "age": 57,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Emily Williams",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Emily Williams\nMRN: MRN538053\nDOB: 1968-06-02\n\nDISCHARGE DIAGNOSES:\n1. Anxiety Disorder\n\nDISCHARGE MEDICATIONS:\n- Metformin 500mg daily\n- Amlodipine 5mg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.6\u00b0F\nHeart Rate: 99 bpm\nBlood Pressure: 135/83 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Richard Jones, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052874",
+      "word_count": 70
+    }
+  },
+  {
+    "id": "8e434f58-68ea-4db1-8161-656d3213d6bf",
+    "patient_id": "PT21999",
+    "patient": {
+      "id": "PT21999",
+      "name": "Lisa Johnson",
+      "date_of_birth": "1972-03-19",
+      "gender": "Male",
+      "mrn": "MRN270016",
+      "metadata": {
+        "age": 53,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Lisa Johnson",
+    "content": "PROGRESS NOTE\n\nPatient: Lisa Johnson\nMRN: MRN270016\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Chronic Kidney Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 95 bpm, BP 127/78\n\nLABORATORY RESULTS:\n- Glucose: 87 mg/dL\n- Hemoglobin: 11.7 g/dL\n\nASSESSMENT AND PLAN:\n1. Chronic Kidney Disease - Continue current management\n   - Medications: Levothyroxine 75mcg, Sertraline 50mg, Furosemide 40mg\n\nDr. Ashley Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052908",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "22fbdcc5-8dd1-4d6b-8d02-27a152e6f9aa",
+    "patient_id": "PT21999",
+    "patient": {
+      "id": "PT21999",
+      "name": "Lisa Johnson",
+      "date_of_birth": "1972-03-19",
+      "gender": "Male",
+      "mrn": "MRN270016",
+      "metadata": {
+        "age": 53,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Lisa Johnson",
+    "content": "PROGRESS NOTE\n\nPatient: Lisa Johnson\nMRN: MRN270016\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Depression.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 89 bpm, BP 137/83\n\nLABORATORY RESULTS:\n- Glucose: 94 mg/dL\n- Hemoglobin: 10.2 g/dL\n\nASSESSMENT AND PLAN:\n1. Depression - Continue current management\n   - Medications: Gabapentin 300mg, Metformin 500mg\n\nDr. Amanda Garcia, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052927",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "8bf0479e-4db4-4241-bf68-ac47130989bf",
+    "patient_id": "PT54097",
+    "patient": {
+      "id": "PT54097",
+      "name": "Robert Williams",
+      "date_of_birth": "1954-12-20",
+      "gender": "Male",
+      "mrn": "MRN919079",
+      "metadata": {
+        "age": 70,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Robert Williams",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Robert Williams\nMRN: MRN919079\nDOB: 1954-12-20\n\nDISCHARGE DIAGNOSES:\n1. Chronic Kidney Disease\n\nDISCHARGE MEDICATIONS:\n- Aspirin 81mg daily\n- Sertraline 50mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.9\u00b0F\nHeart Rate: 77 bpm\nBlood Pressure: 127/83 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. James Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052956",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "f291490b-3c28-4e7a-95c8-3df1e2f858a2",
+    "patient_id": "PT54097",
+    "patient": {
+      "id": "PT54097",
+      "name": "Robert Williams",
+      "date_of_birth": "1954-12-20",
+      "gender": "Male",
+      "mrn": "MRN919079",
+      "metadata": {
+        "age": 70,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Robert Williams",
+    "content": "PROGRESS NOTE\n\nPatient: Robert Williams\nMRN: MRN919079\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Atrial Fibrillation.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 73 bpm, BP 116/79\n\nLABORATORY RESULTS:\n- Glucose: 118 mg/dL\n- Hemoglobin: 10.5 g/dL\n\nASSESSMENT AND PLAN:\n1. Atrial Fibrillation - Continue current management\n   - Medications: Metformin 500mg\n\nDr. Joseph Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.052974",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "54a21d23-d431-4bf9-9bfc-df80181857c7",
+    "patient_id": "PT86156",
+    "patient": {
+      "id": "PT86156",
+      "name": "Emily Martinez",
+      "date_of_birth": "1992-06-05",
+      "gender": "Male",
+      "mrn": "MRN963507",
+      "metadata": {
+        "age": 33,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Emily Martinez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Emily Martinez\nMRN: MRN963507\nDOB: 1992-06-05\n\nDISCHARGE DIAGNOSES:\n1. Congestive Heart Failure\n\nDISCHARGE MEDICATIONS:\n- Gabapentin 300mg daily\n- Omeprazole 20mg daily\n- Atorvastatin 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.9\u00b0F\nHeart Rate: 65 bpm\nBlood Pressure: 127/88 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jane Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053003",
+      "word_count": 71
+    }
+  },
+  {
+    "id": "6af1fd73-269a-40f7-9a79-9f43c8faf292",
+    "patient_id": "PT86156",
+    "patient": {
+      "id": "PT86156",
+      "name": "Emily Martinez",
+      "date_of_birth": "1992-06-05",
+      "gender": "Male",
+      "mrn": "MRN963507",
+      "metadata": {
+        "age": 33,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Emily Martinez",
+    "content": "PROGRESS NOTE\n\nPatient: Emily Martinez\nMRN: MRN963507\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Depression.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 75 bpm, BP 134/81\n\nLABORATORY RESULTS:\n- Glucose: 104 mg/dL\n- Hemoglobin: 16.4 g/dL\n\nASSESSMENT AND PLAN:\n1. Depression - Continue current management\n   - Medications: Lisinopril 10mg, Levothyroxine 75mcg\n\nDr. Jessica Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053023",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "8d9a1e76-72ac-4e71-a228-e80d2c1cc80e",
+    "patient_id": "PT86156",
+    "patient": {
+      "id": "PT86156",
+      "name": "Emily Martinez",
+      "date_of_birth": "1992-06-05",
+      "gender": "Male",
+      "mrn": "MRN963507",
+      "metadata": {
+        "age": 33,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Emily Martinez",
+    "content": "PROGRESS NOTE\n\nPatient: Emily Martinez\nMRN: MRN963507\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Chronic Kidney Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 82 bpm, BP 118/78\n\nLABORATORY RESULTS:\n- Glucose: 106 mg/dL\n- Hemoglobin: 14.4 g/dL\n\nASSESSMENT AND PLAN:\n1. Chronic Kidney Disease - Continue current management\n   - Medications: Levothyroxine 75mcg\n\nDr. David Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053040",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "4c9138b9-6fa7-4274-99ad-60c0f6be2874",
+    "patient_id": "PT49042",
+    "patient": {
+      "id": "PT49042",
+      "name": "Ashley Miller",
+      "date_of_birth": "1968-02-06",
+      "gender": "Male",
+      "mrn": "MRN394601",
+      "metadata": {
+        "age": 57,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Miller\nMRN: MRN394601\nDOB: 1968-02-06\n\nDISCHARGE DIAGNOSES:\n1. Atrial Fibrillation\n\nDISCHARGE MEDICATIONS:\n- Levothyroxine 75mcg daily\n- Aspirin 81mg daily\n- Omeprazole 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.9\u00b0F\nHeart Rate: 76 bpm\nBlood Pressure: 129/89 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Ashley Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053069",
+      "word_count": 70
+    }
+  },
+  {
+    "id": "57252e5b-1f05-45da-ad19-d4028df65f1d",
+    "patient_id": "PT49042",
+    "patient": {
+      "id": "PT49042",
+      "name": "Ashley Miller",
+      "date_of_birth": "1968-02-06",
+      "gender": "Male",
+      "mrn": "MRN394601",
+      "metadata": {
+        "age": 57,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Miller\nMRN: MRN394601\nDOB: 1968-02-06\n\nDISCHARGE DIAGNOSES:\n1. Type 2 Diabetes Mellitus\n\nDISCHARGE MEDICATIONS:\n- Amlodipine 5mg daily\n- Atorvastatin 20mg daily\n- Metformin 500mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.7\u00b0F\nHeart Rate: 97 bpm\nBlood Pressure: 119/73 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Ashley Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053088",
+      "word_count": 72
+    }
+  },
+  {
+    "id": "8773a456-78c5-4b12-a8e8-29f79a154858",
+    "patient_id": "PT49042",
+    "patient": {
+      "id": "PT49042",
+      "name": "Ashley Miller",
+      "date_of_birth": "1968-02-06",
+      "gender": "Male",
+      "mrn": "MRN394601",
+      "metadata": {
+        "age": 57,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Miller\nMRN: MRN394601\nDOB: 1968-02-06\n\nDISCHARGE DIAGNOSES:\n1. Coronary Artery Disease\n\nDISCHARGE MEDICATIONS:\n- Metformin 500mg daily\n- Furosemide 40mg daily\n- Sertraline 50mg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.3\u00b0F\nHeart Rate: 69 bpm\nBlood Pressure: 125/86 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. David Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053107",
+      "word_count": 75
+    }
+  },
+  {
+    "id": "dcfc64c2-53cd-4f0b-8702-0f23c3d76b5d",
+    "patient_id": "PT49042",
+    "patient": {
+      "id": "PT49042",
+      "name": "Ashley Miller",
+      "date_of_birth": "1968-02-06",
+      "gender": "Male",
+      "mrn": "MRN394601",
+      "metadata": {
+        "age": 57,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Miller",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Miller\nMRN: MRN394601\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Hypertension.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 77 bpm, BP 120/90\n\nLABORATORY RESULTS:\n- Glucose: 118 mg/dL\n- Hemoglobin: 12.5 g/dL\n\nASSESSMENT AND PLAN:\n1. Hypertension - Continue current management\n   - Medications: Omeprazole 20mg, Furosemide 40mg, Aspirin 81mg\n\nDr. Joseph Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053126",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "fa9b200b-aa61-4bf6-b208-6695782692bc",
+    "patient_id": "PT23081",
+    "patient": {
+      "id": "PT23081",
+      "name": "James Jones",
+      "date_of_birth": "1970-05-12",
+      "gender": "Female",
+      "mrn": "MRN940377",
+      "metadata": {
+        "age": 55,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - James Jones",
+    "content": "PROGRESS NOTE\n\nPatient: James Jones\nMRN: MRN940377\n\nSUBJECTIVE:\nPatient reports stable symptoms related to COPD.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 99 bpm, BP 118/83\n\nLABORATORY RESULTS:\n- Glucose: 85 mg/dL\n- Hemoglobin: 16.6 g/dL\n\nASSESSMENT AND PLAN:\n1. COPD - Continue current management\n   - Medications: Amlodipine 5mg, Omeprazole 20mg, Metformin 500mg\n\nDr. Sarah Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053158",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "fc0b74a7-f030-495f-a078-68e8bd70bc46",
+    "patient_id": "PT23081",
+    "patient": {
+      "id": "PT23081",
+      "name": "James Jones",
+      "date_of_birth": "1970-05-12",
+      "gender": "Female",
+      "mrn": "MRN940377",
+      "metadata": {
+        "age": 55,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - James Jones",
+    "content": "PROGRESS NOTE\n\nPatient: James Jones\nMRN: MRN940377\n\nSUBJECTIVE:\nPatient reports stable symptoms related to COPD.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 62 bpm, BP 127/78\n\nLABORATORY RESULTS:\n- Glucose: 90 mg/dL\n- Hemoglobin: 15.2 g/dL\n\nASSESSMENT AND PLAN:\n1. COPD - Continue current management\n   - Medications: Levothyroxine 75mcg, Lisinopril 10mg, Aspirin 81mg\n\nDr. Emily Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053179",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "1421800a-54bb-47ff-88ba-e904fb31bd40",
+    "patient_id": "PT23081",
+    "patient": {
+      "id": "PT23081",
+      "name": "James Jones",
+      "date_of_birth": "1970-05-12",
+      "gender": "Female",
+      "mrn": "MRN940377",
+      "metadata": {
+        "age": 55,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - James Jones",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: James Jones\nMRN: MRN940377\nDOB: 1970-05-12\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Gabapentin 300mg daily\n- Atorvastatin 20mg daily\n- Aspirin 81mg daily\n- Amlodipine 5mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.3\u00b0F\nHeart Rate: 91 bpm\nBlood Pressure: 128/88 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Sarah Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053199",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "24385ba9-1894-4d9f-b33e-7aede39bb95b",
+    "patient_id": "PT45415",
+    "patient": {
+      "id": "PT45415",
+      "name": "Michael Williams",
+      "date_of_birth": "1960-01-14",
+      "gender": "Female",
+      "mrn": "MRN419391",
+      "metadata": {
+        "age": 65,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Michael Williams",
+    "content": "PROGRESS NOTE\n\nPatient: Michael Williams\nMRN: MRN419391\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Depression.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 69 bpm, BP 116/85\n\nLABORATORY RESULTS:\n- Glucose: 86 mg/dL\n- Hemoglobin: 12.0 g/dL\n\nASSESSMENT AND PLAN:\n1. Depression - Continue current management\n   - Medications: Aspirin 81mg, Furosemide 40mg\n\nDr. Michael Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053232",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "4e33be8e-7f4d-410d-af78-bf55b46218eb",
+    "patient_id": "PT45415",
+    "patient": {
+      "id": "PT45415",
+      "name": "Michael Williams",
+      "date_of_birth": "1960-01-14",
+      "gender": "Female",
+      "mrn": "MRN419391",
+      "metadata": {
+        "age": 65,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Michael Williams",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Michael Williams\nMRN: MRN419391\nDOB: 1960-01-14\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Levothyroxine 75mcg daily\n- Metformin 500mg daily\n- Amlodipine 5mg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.4\u00b0F\nHeart Rate: 67 bpm\nBlood Pressure: 114/81 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. David Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053250",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "08752348-a830-4e56-9cab-c98273659ab8",
+    "patient_id": "PT26378",
+    "patient": {
+      "id": "PT26378",
+      "name": "Sarah Garcia",
+      "date_of_birth": "1991-06-27",
+      "gender": "Male",
+      "mrn": "MRN633700",
+      "metadata": {
+        "age": 34,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Sarah Garcia",
+    "content": "PROGRESS NOTE\n\nPatient: Sarah Garcia\nMRN: MRN633700\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Depression.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 86 bpm, BP 126/79\n\nLABORATORY RESULTS:\n- Glucose: 81 mg/dL\n- Hemoglobin: 12.7 g/dL\n\nASSESSMENT AND PLAN:\n1. Depression - Continue current management\n   - Medications: Sertraline 50mg\n\nDr. Sarah Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053280",
+      "word_count": 52
+    }
+  },
+  {
+    "id": "43415b97-240c-4298-b7cd-12456ddd8ffc",
+    "patient_id": "PT26378",
+    "patient": {
+      "id": "PT26378",
+      "name": "Sarah Garcia",
+      "date_of_birth": "1991-06-27",
+      "gender": "Male",
+      "mrn": "MRN633700",
+      "metadata": {
+        "age": 34,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Sarah Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Sarah Garcia\nMRN: MRN633700\nDOB: 1991-06-27\n\nDISCHARGE DIAGNOSES:\n1. Coronary Artery Disease\n\nDISCHARGE MEDICATIONS:\n- Aspirin 81mg daily\n- Atorvastatin 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.4\u00b0F\nHeart Rate: 61 bpm\nBlood Pressure: 131/83 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jane Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053298",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "400d437f-939a-48c1-9765-6295799504e2",
+    "patient_id": "PT22851",
+    "patient": {
+      "id": "PT22851",
+      "name": "Joseph Lopez",
+      "date_of_birth": "1961-03-07",
+      "gender": "Female",
+      "mrn": "MRN583907",
+      "metadata": {
+        "age": 64,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Lopez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Lopez\nMRN: MRN583907\nDOB: 1961-03-07\n\nDISCHARGE DIAGNOSES:\n1. COPD\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Gabapentin 300mg daily\n- Sertraline 50mg daily\n- Aspirin 81mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.8\u00b0F\nHeart Rate: 90 bpm\nBlood Pressure: 119/84 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Joseph Garcia, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053365",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "72c51566-53e3-4398-9c74-5fbbde3e5a92",
+    "patient_id": "PT22851",
+    "patient": {
+      "id": "PT22851",
+      "name": "Joseph Lopez",
+      "date_of_birth": "1961-03-07",
+      "gender": "Female",
+      "mrn": "MRN583907",
+      "metadata": {
+        "age": 64,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Joseph Lopez",
+    "content": "PROGRESS NOTE\n\nPatient: Joseph Lopez\nMRN: MRN583907\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Hypertension.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 76 bpm, BP 116/82\n\nLABORATORY RESULTS:\n- Glucose: 100 mg/dL\n- Hemoglobin: 14.3 g/dL\n\nASSESSMENT AND PLAN:\n1. Hypertension - Continue current management\n   - Medications: Omeprazole 20mg, Gabapentin 300mg, Sertraline 50mg\n\nDr. Ashley Lopez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053386",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "61d7de2a-dedd-4886-b9cd-e29020d889d5",
+    "patient_id": "PT22851",
+    "patient": {
+      "id": "PT22851",
+      "name": "Joseph Lopez",
+      "date_of_birth": "1961-03-07",
+      "gender": "Female",
+      "mrn": "MRN583907",
+      "metadata": {
+        "age": 64,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Lopez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Lopez\nMRN: MRN583907\nDOB: 1961-03-07\n\nDISCHARGE DIAGNOSES:\n1. Chronic Kidney Disease\n\nDISCHARGE MEDICATIONS:\n- Sertraline 50mg daily\n- Gabapentin 300mg daily\n- Levothyroxine 75mcg daily\n- Furosemide 40mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.4\u00b0F\nHeart Rate: 98 bpm\nBlood Pressure: 119/70 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. William Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053404",
+      "word_count": 75
+    }
+  },
+  {
+    "id": "69e020d5-2c86-404f-9311-fe1f85dd36d9",
+    "patient_id": "PT22851",
+    "patient": {
+      "id": "PT22851",
+      "name": "Joseph Lopez",
+      "date_of_birth": "1961-03-07",
+      "gender": "Female",
+      "mrn": "MRN583907",
+      "metadata": {
+        "age": 64,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Joseph Lopez",
+    "content": "PROGRESS NOTE\n\nPatient: Joseph Lopez\nMRN: MRN583907\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 66 bpm, BP 128/78\n\nLABORATORY RESULTS:\n- Glucose: 161 mg/dL\n- Hemoglobin: 14.0 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Gabapentin 300mg, Levothyroxine 75mcg, Atorvastatin 20mg\n\nDr. David Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053424",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "70e0ed7f-cd49-4f5b-ba91-06afc51ffdda",
+    "patient_id": "PT27487",
+    "patient": {
+      "id": "PT27487",
+      "name": "Sarah Smith",
+      "date_of_birth": "1991-04-13",
+      "gender": "Female",
+      "mrn": "MRN555492",
+      "metadata": {
+        "age": 34,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Sarah Smith",
+    "content": "PROGRESS NOTE\n\nPatient: Sarah Smith\nMRN: MRN555492\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Atrial Fibrillation.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 77 bpm, BP 136/73\n\nLABORATORY RESULTS:\n- Glucose: 92 mg/dL\n- Hemoglobin: 10.3 g/dL\n\nASSESSMENT AND PLAN:\n1. Atrial Fibrillation - Continue current management\n   - Medications: Sertraline 50mg\n\nDr. John Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053454",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "9a5b702f-181d-41e2-890b-bbbf8340e6b1",
+    "patient_id": "PT27487",
+    "patient": {
+      "id": "PT27487",
+      "name": "Sarah Smith",
+      "date_of_birth": "1991-04-13",
+      "gender": "Female",
+      "mrn": "MRN555492",
+      "metadata": {
+        "age": 34,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Sarah Smith",
+    "content": "PROGRESS NOTE\n\nPatient: Sarah Smith\nMRN: MRN555492\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Depression.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 73 bpm, BP 112/75\n\nLABORATORY RESULTS:\n- Glucose: 106 mg/dL\n- Hemoglobin: 14.2 g/dL\n\nASSESSMENT AND PLAN:\n1. Depression - Continue current management\n   - Medications: Lisinopril 10mg\n\nDr. Jane Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053472",
+      "word_count": 52
+    }
+  },
+  {
+    "id": "ad16121a-9aae-4893-8b61-c8ee7425840d",
+    "patient_id": "PT27487",
+    "patient": {
+      "id": "PT27487",
+      "name": "Sarah Smith",
+      "date_of_birth": "1991-04-13",
+      "gender": "Female",
+      "mrn": "MRN555492",
+      "metadata": {
+        "age": 34,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Sarah Smith",
+    "content": "PROGRESS NOTE\n\nPatient: Sarah Smith\nMRN: MRN555492\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 63 bpm, BP 117/86\n\nLABORATORY RESULTS:\n- Glucose: 189 mg/dL\n- Hemoglobin: 12.2 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Levothyroxine 75mcg, Amlodipine 5mg, Sertraline 50mg\n\nDr. Jessica Brown, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053490",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "c493ee39-5bdc-41fd-861c-25a3898995cf",
+    "patient_id": "PT27487",
+    "patient": {
+      "id": "PT27487",
+      "name": "Sarah Smith",
+      "date_of_birth": "1991-04-13",
+      "gender": "Female",
+      "mrn": "MRN555492",
+      "metadata": {
+        "age": 34,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Sarah Smith",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Sarah Smith\nMRN: MRN555492\nDOB: 1991-04-13\n\nDISCHARGE DIAGNOSES:\n1. Coronary Artery Disease\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Aspirin 81mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.2\u00b0F\nHeart Rate: 76 bpm\nBlood Pressure: 124/83 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Lisa Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053508",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "d515b7a8-9d45-4c91-a9fd-03358670c5cf",
+    "patient_id": "PT61292",
+    "patient": {
+      "id": "PT61292",
+      "name": "Amanda Miller",
+      "date_of_birth": "1942-09-16",
+      "gender": "Male",
+      "mrn": "MRN362401",
+      "metadata": {
+        "age": 82,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Amanda Miller",
+    "content": "PROGRESS NOTE\n\nPatient: Amanda Miller\nMRN: MRN362401\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Osteoarthritis.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 100 bpm, BP 129/83\n\nLABORATORY RESULTS:\n- Glucose: 151 mg/dL\n- Hemoglobin: 11.3 g/dL\n\nASSESSMENT AND PLAN:\n1. Osteoarthritis - Continue current management\n   - Medications: Lisinopril 10mg, Amlodipine 5mg\n\nDr. Joseph Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053539",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "fa389ac0-ea2f-4c77-8b06-ff0769383a4e",
+    "patient_id": "PT61292",
+    "patient": {
+      "id": "PT61292",
+      "name": "Amanda Miller",
+      "date_of_birth": "1942-09-16",
+      "gender": "Male",
+      "mrn": "MRN362401",
+      "metadata": {
+        "age": 82,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Amanda Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Amanda Miller\nMRN: MRN362401\nDOB: 1942-09-16\n\nDISCHARGE DIAGNOSES:\n1. COPD\n\nDISCHARGE MEDICATIONS:\n- Furosemide 40mg daily\n- Gabapentin 300mg daily\n- Omeprazole 20mg daily\n- Aspirin 81mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.5\u00b0F\nHeart Rate: 88 bpm\nBlood Pressure: 121/88 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. James Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053561",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "6bad1297-1401-4b1d-9c10-e8554dae8e08",
+    "patient_id": "PT78546",
+    "patient": {
+      "id": "PT78546",
+      "name": "Joseph Jones",
+      "date_of_birth": "1965-01-16",
+      "gender": "Female",
+      "mrn": "MRN486236",
+      "metadata": {
+        "age": 60,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Jones",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Jones\nMRN: MRN486236\nDOB: 1965-01-16\n\nDISCHARGE DIAGNOSES:\n1. Coronary Artery Disease\n\nDISCHARGE MEDICATIONS:\n- Metformin 500mg daily\n- Lisinopril 10mg daily\n- Omeprazole 20mg daily\n- Levothyroxine 75mcg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.3\u00b0F\nHeart Rate: 73 bpm\nBlood Pressure: 131/77 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jessica Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053599",
+      "word_count": 75
+    }
+  },
+  {
+    "id": "e073d817-7077-4ae0-925f-4b582fa4b3a1",
+    "patient_id": "PT78546",
+    "patient": {
+      "id": "PT78546",
+      "name": "Joseph Jones",
+      "date_of_birth": "1965-01-16",
+      "gender": "Female",
+      "mrn": "MRN486236",
+      "metadata": {
+        "age": 60,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Jones",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Jones\nMRN: MRN486236\nDOB: 1965-01-16\n\nDISCHARGE DIAGNOSES:\n1. Coronary Artery Disease\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Atorvastatin 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.8\u00b0F\nHeart Rate: 94 bpm\nBlood Pressure: 130/74 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jessica Brown, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053619",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "8cd7ba68-2db3-44b2-9e23-842f1d69e42f",
+    "patient_id": "PT39212",
+    "patient": {
+      "id": "PT39212",
+      "name": "Ashley Hernandez",
+      "date_of_birth": "1999-02-24",
+      "gender": "Female",
+      "mrn": "MRN173774",
+      "metadata": {
+        "age": 26,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Hernandez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Hernandez\nMRN: MRN173774\nDOB: 1999-02-24\n\nDISCHARGE DIAGNOSES:\n1. Congestive Heart Failure\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Amlodipine 5mg daily\n- Levothyroxine 75mcg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.2\u00b0F\nHeart Rate: 65 bpm\nBlood Pressure: 138/73 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. William Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.053649",
+      "word_count": 71
+    }
+  },
+  {
+    "id": "647ac330-8bdc-42a0-9ef3-93d9ed621251",
+    "patient_id": "PT39212",
+    "patient": {
+      "id": "PT39212",
+      "name": "Ashley Hernandez",
+      "date_of_birth": "1999-02-24",
+      "gender": "Female",
+      "mrn": "MRN173774",
+      "metadata": {
+        "age": 26,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Hernandez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Hernandez\nMRN: MRN173774\nDOB: 1999-02-24\n\nDISCHARGE DIAGNOSES:\n1. Anxiety Disorder\n\nDISCHARGE MEDICATIONS:\n- Metformin 500mg daily\n- Gabapentin 300mg daily\n- Atorvastatin 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.0\u00b0F\nHeart Rate: 67 bpm\nBlood Pressure: 131/81 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. John Lopez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.054764",
+      "word_count": 70
+    }
+  },
+  {
+    "id": "ba72511c-8c17-445a-980e-872da268660f",
+    "patient_id": "PT39212",
+    "patient": {
+      "id": "PT39212",
+      "name": "Ashley Hernandez",
+      "date_of_birth": "1999-02-24",
+      "gender": "Female",
+      "mrn": "MRN173774",
+      "metadata": {
+        "age": 26,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Hernandez",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Hernandez\nMRN: MRN173774\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Osteoarthritis.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 62 bpm, BP 136/71\n\nLABORATORY RESULTS:\n- Glucose: 96 mg/dL\n- Hemoglobin: 11.1 g/dL\n\nASSESSMENT AND PLAN:\n1. Osteoarthritis - Continue current management\n   - Medications: Amlodipine 5mg, Aspirin 81mg, Atorvastatin 20mg\n\nDr. Lisa Brown, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.054799",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "574e9990-be45-45d4-920c-f931354096f4",
+    "patient_id": "PT98782",
+    "patient": {
+      "id": "PT98782",
+      "name": "Ashley Rodriguez",
+      "date_of_birth": "1959-12-23",
+      "gender": "Female",
+      "mrn": "MRN577659",
+      "metadata": {
+        "age": 65,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Rodriguez",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Rodriguez\nMRN: MRN577659\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Hypertension.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 70 bpm, BP 117/82\n\nLABORATORY RESULTS:\n- Glucose: 99 mg/dL\n- Hemoglobin: 13.0 g/dL\n\nASSESSMENT AND PLAN:\n1. Hypertension - Continue current management\n   - Medications: Lisinopril 10mg, Atorvastatin 20mg\n\nDr. Michael Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.054846",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "85b4fdae-7990-40a2-95c0-d78d2b423f1a",
+    "patient_id": "PT98782",
+    "patient": {
+      "id": "PT98782",
+      "name": "Ashley Rodriguez",
+      "date_of_birth": "1959-12-23",
+      "gender": "Female",
+      "mrn": "MRN577659",
+      "metadata": {
+        "age": 65,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Rodriguez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Rodriguez\nMRN: MRN577659\nDOB: 1959-12-23\n\nDISCHARGE DIAGNOSES:\n1. Congestive Heart Failure\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Omeprazole 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.8\u00b0F\nHeart Rate: 67 bpm\nBlood Pressure: 115/90 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Sarah Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.054869",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "7aadf04b-f30a-46c1-b553-f7a4db24273e",
+    "patient_id": "PT98782",
+    "patient": {
+      "id": "PT98782",
+      "name": "Ashley Rodriguez",
+      "date_of_birth": "1959-12-23",
+      "gender": "Female",
+      "mrn": "MRN577659",
+      "metadata": {
+        "age": 65,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Rodriguez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Rodriguez\nMRN: MRN577659\nDOB: 1959-12-23\n\nDISCHARGE DIAGNOSES:\n1. Osteoarthritis\n\nDISCHARGE MEDICATIONS:\n- Omeprazole 20mg daily\n- Sertraline 50mg daily\n- Metformin 500mg daily\n- Levothyroxine 75mcg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.4\u00b0F\nHeart Rate: 63 bpm\nBlood Pressure: 139/81 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jane Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.054892",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "ee9352b7-565a-4c31-ae97-170584e0c38d",
+    "patient_id": "PT83343",
+    "patient": {
+      "id": "PT83343",
+      "name": "Joseph Miller",
+      "date_of_birth": "2000-01-07",
+      "gender": "Male",
+      "mrn": "MRN579608",
+      "metadata": {
+        "age": 25,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Miller\nMRN: MRN579608\nDOB: 2000-01-07\n\nDISCHARGE DIAGNOSES:\n1. Chronic Kidney Disease\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Omeprazole 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.0\u00b0F\nHeart Rate: 85 bpm\nBlood Pressure: 117/79 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Robert Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.054935",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "df27ef67-b5b8-4a77-8daa-3cc6a1f4369d",
+    "patient_id": "PT83343",
+    "patient": {
+      "id": "PT83343",
+      "name": "Joseph Miller",
+      "date_of_birth": "2000-01-07",
+      "gender": "Male",
+      "mrn": "MRN579608",
+      "metadata": {
+        "age": 25,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Miller\nMRN: MRN579608\nDOB: 2000-01-07\n\nDISCHARGE DIAGNOSES:\n1. Chronic Kidney Disease\n\nDISCHARGE MEDICATIONS:\n- Metformin 500mg daily\n- Levothyroxine 75mcg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.9\u00b0F\nHeart Rate: 96 bpm\nBlood Pressure: 124/78 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Emily Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.054956",
+      "word_count": 67
+    }
+  },
+  {
+    "id": "d4449b27-ede0-4141-8479-f9b59e850d94",
+    "patient_id": "PT25354",
+    "patient": {
+      "id": "PT25354",
+      "name": "John Davis",
+      "date_of_birth": "1991-02-10",
+      "gender": "Male",
+      "mrn": "MRN914745",
+      "metadata": {
+        "age": 34,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - John Davis",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: John Davis\nMRN: MRN914745\nDOB: 1991-02-10\n\nDISCHARGE DIAGNOSES:\n1. COPD\n\nDISCHARGE MEDICATIONS:\n- Metformin 500mg daily\n- Furosemide 40mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.5\u00b0F\nHeart Rate: 64 bpm\nBlood Pressure: 116/82 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. James Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.054989",
+      "word_count": 65
+    }
+  },
+  {
+    "id": "c2b33dfe-d7f8-4b34-b8a0-7560b6001fe4",
+    "patient_id": "PT25354",
+    "patient": {
+      "id": "PT25354",
+      "name": "John Davis",
+      "date_of_birth": "1991-02-10",
+      "gender": "Male",
+      "mrn": "MRN914745",
+      "metadata": {
+        "age": 34,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - John Davis",
+    "content": "PROGRESS NOTE\n\nPatient: John Davis\nMRN: MRN914745\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Depression.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 76 bpm, BP 139/70\n\nLABORATORY RESULTS:\n- Glucose: 135 mg/dL\n- Hemoglobin: 11.9 g/dL\n\nASSESSMENT AND PLAN:\n1. Depression - Continue current management\n   - Medications: Sertraline 50mg\n\nDr. John Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055009",
+      "word_count": 52
+    }
+  },
+  {
+    "id": "6c5e3606-4afe-4ac3-bc90-097916cb9b5a",
+    "patient_id": "PT25354",
+    "patient": {
+      "id": "PT25354",
+      "name": "John Davis",
+      "date_of_birth": "1991-02-10",
+      "gender": "Male",
+      "mrn": "MRN914745",
+      "metadata": {
+        "age": 34,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - John Davis",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: John Davis\nMRN: MRN914745\nDOB: 1991-02-10\n\nDISCHARGE DIAGNOSES:\n1. Type 2 Diabetes Mellitus\n\nDISCHARGE MEDICATIONS:\n- Furosemide 40mg daily\n- Aspirin 81mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.6\u00b0F\nHeart Rate: 97 bpm\nBlood Pressure: 117/88 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Lisa Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055028",
+      "word_count": 68
+    }
+  },
+  {
+    "id": "4bc86482-6af8-4e82-aa38-7df018ef16a4",
+    "patient_id": "PT25354",
+    "patient": {
+      "id": "PT25354",
+      "name": "John Davis",
+      "date_of_birth": "1991-02-10",
+      "gender": "Male",
+      "mrn": "MRN914745",
+      "metadata": {
+        "age": 34,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - John Davis",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: John Davis\nMRN: MRN914745\nDOB: 1991-02-10\n\nDISCHARGE DIAGNOSES:\n1. COPD\n\nDISCHARGE MEDICATIONS:\n- Gabapentin 300mg daily\n- Omeprazole 20mg daily\n- Atorvastatin 20mg daily\n- Aspirin 81mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.6\u00b0F\nHeart Rate: 91 bpm\nBlood Pressure: 120/74 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jessica Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055049",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "f32a8e67-3631-47b7-ace6-6c63bda572b5",
+    "patient_id": "PT64067",
+    "patient": {
+      "id": "PT64067",
+      "name": "Ashley Smith",
+      "date_of_birth": "1986-02-01",
+      "gender": "Male",
+      "mrn": "MRN150592",
+      "metadata": {
+        "age": 39,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Smith",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Smith\nMRN: MRN150592\nDOB: 1986-02-01\n\nDISCHARGE DIAGNOSES:\n1. Osteoarthritis\n\nDISCHARGE MEDICATIONS:\n- Furosemide 40mg daily\n- Levothyroxine 75mcg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.0\u00b0F\nHeart Rate: 90 bpm\nBlood Pressure: 130/77 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Michael Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055092",
+      "word_count": 65
+    }
+  },
+  {
+    "id": "58d997cf-5820-42fa-80a2-d11164f6bde3",
+    "patient_id": "PT64067",
+    "patient": {
+      "id": "PT64067",
+      "name": "Ashley Smith",
+      "date_of_birth": "1986-02-01",
+      "gender": "Male",
+      "mrn": "MRN150592",
+      "metadata": {
+        "age": 39,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Smith",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Smith\nMRN: MRN150592\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 61 bpm, BP 127/81\n\nLABORATORY RESULTS:\n- Glucose: 104 mg/dL\n- Hemoglobin: 14.2 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Levothyroxine 75mcg, Aspirin 81mg, Omeprazole 20mg\n\nDr. Robert Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055112",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "50071a9c-7ae2-4220-8e61-81592a90888a",
+    "patient_id": "PT17404",
+    "patient": {
+      "id": "PT17404",
+      "name": "Amanda Brown",
+      "date_of_birth": "1957-02-27",
+      "gender": "Female",
+      "mrn": "MRN377360",
+      "metadata": {
+        "age": 68,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Amanda Brown",
+    "content": "PROGRESS NOTE\n\nPatient: Amanda Brown\nMRN: MRN377360\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Hypertension.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 62 bpm, BP 123/81\n\nLABORATORY RESULTS:\n- Glucose: 142 mg/dL\n- Hemoglobin: 16.0 g/dL\n\nASSESSMENT AND PLAN:\n1. Hypertension - Continue current management\n   - Medications: Levothyroxine 75mcg, Gabapentin 300mg, Aspirin 81mg\n\nDr. Sarah Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055147",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "5acf6d65-9d52-43cd-be2f-5502435785ee",
+    "patient_id": "PT17404",
+    "patient": {
+      "id": "PT17404",
+      "name": "Amanda Brown",
+      "date_of_birth": "1957-02-27",
+      "gender": "Female",
+      "mrn": "MRN377360",
+      "metadata": {
+        "age": 68,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Amanda Brown",
+    "content": "PROGRESS NOTE\n\nPatient: Amanda Brown\nMRN: MRN377360\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Hypertension.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 80 bpm, BP 129/88\n\nLABORATORY RESULTS:\n- Glucose: 80 mg/dL\n- Hemoglobin: 13.1 g/dL\n\nASSESSMENT AND PLAN:\n1. Hypertension - Continue current management\n   - Medications: Omeprazole 20mg, Lisinopril 10mg\n\nDr. William Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055171",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "c6ebf76d-92d1-4159-aee7-838b76b54d45",
+    "patient_id": "PT17404",
+    "patient": {
+      "id": "PT17404",
+      "name": "Amanda Brown",
+      "date_of_birth": "1957-02-27",
+      "gender": "Female",
+      "mrn": "MRN377360",
+      "metadata": {
+        "age": 68,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Amanda Brown",
+    "content": "PROGRESS NOTE\n\nPatient: Amanda Brown\nMRN: MRN377360\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Chronic Kidney Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 72 bpm, BP 136/82\n\nLABORATORY RESULTS:\n- Glucose: 155 mg/dL\n- Hemoglobin: 13.3 g/dL\n\nASSESSMENT AND PLAN:\n1. Chronic Kidney Disease - Continue current management\n   - Medications: Metformin 500mg, Amlodipine 5mg\n\nDr. Ashley Jones, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055190",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "ec894903-9b72-418b-a58d-f7ee394a8b85",
+    "patient_id": "PT17404",
+    "patient": {
+      "id": "PT17404",
+      "name": "Amanda Brown",
+      "date_of_birth": "1957-02-27",
+      "gender": "Female",
+      "mrn": "MRN377360",
+      "metadata": {
+        "age": 68,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Amanda Brown",
+    "content": "PROGRESS NOTE\n\nPatient: Amanda Brown\nMRN: MRN377360\n\nSUBJECTIVE:\nPatient reports stable symptoms related to COPD.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 97 bpm, BP 131/75\n\nLABORATORY RESULTS:\n- Glucose: 185 mg/dL\n- Hemoglobin: 14.6 g/dL\n\nASSESSMENT AND PLAN:\n1. COPD - Continue current management\n   - Medications: Amlodipine 5mg, Metformin 500mg\n\nDr. Emily Lopez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055211",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "520a8947-24d9-4dd4-b3e7-76ae2b56fa1c",
+    "patient_id": "PT20056",
+    "patient": {
+      "id": "PT20056",
+      "name": "Richard Martinez",
+      "date_of_birth": "1993-06-21",
+      "gender": "Male",
+      "mrn": "MRN113758",
+      "metadata": {
+        "age": 32,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Martinez",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Martinez\nMRN: MRN113758\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 94 bpm, BP 128/72\n\nLABORATORY RESULTS:\n- Glucose: 84 mg/dL\n- Hemoglobin: 16.5 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Aspirin 81mg\n\nDr. Emily Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055245",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "77376f72-8fb4-4f8e-9f9e-5f0c4e4dbf0f",
+    "patient_id": "PT20056",
+    "patient": {
+      "id": "PT20056",
+      "name": "Richard Martinez",
+      "date_of_birth": "1993-06-21",
+      "gender": "Male",
+      "mrn": "MRN113758",
+      "metadata": {
+        "age": 32,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Martinez",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Martinez\nMRN: MRN113758\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Hypertension.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 77 bpm, BP 129/71\n\nLABORATORY RESULTS:\n- Glucose: 95 mg/dL\n- Hemoglobin: 10.7 g/dL\n\nASSESSMENT AND PLAN:\n1. Hypertension - Continue current management\n   - Medications: Aspirin 81mg, Sertraline 50mg, Atorvastatin 20mg\n\nDr. Jane Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055265",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "5bcdb0ee-3d77-4df8-9b1c-4e7076723ce8",
+    "patient_id": "PT20056",
+    "patient": {
+      "id": "PT20056",
+      "name": "Richard Martinez",
+      "date_of_birth": "1993-06-21",
+      "gender": "Male",
+      "mrn": "MRN113758",
+      "metadata": {
+        "age": 32,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Richard Martinez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Richard Martinez\nMRN: MRN113758\nDOB: 1993-06-21\n\nDISCHARGE DIAGNOSES:\n1. Coronary Artery Disease\n\nDISCHARGE MEDICATIONS:\n- Sertraline 50mg daily\n- Levothyroxine 75mcg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.5\u00b0F\nHeart Rate: 65 bpm\nBlood Pressure: 135/86 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Amanda Jones, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055284",
+      "word_count": 71
+    }
+  },
+  {
+    "id": "62c35482-9f2c-4a2b-90d0-b5d1cad8027b",
+    "patient_id": "PT20056",
+    "patient": {
+      "id": "PT20056",
+      "name": "Richard Martinez",
+      "date_of_birth": "1993-06-21",
+      "gender": "Male",
+      "mrn": "MRN113758",
+      "metadata": {
+        "age": 32,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Richard Martinez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Richard Martinez\nMRN: MRN113758\nDOB: 1993-06-21\n\nDISCHARGE DIAGNOSES:\n1. Hypertension\n\nDISCHARGE MEDICATIONS:\n- Furosemide 40mg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.8\u00b0F\nHeart Rate: 80 bpm\nBlood Pressure: 113/86 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Ashley Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055305",
+      "word_count": 65
+    }
+  },
+  {
+    "id": "44e1396a-fc18-4c29-9b2c-511e0683b3b6",
+    "patient_id": "PT66278",
+    "patient": {
+      "id": "PT66278",
+      "name": "Joseph Rodriguez",
+      "date_of_birth": "1942-10-30",
+      "gender": "Male",
+      "mrn": "MRN384945",
+      "metadata": {
+        "age": 82,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Rodriguez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Rodriguez\nMRN: MRN384945\nDOB: 1942-10-30\n\nDISCHARGE DIAGNOSES:\n1. Type 2 Diabetes Mellitus\n\nDISCHARGE MEDICATIONS:\n- Atorvastatin 20mg daily\n- Omeprazole 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.4\u00b0F\nHeart Rate: 72 bpm\nBlood Pressure: 112/70 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Emily Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055352",
+      "word_count": 68
+    }
+  },
+  {
+    "id": "91ec5836-1078-44c9-bca0-bdafc2e2c04b",
+    "patient_id": "PT66278",
+    "patient": {
+      "id": "PT66278",
+      "name": "Joseph Rodriguez",
+      "date_of_birth": "1942-10-30",
+      "gender": "Male",
+      "mrn": "MRN384945",
+      "metadata": {
+        "age": 82,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Rodriguez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Rodriguez\nMRN: MRN384945\nDOB: 1942-10-30\n\nDISCHARGE DIAGNOSES:\n1. Atrial Fibrillation\n\nDISCHARGE MEDICATIONS:\n- Gabapentin 300mg daily\n- Lisinopril 10mg daily\n- Sertraline 50mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.3\u00b0F\nHeart Rate: 99 bpm\nBlood Pressure: 134/78 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Amanda Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055372",
+      "word_count": 70
+    }
+  },
+  {
+    "id": "2c500015-8103-46e0-b3a5-a0b5c28eb443",
+    "patient_id": "PT66278",
+    "patient": {
+      "id": "PT66278",
+      "name": "Joseph Rodriguez",
+      "date_of_birth": "1942-10-30",
+      "gender": "Male",
+      "mrn": "MRN384945",
+      "metadata": {
+        "age": 82,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Rodriguez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Rodriguez\nMRN: MRN384945\nDOB: 1942-10-30\n\nDISCHARGE DIAGNOSES:\n1. Atrial Fibrillation\n\nDISCHARGE MEDICATIONS:\n- Sertraline 50mg daily\n- Furosemide 40mg daily\n- Aspirin 81mg daily\n- Metformin 500mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.9\u00b0F\nHeart Rate: 83 bpm\nBlood Pressure: 122/89 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Joseph Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055392",
+      "word_count": 74
+    }
+  },
+  {
+    "id": "b5f5d67a-b83b-4cd6-8e74-5256460baae6",
+    "patient_id": "PT12780",
+    "patient": {
+      "id": "PT12780",
+      "name": "Robert Garcia",
+      "date_of_birth": "1976-08-27",
+      "gender": "Male",
+      "mrn": "MRN461441",
+      "metadata": {
+        "age": 49,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Robert Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Robert Garcia\nMRN: MRN461441\nDOB: 1976-08-27\n\nDISCHARGE DIAGNOSES:\n1. Coronary Artery Disease\n\nDISCHARGE MEDICATIONS:\n- Amlodipine 5mg daily\n- Aspirin 81mg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.2\u00b0F\nHeart Rate: 68 bpm\nBlood Pressure: 133/72 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Lisa Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055424",
+      "word_count": 71
+    }
+  },
+  {
+    "id": "56b53599-8258-4cdd-8649-066db5b0245b",
+    "patient_id": "PT12780",
+    "patient": {
+      "id": "PT12780",
+      "name": "Robert Garcia",
+      "date_of_birth": "1976-08-27",
+      "gender": "Male",
+      "mrn": "MRN461441",
+      "metadata": {
+        "age": 49,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Robert Garcia",
+    "content": "PROGRESS NOTE\n\nPatient: Robert Garcia\nMRN: MRN461441\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Atrial Fibrillation.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 66 bpm, BP 140/78\n\nLABORATORY RESULTS:\n- Glucose: 134 mg/dL\n- Hemoglobin: 14.6 g/dL\n\nASSESSMENT AND PLAN:\n1. Atrial Fibrillation - Continue current management\n   - Medications: Gabapentin 300mg\n\nDr. Emily Jones, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055444",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "cccb5bd7-d431-44e2-91d2-e69ead5275a7",
+    "patient_id": "PT12780",
+    "patient": {
+      "id": "PT12780",
+      "name": "Robert Garcia",
+      "date_of_birth": "1976-08-27",
+      "gender": "Male",
+      "mrn": "MRN461441",
+      "metadata": {
+        "age": 49,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Robert Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Robert Garcia\nMRN: MRN461441\nDOB: 1976-08-27\n\nDISCHARGE DIAGNOSES:\n1. Anxiety Disorder\n\nDISCHARGE MEDICATIONS:\n- Levothyroxine 75mcg daily\n- Omeprazole 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.8\u00b0F\nHeart Rate: 62 bpm\nBlood Pressure: 128/86 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. James Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055462",
+      "word_count": 66
+    }
+  },
+  {
+    "id": "251bee81-34b2-48fd-91fd-29d220d32965",
+    "patient_id": "PT27760",
+    "patient": {
+      "id": "PT27760",
+      "name": "David Jones",
+      "date_of_birth": "1947-01-24",
+      "gender": "Female",
+      "mrn": "MRN633782",
+      "metadata": {
+        "age": 78,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - David Jones",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: David Jones\nMRN: MRN633782\nDOB: 1947-01-24\n\nDISCHARGE DIAGNOSES:\n1. Anxiety Disorder\n\nDISCHARGE MEDICATIONS:\n- Atorvastatin 20mg daily\n- Lisinopril 10mg daily\n- Sertraline 50mg daily\n- Levothyroxine 75mcg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.7\u00b0F\nHeart Rate: 95 bpm\nBlood Pressure: 139/76 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Michael Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055493",
+      "word_count": 74
+    }
+  },
+  {
+    "id": "d840436e-a9de-4360-864c-168b6b277254",
+    "patient_id": "PT27760",
+    "patient": {
+      "id": "PT27760",
+      "name": "David Jones",
+      "date_of_birth": "1947-01-24",
+      "gender": "Female",
+      "mrn": "MRN633782",
+      "metadata": {
+        "age": 78,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - David Jones",
+    "content": "PROGRESS NOTE\n\nPatient: David Jones\nMRN: MRN633782\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Congestive Heart Failure.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 96 bpm, BP 117/88\n\nLABORATORY RESULTS:\n- Glucose: 133 mg/dL\n- Hemoglobin: 11.3 g/dL\n\nASSESSMENT AND PLAN:\n1. Congestive Heart Failure - Continue current management\n   - Medications: Gabapentin 300mg, Amlodipine 5mg\n\nDr. Michael Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055513",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "d7d490ef-ce13-4b43-adeb-fccfe8868fc1",
+    "patient_id": "PT27760",
+    "patient": {
+      "id": "PT27760",
+      "name": "David Jones",
+      "date_of_birth": "1947-01-24",
+      "gender": "Female",
+      "mrn": "MRN633782",
+      "metadata": {
+        "age": 78,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - David Jones",
+    "content": "PROGRESS NOTE\n\nPatient: David Jones\nMRN: MRN633782\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Atrial Fibrillation.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 71 bpm, BP 131/81\n\nLABORATORY RESULTS:\n- Glucose: 97 mg/dL\n- Hemoglobin: 13.8 g/dL\n\nASSESSMENT AND PLAN:\n1. Atrial Fibrillation - Continue current management\n   - Medications: Atorvastatin 20mg\n\nDr. James Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055531",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "c12d5aa3-6e60-4459-a45d-905c9aca4771",
+    "patient_id": "PT34519",
+    "patient": {
+      "id": "PT34519",
+      "name": "Ashley Davis",
+      "date_of_birth": "1966-03-15",
+      "gender": "Male",
+      "mrn": "MRN333725",
+      "metadata": {
+        "age": 59,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Davis",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Davis\nMRN: MRN333725\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Coronary Artery Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 99 bpm, BP 118/79\n\nLABORATORY RESULTS:\n- Glucose: 141 mg/dL\n- Hemoglobin: 13.5 g/dL\n\nASSESSMENT AND PLAN:\n1. Coronary Artery Disease - Continue current management\n   - Medications: Amlodipine 5mg\n\nDr. Lisa Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055565",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "71aba98e-85e0-444d-b2dc-fb71fdb7c68f",
+    "patient_id": "PT34519",
+    "patient": {
+      "id": "PT34519",
+      "name": "Ashley Davis",
+      "date_of_birth": "1966-03-15",
+      "gender": "Male",
+      "mrn": "MRN333725",
+      "metadata": {
+        "age": 59,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Davis",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Davis\nMRN: MRN333725\nDOB: 1966-03-15\n\nDISCHARGE DIAGNOSES:\n1. Atrial Fibrillation\n\nDISCHARGE MEDICATIONS:\n- Aspirin 81mg daily\n- Levothyroxine 75mcg daily\n- Metformin 500mg daily\n- Amlodipine 5mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.9\u00b0F\nHeart Rate: 73 bpm\nBlood Pressure: 139/76 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jane Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055588",
+      "word_count": 74
+    }
+  },
+  {
+    "id": "49a27d1f-92e1-4263-9b05-99049cf44e55",
+    "patient_id": "PT34519",
+    "patient": {
+      "id": "PT34519",
+      "name": "Ashley Davis",
+      "date_of_birth": "1966-03-15",
+      "gender": "Male",
+      "mrn": "MRN333725",
+      "metadata": {
+        "age": 59,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Davis",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Davis\nMRN: MRN333725\nDOB: 1966-03-15\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Metformin 500mg daily\n- Sertraline 50mg daily\n- Furosemide 40mg daily\n- Gabapentin 300mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.6\u00b0F\nHeart Rate: 63 bpm\nBlood Pressure: 117/78 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. William Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055608",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "8377d8e0-c007-40c8-85be-daad5cbaa5d7",
+    "patient_id": "PT34519",
+    "patient": {
+      "id": "PT34519",
+      "name": "Ashley Davis",
+      "date_of_birth": "1966-03-15",
+      "gender": "Male",
+      "mrn": "MRN333725",
+      "metadata": {
+        "age": 59,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Davis",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Davis\nMRN: MRN333725\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Osteoarthritis.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 94 bpm, BP 138/70\n\nLABORATORY RESULTS:\n- Glucose: 128 mg/dL\n- Hemoglobin: 14.4 g/dL\n\nASSESSMENT AND PLAN:\n1. Osteoarthritis - Continue current management\n   - Medications: Amlodipine 5mg\n\nDr. David Garcia, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055627",
+      "word_count": 52
+    }
+  },
+  {
+    "id": "68c1d7b7-270c-4019-9867-a61fbe9348fb",
+    "patient_id": "PT81520",
+    "patient": {
+      "id": "PT81520",
+      "name": "Ashley Williams",
+      "date_of_birth": "1994-01-04",
+      "gender": "Female",
+      "mrn": "MRN739790",
+      "metadata": {
+        "age": 31,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Williams",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Williams\nMRN: MRN739790\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Chronic Kidney Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 86 bpm, BP 123/83\n\nLABORATORY RESULTS:\n- Glucose: 97 mg/dL\n- Hemoglobin: 12.9 g/dL\n\nASSESSMENT AND PLAN:\n1. Chronic Kidney Disease - Continue current management\n   - Medications: Furosemide 40mg, Aspirin 81mg, Gabapentin 300mg\n\nDr. Ashley Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055658",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "b292364f-15b0-41db-a409-f6de559af73d",
+    "patient_id": "PT81520",
+    "patient": {
+      "id": "PT81520",
+      "name": "Ashley Williams",
+      "date_of_birth": "1994-01-04",
+      "gender": "Female",
+      "mrn": "MRN739790",
+      "metadata": {
+        "age": 31,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Williams",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Williams\nMRN: MRN739790\nDOB: 1994-01-04\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Sertraline 50mg daily\n- Amlodipine 5mg daily\n- Furosemide 40mg daily\n- Atorvastatin 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.9\u00b0F\nHeart Rate: 94 bpm\nBlood Pressure: 118/80 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Michael Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055681",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "610ab76e-7f0e-4aea-a970-4c07a8b2dac7",
+    "patient_id": "PT99888",
+    "patient": {
+      "id": "PT99888",
+      "name": "Ashley Jones",
+      "date_of_birth": "1986-02-05",
+      "gender": "Male",
+      "mrn": "MRN313054",
+      "metadata": {
+        "age": 39,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Jones",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Jones\nMRN: MRN313054\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Atrial Fibrillation.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 76 bpm, BP 137/77\n\nLABORATORY RESULTS:\n- Glucose: 128 mg/dL\n- Hemoglobin: 13.0 g/dL\n\nASSESSMENT AND PLAN:\n1. Atrial Fibrillation - Continue current management\n   - Medications: Metformin 500mg, Sertraline 50mg, Lisinopril 10mg\n\nDr. James Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055713",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "eb73c932-6a91-4d3c-92cc-cd475e5245b9",
+    "patient_id": "PT99888",
+    "patient": {
+      "id": "PT99888",
+      "name": "Ashley Jones",
+      "date_of_birth": "1986-02-05",
+      "gender": "Male",
+      "mrn": "MRN313054",
+      "metadata": {
+        "age": 39,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Jones",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Jones\nMRN: MRN313054\nDOB: 1986-02-05\n\nDISCHARGE DIAGNOSES:\n1. Type 2 Diabetes Mellitus\n\nDISCHARGE MEDICATIONS:\n- Gabapentin 300mg daily\n- Aspirin 81mg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.6\u00b0F\nHeart Rate: 100 bpm\nBlood Pressure: 137/77 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jane Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055733",
+      "word_count": 72
+    }
+  },
+  {
+    "id": "9ada7b60-d3ba-4928-b448-baca9f566241",
+    "patient_id": "PT99888",
+    "patient": {
+      "id": "PT99888",
+      "name": "Ashley Jones",
+      "date_of_birth": "1986-02-05",
+      "gender": "Male",
+      "mrn": "MRN313054",
+      "metadata": {
+        "age": 39,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Ashley Jones",
+    "content": "PROGRESS NOTE\n\nPatient: Ashley Jones\nMRN: MRN313054\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Hypertension.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 79 bpm, BP 119/71\n\nLABORATORY RESULTS:\n- Glucose: 95 mg/dL\n- Hemoglobin: 11.6 g/dL\n\nASSESSMENT AND PLAN:\n1. Hypertension - Continue current management\n   - Medications: Gabapentin 300mg\n\nDr. Joseph Lopez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055752",
+      "word_count": 52
+    }
+  },
+  {
+    "id": "697a63d7-af9b-42de-b87e-d3a9481fab0d",
+    "patient_id": "PT99888",
+    "patient": {
+      "id": "PT99888",
+      "name": "Ashley Jones",
+      "date_of_birth": "1986-02-05",
+      "gender": "Male",
+      "mrn": "MRN313054",
+      "metadata": {
+        "age": 39,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Ashley Jones",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Ashley Jones\nMRN: MRN313054\nDOB: 1986-02-05\n\nDISCHARGE DIAGNOSES:\n1. Congestive Heart Failure\n\nDISCHARGE MEDICATIONS:\n- Amlodipine 5mg daily\n- Levothyroxine 75mcg daily\n- Atorvastatin 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.5\u00b0F\nHeart Rate: 64 bpm\nBlood Pressure: 137/74 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Ashley Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055770",
+      "word_count": 71
+    }
+  },
+  {
+    "id": "7c833e73-643a-442c-bde4-f145ad71cd89",
+    "patient_id": "PT95686",
+    "patient": {
+      "id": "PT95686",
+      "name": "David Rodriguez",
+      "date_of_birth": "1975-01-02",
+      "gender": "Female",
+      "mrn": "MRN102920",
+      "metadata": {
+        "age": 50,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - David Rodriguez",
+    "content": "PROGRESS NOTE\n\nPatient: David Rodriguez\nMRN: MRN102920\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Coronary Artery Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 92 bpm, BP 135/87\n\nLABORATORY RESULTS:\n- Glucose: 106 mg/dL\n- Hemoglobin: 12.6 g/dL\n\nASSESSMENT AND PLAN:\n1. Coronary Artery Disease - Continue current management\n   - Medications: Atorvastatin 20mg, Aspirin 81mg\n\nDr. Lisa Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055801",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "6aa1de04-15b8-4d2d-ac99-ec6e63aaeee3",
+    "patient_id": "PT95686",
+    "patient": {
+      "id": "PT95686",
+      "name": "David Rodriguez",
+      "date_of_birth": "1975-01-02",
+      "gender": "Female",
+      "mrn": "MRN102920",
+      "metadata": {
+        "age": 50,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - David Rodriguez",
+    "content": "PROGRESS NOTE\n\nPatient: David Rodriguez\nMRN: MRN102920\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Hypertension.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 86 bpm, BP 139/84\n\nLABORATORY RESULTS:\n- Glucose: 99 mg/dL\n- Hemoglobin: 16.8 g/dL\n\nASSESSMENT AND PLAN:\n1. Hypertension - Continue current management\n   - Medications: Amlodipine 5mg, Furosemide 40mg\n\nDr. James Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055820",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "5cea042d-3130-4fd6-9212-2fa28bf74a85",
+    "patient_id": "PT95686",
+    "patient": {
+      "id": "PT95686",
+      "name": "David Rodriguez",
+      "date_of_birth": "1975-01-02",
+      "gender": "Female",
+      "mrn": "MRN102920",
+      "metadata": {
+        "age": 50,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - David Rodriguez",
+    "content": "PROGRESS NOTE\n\nPatient: David Rodriguez\nMRN: MRN102920\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Chronic Kidney Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 68 bpm, BP 139/82\n\nLABORATORY RESULTS:\n- Glucose: 156 mg/dL\n- Hemoglobin: 14.2 g/dL\n\nASSESSMENT AND PLAN:\n1. Chronic Kidney Disease - Continue current management\n   - Medications: Gabapentin 300mg, Lisinopril 10mg, Furosemide 40mg\n\nDr. Lisa Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055841",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "4c241a9d-b1a2-41e9-b8cc-8c8457b7494b",
+    "patient_id": "PT95686",
+    "patient": {
+      "id": "PT95686",
+      "name": "David Rodriguez",
+      "date_of_birth": "1975-01-02",
+      "gender": "Female",
+      "mrn": "MRN102920",
+      "metadata": {
+        "age": 50,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - David Rodriguez",
+    "content": "PROGRESS NOTE\n\nPatient: David Rodriguez\nMRN: MRN102920\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 82 bpm, BP 120/83\n\nLABORATORY RESULTS:\n- Glucose: 135 mg/dL\n- Hemoglobin: 16.0 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Omeprazole 20mg\n\nDr. John Garcia, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055859",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "9349cb12-4874-47ea-a7ff-6c9699010e1b",
+    "patient_id": "PT58682",
+    "patient": {
+      "id": "PT58682",
+      "name": "William Rodriguez",
+      "date_of_birth": "1954-11-22",
+      "gender": "Female",
+      "mrn": "MRN181629",
+      "metadata": {
+        "age": 70,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - William Rodriguez",
+    "content": "PROGRESS NOTE\n\nPatient: William Rodriguez\nMRN: MRN181629\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Hypertension.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 78 bpm, BP 114/79\n\nLABORATORY RESULTS:\n- Glucose: 139 mg/dL\n- Hemoglobin: 11.4 g/dL\n\nASSESSMENT AND PLAN:\n1. Hypertension - Continue current management\n   - Medications: Aspirin 81mg, Furosemide 40mg\n\nDr. Sarah Brown, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055888",
+      "word_count": 54
+    }
+  },
+  {
+    "id": "421f347b-317e-4821-8cd0-53a612a74daa",
+    "patient_id": "PT58682",
+    "patient": {
+      "id": "PT58682",
+      "name": "William Rodriguez",
+      "date_of_birth": "1954-11-22",
+      "gender": "Female",
+      "mrn": "MRN181629",
+      "metadata": {
+        "age": 70,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - William Rodriguez",
+    "content": "PROGRESS NOTE\n\nPatient: William Rodriguez\nMRN: MRN181629\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Congestive Heart Failure.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 60 bpm, BP 135/73\n\nLABORATORY RESULTS:\n- Glucose: 115 mg/dL\n- Hemoglobin: 13.5 g/dL\n\nASSESSMENT AND PLAN:\n1. Congestive Heart Failure - Continue current management\n   - Medications: Amlodipine 5mg\n\nDr. Ashley Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055909",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "d865d6d7-cfed-4b9c-af46-0f36b6c9f4b7",
+    "patient_id": "PT58682",
+    "patient": {
+      "id": "PT58682",
+      "name": "William Rodriguez",
+      "date_of_birth": "1954-11-22",
+      "gender": "Female",
+      "mrn": "MRN181629",
+      "metadata": {
+        "age": 70,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - William Rodriguez",
+    "content": "PROGRESS NOTE\n\nPatient: William Rodriguez\nMRN: MRN181629\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Osteoarthritis.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 77 bpm, BP 131/78\n\nLABORATORY RESULTS:\n- Glucose: 87 mg/dL\n- Hemoglobin: 11.1 g/dL\n\nASSESSMENT AND PLAN:\n1. Osteoarthritis - Continue current management\n   - Medications: Gabapentin 300mg, Lisinopril 10mg, Amlodipine 5mg\n\nDr. Emily Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055928",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "91bd9503-9c59-4b1e-8f5e-80696818c11e",
+    "patient_id": "PT31548",
+    "patient": {
+      "id": "PT31548",
+      "name": "James Miller",
+      "date_of_birth": "2001-05-10",
+      "gender": "Female",
+      "mrn": "MRN575095",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - James Miller",
+    "content": "PROGRESS NOTE\n\nPatient: James Miller\nMRN: MRN575095\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Chronic Kidney Disease.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 82 bpm, BP 117/73\n\nLABORATORY RESULTS:\n- Glucose: 125 mg/dL\n- Hemoglobin: 13.1 g/dL\n\nASSESSMENT AND PLAN:\n1. Chronic Kidney Disease - Continue current management\n   - Medications: Gabapentin 300mg, Atorvastatin 20mg, Levothyroxine 75mcg\n\nDr. Emily Johnson, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055962",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "8e5697af-328b-44de-9bec-76b4b39c3fcd",
+    "patient_id": "PT31548",
+    "patient": {
+      "id": "PT31548",
+      "name": "James Miller",
+      "date_of_birth": "2001-05-10",
+      "gender": "Female",
+      "mrn": "MRN575095",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - James Miller",
+    "content": "PROGRESS NOTE\n\nPatient: James Miller\nMRN: MRN575095\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 74 bpm, BP 115/87\n\nLABORATORY RESULTS:\n- Glucose: 91 mg/dL\n- Hemoglobin: 12.1 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Amlodipine 5mg, Atorvastatin 20mg, Gabapentin 300mg\n\nDr. Richard Garcia, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.055982",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "b3e39ba9-063b-4a0d-9a4d-e75fce3326d5",
+    "patient_id": "PT31548",
+    "patient": {
+      "id": "PT31548",
+      "name": "James Miller",
+      "date_of_birth": "2001-05-10",
+      "gender": "Female",
+      "mrn": "MRN575095",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - James Miller",
+    "content": "PROGRESS NOTE\n\nPatient: James Miller\nMRN: MRN575095\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Osteoarthritis.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 65 bpm, BP 110/79\n\nLABORATORY RESULTS:\n- Glucose: 194 mg/dL\n- Hemoglobin: 13.1 g/dL\n\nASSESSMENT AND PLAN:\n1. Osteoarthritis - Continue current management\n   - Medications: Lisinopril 10mg, Aspirin 81mg, Sertraline 50mg\n\nDr. Jessica Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056001",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "ae07fe9a-8781-4f30-b37c-91abc0dc7f56",
+    "patient_id": "PT31548",
+    "patient": {
+      "id": "PT31548",
+      "name": "James Miller",
+      "date_of_birth": "2001-05-10",
+      "gender": "Female",
+      "mrn": "MRN575095",
+      "metadata": {
+        "age": 24,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - James Miller",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: James Miller\nMRN: MRN575095\nDOB: 2001-05-10\n\nDISCHARGE DIAGNOSES:\n1. Atrial Fibrillation\n\nDISCHARGE MEDICATIONS:\n- Aspirin 81mg daily\n- Atorvastatin 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.2\u00b0F\nHeart Rate: 97 bpm\nBlood Pressure: 135/71 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Jessica Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056019",
+      "word_count": 66
+    }
+  },
+  {
+    "id": "a685699e-a216-403d-a048-12a1e3512e36",
+    "patient_id": "PT60016",
+    "patient": {
+      "id": "PT60016",
+      "name": "Joseph Garcia",
+      "date_of_birth": "1963-02-24",
+      "gender": "Female",
+      "mrn": "MRN654819",
+      "metadata": {
+        "age": 62,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Garcia\nMRN: MRN654819\nDOB: 1963-02-24\n\nDISCHARGE DIAGNOSES:\n1. Hypertension\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Metformin 500mg daily\n- Furosemide 40mg daily\n- Amlodipine 5mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.7\u00b0F\nHeart Rate: 67 bpm\nBlood Pressure: 133/71 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Lisa Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056055",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "db58b77b-4290-4ce9-8803-0d85c4d5d378",
+    "patient_id": "PT60016",
+    "patient": {
+      "id": "PT60016",
+      "name": "Joseph Garcia",
+      "date_of_birth": "1963-02-24",
+      "gender": "Female",
+      "mrn": "MRN654819",
+      "metadata": {
+        "age": 62,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Joseph Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Joseph Garcia\nMRN: MRN654819\nDOB: 1963-02-24\n\nDISCHARGE DIAGNOSES:\n1. Osteoarthritis\n\nDISCHARGE MEDICATIONS:\n- Furosemide 40mg daily\n- Aspirin 81mg daily\n- Sertraline 50mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.9\u00b0F\nHeart Rate: 75 bpm\nBlood Pressure: 117/87 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Robert Gonzalez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056076",
+      "word_count": 69
+    }
+  },
+  {
+    "id": "b63f51b8-ec43-4b1d-9100-ec75217514a8",
+    "patient_id": "PT45159",
+    "patient": {
+      "id": "PT45159",
+      "name": "Jane Garcia",
+      "date_of_birth": "1971-03-08",
+      "gender": "Male",
+      "mrn": "MRN758449",
+      "metadata": {
+        "age": 54,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Jane Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Jane Garcia\nMRN: MRN758449\nDOB: 1971-03-08\n\nDISCHARGE DIAGNOSES:\n1. Atrial Fibrillation\n\nDISCHARGE MEDICATIONS:\n- Metformin 500mg daily\n- Sertraline 50mg daily\n- Omeprazole 20mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.1\u00b0F\nHeart Rate: 76 bpm\nBlood Pressure: 133/79 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. David Lopez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056108",
+      "word_count": 70
+    }
+  },
+  {
+    "id": "d174ba9a-b16a-4294-8fc6-6e501adfc35b",
+    "patient_id": "PT45159",
+    "patient": {
+      "id": "PT45159",
+      "name": "Jane Garcia",
+      "date_of_birth": "1971-03-08",
+      "gender": "Male",
+      "mrn": "MRN758449",
+      "metadata": {
+        "age": 54,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Jane Garcia",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Jane Garcia\nMRN: MRN758449\nDOB: 1971-03-08\n\nDISCHARGE DIAGNOSES:\n1. Osteoarthritis\n\nDISCHARGE MEDICATIONS:\n- Levothyroxine 75mcg daily\n- Omeprazole 20mg daily\n- Sertraline 50mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.1\u00b0F\nHeart Rate: 88 bpm\nBlood Pressure: 124/77 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Robert Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056131",
+      "word_count": 69
+    }
+  },
+  {
+    "id": "b3a41ec0-eb9b-4d53-a937-e64f6f5fff36",
+    "patient_id": "PT45159",
+    "patient": {
+      "id": "PT45159",
+      "name": "Jane Garcia",
+      "date_of_birth": "1971-03-08",
+      "gender": "Male",
+      "mrn": "MRN758449",
+      "metadata": {
+        "age": 54,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Jane Garcia",
+    "content": "PROGRESS NOTE\n\nPatient: Jane Garcia\nMRN: MRN758449\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Congestive Heart Failure.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 99 bpm, BP 130/83\n\nLABORATORY RESULTS:\n- Glucose: 193 mg/dL\n- Hemoglobin: 10.2 g/dL\n\nASSESSMENT AND PLAN:\n1. Congestive Heart Failure - Continue current management\n   - Medications: Levothyroxine 75mcg, Sertraline 50mg, Atorvastatin 20mg\n\nDr. Sarah Rodriguez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056151",
+      "word_count": 60
+    }
+  },
+  {
+    "id": "4bd8df2f-3222-419c-b516-086927e89d5e",
+    "patient_id": "PT13096",
+    "patient": {
+      "id": "PT13096",
+      "name": "Jane Martinez",
+      "date_of_birth": "1979-10-26",
+      "gender": "Female",
+      "mrn": "MRN641736",
+      "metadata": {
+        "age": 45,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Jane Martinez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Jane Martinez\nMRN: MRN641736\nDOB: 1979-10-26\n\nDISCHARGE DIAGNOSES:\n1. Depression\n\nDISCHARGE MEDICATIONS:\n- Furosemide 40mg daily\n- Aspirin 81mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 98.9\u00b0F\nHeart Rate: 77 bpm\nBlood Pressure: 111/89 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Richard Jones, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056183",
+      "word_count": 65
+    }
+  },
+  {
+    "id": "4ab646dc-d8c0-40c4-ac21-891f80094f06",
+    "patient_id": "PT13096",
+    "patient": {
+      "id": "PT13096",
+      "name": "Jane Martinez",
+      "date_of_birth": "1979-10-26",
+      "gender": "Female",
+      "mrn": "MRN641736",
+      "metadata": {
+        "age": 45,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Jane Martinez",
+    "content": "PROGRESS NOTE\n\nPatient: Jane Martinez\nMRN: MRN641736\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Depression.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 99 bpm, BP 122/70\n\nLABORATORY RESULTS:\n- Glucose: 99 mg/dL\n- Hemoglobin: 11.4 g/dL\n\nASSESSMENT AND PLAN:\n1. Depression - Continue current management\n   - Medications: Levothyroxine 75mcg\n\nDr. Robert Miller, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056201",
+      "word_count": 52
+    }
+  },
+  {
+    "id": "53abfb94-882a-4fc1-851f-3fb092abf04a",
+    "patient_id": "PT13096",
+    "patient": {
+      "id": "PT13096",
+      "name": "Jane Martinez",
+      "date_of_birth": "1979-10-26",
+      "gender": "Female",
+      "mrn": "MRN641736",
+      "metadata": {
+        "age": 45,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Jane Martinez",
+    "content": "PROGRESS NOTE\n\nPatient: Jane Martinez\nMRN: MRN641736\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Depression.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 83 bpm, BP 126/88\n\nLABORATORY RESULTS:\n- Glucose: 117 mg/dL\n- Hemoglobin: 13.7 g/dL\n\nASSESSMENT AND PLAN:\n1. Depression - Continue current management\n   - Medications: Amlodipine 5mg, Sertraline 50mg, Atorvastatin 20mg\n\nDr. David Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056220",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "eb335c8c-a0ab-465f-9acb-0dbf0c882b44",
+    "patient_id": "PT13096",
+    "patient": {
+      "id": "PT13096",
+      "name": "Jane Martinez",
+      "date_of_birth": "1979-10-26",
+      "gender": "Female",
+      "mrn": "MRN641736",
+      "metadata": {
+        "age": 45,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Jane Martinez",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Jane Martinez\nMRN: MRN641736\nDOB: 1979-10-26\n\nDISCHARGE DIAGNOSES:\n1. Hypertension\n\nDISCHARGE MEDICATIONS:\n- Amlodipine 5mg daily\n- Levothyroxine 75mcg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.5\u00b0F\nHeart Rate: 96 bpm\nBlood Pressure: 124/78 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Emily Williams, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056238",
+      "word_count": 65
+    }
+  },
+  {
+    "id": "5df06469-0a95-4f25-b9ca-7f09e4bc791d",
+    "patient_id": "PT84566",
+    "patient": {
+      "id": "PT84566",
+      "name": "Michael Hernandez",
+      "date_of_birth": "1994-08-01",
+      "gender": "Female",
+      "mrn": "MRN454006",
+      "metadata": {
+        "age": 31,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Michael Hernandez",
+    "content": "PROGRESS NOTE\n\nPatient: Michael Hernandez\nMRN: MRN454006\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Type 2 Diabetes Mellitus.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 87 bpm, BP 138/74\n\nLABORATORY RESULTS:\n- Glucose: 197 mg/dL\n- Hemoglobin: 15.5 g/dL\n\nASSESSMENT AND PLAN:\n1. Type 2 Diabetes Mellitus - Continue current management\n   - Medications: Lisinopril 10mg\n\nDr. Emily Jones, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056271",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "81ba940a-e49b-4544-b63b-89145cfd2575",
+    "patient_id": "PT84566",
+    "patient": {
+      "id": "PT84566",
+      "name": "Michael Hernandez",
+      "date_of_birth": "1994-08-01",
+      "gender": "Female",
+      "mrn": "MRN454006",
+      "metadata": {
+        "age": 31,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Michael Hernandez",
+    "content": "PROGRESS NOTE\n\nPatient: Michael Hernandez\nMRN: MRN454006\n\nSUBJECTIVE:\nPatient reports stable symptoms related to COPD.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 86 bpm, BP 126/89\n\nLABORATORY RESULTS:\n- Glucose: 171 mg/dL\n- Hemoglobin: 15.5 g/dL\n\nASSESSMENT AND PLAN:\n1. COPD - Continue current management\n   - Medications: Lisinopril 10mg, Furosemide 40mg, Sertraline 50mg\n\nDr. Jessica Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056290",
+      "word_count": 56
+    }
+  },
+  {
+    "id": "854d4c87-32f9-4d9b-9e1c-097403e22483",
+    "patient_id": "PT51378",
+    "patient": {
+      "id": "PT51378",
+      "name": "Michael Davis",
+      "date_of_birth": "1942-10-07",
+      "gender": "Male",
+      "mrn": "MRN389715",
+      "metadata": {
+        "age": 82,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Michael Davis",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Michael Davis\nMRN: MRN389715\nDOB: 1942-10-07\n\nDISCHARGE DIAGNOSES:\n1. COPD\n\nDISCHARGE MEDICATIONS:\n- Sertraline 50mg daily\n- Levothyroxine 75mcg daily\n- Amlodipine 5mg daily\n- Lisinopril 10mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 99.0\u00b0F\nHeart Rate: 92 bpm\nBlood Pressure: 139/79 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. Michael Hernandez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056334",
+      "word_count": 73
+    }
+  },
+  {
+    "id": "48a633e3-6402-46f0-8448-fa674581ee44",
+    "patient_id": "PT51378",
+    "patient": {
+      "id": "PT51378",
+      "name": "Michael Davis",
+      "date_of_birth": "1942-10-07",
+      "gender": "Male",
+      "mrn": "MRN389715",
+      "metadata": {
+        "age": 82,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Michael Davis",
+    "content": "PROGRESS NOTE\n\nPatient: Michael Davis\nMRN: MRN389715\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Type 2 Diabetes Mellitus.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 75 bpm, BP 128/83\n\nLABORATORY RESULTS:\n- Glucose: 118 mg/dL\n- Hemoglobin: 16.2 g/dL\n\nASSESSMENT AND PLAN:\n1. Type 2 Diabetes Mellitus - Continue current management\n   - Medications: Amlodipine 5mg\n\nDr. David Lopez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056354",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "a70184be-7cb4-4002-9c08-828fca384a2e",
+    "patient_id": "PT51378",
+    "patient": {
+      "id": "PT51378",
+      "name": "Michael Davis",
+      "date_of_birth": "1942-10-07",
+      "gender": "Male",
+      "mrn": "MRN389715",
+      "metadata": {
+        "age": 82,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Michael Davis",
+    "content": "PROGRESS NOTE\n\nPatient: Michael Davis\nMRN: MRN389715\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Congestive Heart Failure.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 97 bpm, BP 118/85\n\nLABORATORY RESULTS:\n- Glucose: 93 mg/dL\n- Hemoglobin: 14.0 g/dL\n\nASSESSMENT AND PLAN:\n1. Congestive Heart Failure - Continue current management\n   - Medications: Aspirin 81mg, Metformin 500mg\n\nDr. Jane Smith, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056375",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "4b4fa8ee-4944-4242-bc93-0e892ffa8b3e",
+    "patient_id": "PT51378",
+    "patient": {
+      "id": "PT51378",
+      "name": "Michael Davis",
+      "date_of_birth": "1942-10-07",
+      "gender": "Male",
+      "mrn": "MRN389715",
+      "metadata": {
+        "age": 82,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "discharge_summary",
+    "title": "Discharge Summary - Michael Davis",
+    "content": "DISCHARGE SUMMARY\n\nPATIENT: Michael Davis\nMRN: MRN389715\nDOB: 1942-10-07\n\nDISCHARGE DIAGNOSES:\n1. Chronic Kidney Disease\n\nDISCHARGE MEDICATIONS:\n- Lisinopril 10mg daily\n- Amlodipine 5mg daily\n- Aspirin 81mg daily\n\nVITAL SIGNS ON DISCHARGE:\nTemperature: 97.5\u00b0F\nHeart Rate: 90 bpm\nBlood Pressure: 131/89 mmHg\n\nDISCHARGE INSTRUCTIONS:\n1. Follow up with primary care physician in 1-2 weeks\n2. Continue medications as prescribed\n3. Monitor symptoms and return if worsening\n\nDr. James Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056393",
+      "word_count": 71
+    }
+  },
+  {
+    "id": "ae9b1397-f85c-4d07-8f1a-3717b47bc8ba",
+    "patient_id": "PT77653",
+    "patient": {
+      "id": "PT77653",
+      "name": "Richard Brown",
+      "date_of_birth": "1954-01-13",
+      "gender": "Female",
+      "mrn": "MRN399082",
+      "metadata": {
+        "age": 71,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Brown",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Brown\nMRN: MRN399082\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Anxiety Disorder.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 74 bpm, BP 124/82\n\nLABORATORY RESULTS:\n- Glucose: 123 mg/dL\n- Hemoglobin: 12.8 g/dL\n\nASSESSMENT AND PLAN:\n1. Anxiety Disorder - Continue current management\n   - Medications: Atorvastatin 20mg, Omeprazole 20mg, Aspirin 81mg\n\nDr. James Martinez, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056429",
+      "word_count": 58
+    }
+  },
+  {
+    "id": "cdb580d1-aee5-4f01-b13d-f2930af9cdb8",
+    "patient_id": "PT77653",
+    "patient": {
+      "id": "PT77653",
+      "name": "Richard Brown",
+      "date_of_birth": "1954-01-13",
+      "gender": "Female",
+      "mrn": "MRN399082",
+      "metadata": {
+        "age": 71,
+        "created_by": "synthetic_generator"
+      }
+    },
+    "document_type": "progress_note",
+    "title": "Progress Note - Richard Brown",
+    "content": "PROGRESS NOTE\n\nPatient: Richard Brown\nMRN: MRN399082\n\nSUBJECTIVE:\nPatient reports stable symptoms related to Depression.\n\nOBJECTIVE:\nVital Signs: Temperature 98.6\u00b0F, HR 75 bpm, BP 133/70\n\nLABORATORY RESULTS:\n- Glucose: 127 mg/dL\n- Hemoglobin: 10.2 g/dL\n\nASSESSMENT AND PLAN:\n1. Depression - Continue current management\n   - Medications: Levothyroxine 75mcg, Furosemide 40mg\n\nDr. Joseph Davis, MD",
+    "metadata": {
+      "generated_at": "2025-09-13T14:12:54.056449",
+      "word_count": 54
+    }
+  }
+]

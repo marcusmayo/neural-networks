@@ -1,0 +1,12 @@
+streamlit==1.28.1
+fastapi==0.104.1
+pandas==2.1.4
+numpy==1.24.3
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.23
+pgvector==0.2.4
+sentence-transformers==2.2.2
+torch==2.2.0
+scikit-learn==1.3.2
+pydantic==2.5.0
+python-multipart==0.0.6
