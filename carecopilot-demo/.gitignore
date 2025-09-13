@@ -1,14 +1,48 @@
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.so
 .Python
-env/
-venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
-*.db
-*.sqlite3
-.env
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
 .vscode/
 .idea/
-*.log
-.streamlit/secrets.toml
+
+# Backup files
+*.backup
+*.bak
