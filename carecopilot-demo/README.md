@@ -253,6 +253,12 @@ Compliance: HIPAA-ready architecture with audit trails
 
 ### **Deployment Architecture**
 ```bash
+# Navigate to project directory
+cd /home/ubuntu/machine-learning-portfolio/carecopilot-demo
+
+# Activate virtual environment
+source venv/bin/activate
+
 # Production-ready deployment command
 streamlit run app.py --server.address 0.0.0.0 --server.port 8501
 
