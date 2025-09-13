@@ -7,7 +7,6 @@ import boto3
 from typing import List, Dict, Any
 from sentence_transformers import SentenceTransformer
 from sqlalchemy.orm import Session
-from sqlalchemy import func
 from datetime import datetime
 
 from config.settings import settings
@@ -173,7 +172,7 @@ class DataProcessor:
             chunk_count = db.query(DocumentChunk).count()
             patient_count = db.query(Patient).count()
             
-            doc_types = db.query(Document.document_type, func.count(Document.document_type).label('count')).group_by(Document.document_type).all()
+            doc_types = db.query(Document.document_type, db.func.count(Document.document_type).label('count')).group_by(Document.document_type).all()
             
             return {
                 "total_documents": doc_count,
