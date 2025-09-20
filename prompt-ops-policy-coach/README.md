@@ -53,7 +53,7 @@ Transform the same business question through 5 different AI reasoning approaches
 ### 🎛️ **Framework Comparison Dashboard**
 Real-time comparison of prompt framework effectiveness with comprehensive descriptions and usage guidance.
 
-![Framework Comparison](prompt-ops-policy-coach/screenshots/framework-comparision.png)
+![Framework Comparison](screenshots/framework-comparision.png)
 *Complete framework comparison showing all 5 methodologies with icons, descriptions, best use cases, and pro tips for optimal implementation*
 
 ### 💰 **Real-Time Cost Optimization & Session Metrics**
